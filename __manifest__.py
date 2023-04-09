@@ -28,7 +28,10 @@
     # 'website': "https://www.cybrosys.com",
     'depends': ['website'],
     'data': [
-        'views/views.xml'    ],
+        'views/views.xml',
+        'views/header.xml',
+        'views/homepage.xml',
+    ],
     'images': [
     ],
     'license': 'LGPL-3',
@@ -37,13 +40,13 @@
     'auto_install': False,
     'assets': {
             'web.assets_frontend': [
-                '/metafit/static/src/css/style.css',
+                    '/metafit/static/src/css/style.css',
                 # 'metafit/static/src/css/owl.carousel.min.css',
                 # 'metafit/static/src/css/owl.theme.default.min.css',
                 # 'metafit/static/src/js/product.js',
-                # 'metafit/static/src/js/scroll_navbar.js',
-                  '/metafit/static/src/libs/swiper/swiper-bundle.min.css',
-                  '/metafit/static/src/libs/swiper/swiper-bundle.min.js',
+                    '/metafit/static/src/libs/swiper/swiper-bundle.min.css',
+                    '/metafit/static/src/libs/swiper/swiper-bundle.min.js',
+                    '/metafit/static/src/js/index.js',
                 ],
             },
 }

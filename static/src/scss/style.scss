@@ -1,4 +1,10 @@
 
 
 @import './variables';
+@import './mixins';
 @import './normalize';
+@import './common';
+
+// @import "./layouts/*";
+@import './layouts/navigation';
+@import './pages/homepage';

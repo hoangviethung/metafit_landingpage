@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="template_header_default"
+              inherit_id="website.template_header_default"
+              name="Template Header Theme MetaFit" active="True">
+        <xpath expr="//t [@t-call='website.navbar']" position="replace">
+            <t t-call="website.navbar">
+                <t t-set="_navbar_classes" t-valuef="mf_container mf_navbar"/>
+                <div class="mf_navbar-links">
+                    <!-- Brand -->
+                    <t t-call="website.placeholder_header_brand">
+                        <t t-set="_link_class" t-valuef="mr-4"/>
+                    </t>
+                    <!-- Navbar Collapse -->
+                    <div id="top_menu_collapse" class="mf_collapse collapse">
+                        <t t-call="website.navbar_nav">
+                            <t t-set="_nav_class" t-valuef="flex-grow-1"/>
+                            <!-- Menu -->
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu">
+                                    <t t-set="item_class" t-valuef="nav-item"/>
+                                    <t t-set="link_class" t-valuef="nav-link"/>
+                                </t>
+                            </t>
+                        </t>
+                    </div>
+                    <t t-call="website.navbar_toggler">
+                        <t t-set="_toggler_class" t-valuef="ml-auto"/>
+                    </t>
+                </div>
+                <!-- <t t-call="website.placeholder_header_call_to_action"/> -->
+            </t>
+        </xpath>
+    </template>
+</odoo>

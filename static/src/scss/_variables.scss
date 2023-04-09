@@ -1,18 +1,27 @@
 //font
-$font-default:'Roboto', sans-serif;
+@import url('https://fonts.cdnfonts.com/css/svn-gilroy');
+@import url('https://fonts.cdnfonts.com/css/inter');
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+$font-default:'SVN-Gilroy', sans-serif;
+$font-secondary: 'Inter', sans-serif;
 $font-offer: 'Kaushan Script', cursive;
-
 
 //colors
 $color-white: #ffffff;
 $color-orange: #3fc0b6;
 $color-black: #000000;
+$color-black-1: #242424;
 $color-button: #00000056;
 $color-grey: #6b778d;
 $color-bg:#f4f4f4;
 $color-footer:#a09292;
 $color-carousel:#232020;
 $color-border:#cfcdcd;
+
+$color-primary: #FF5B26;
+$color-secondary: #120F2F;
+$color-cream-white:#FFE5E5;
+$color-cream-white-1:#EFDCDC;
 
 
 //fon-size
@@ -25,3 +34,8 @@ $font-size-demo:40px;
 $font-size-form:12px;
 $font-sub-head:16px;
 $font-sub-blog:20px;
+
+
+$space_large: 100px;
+$space_medium: 50px;
+$space_small: 20px;

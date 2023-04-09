@@ -1,0 +1,122 @@
+*:focus {
+    outline: 0 !important;
+}
+
+*button:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+* {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: $font-default;
+    font-size: 16px;
+    &:focus,
+    &:active {
+        outline: none !important;
+    }
+}
+
+*:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+.mf_container{
+    width: 100%;
+    padding: 0 100px;
+
+    @include respond-to-mobile{
+        padding:0 20px;
+    }
+
+    @include respond-to-tablet{
+        padding:0 20px;
+    }
+}
+
+.mf_title{
+    font-size: 4.5rem;
+    line-height: 6.75rem;
+    font-weight: 700;
+
+    font-family: $font-default;
+
+    text-transform: uppercase;
+
+    @include respond-to-mobile{
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+
+    @include respond-to-tablet{
+        font-size: 3.5rem;
+        line-height: 5.5rem;
+    }
+}
+
+.mf_button{
+    padding: 0.75rem 4.25rem;
+    border-radius: 2.125rem;
+    border: none;
+    background-size: 300% 100%;
+    -o-moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    background-image: linear-gradient(90deg, #E8ABBE 0%, #E4BDCB 8%, #E1CCD6 18%, #E0D1DA 26%, #E1CAD5 46%, #E6B8C8 75%, #E8ADC0 87%, #E0D1DA 100%);;
+
+    &:focus-visible{
+        outline: none;
+    }
+
+    &:hover{
+        background-position: 99% 0;
+        -o-moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    a{
+        color: $color-secondary;
+        font-size: 1.75rem;
+        line-height: 2.625rem;
+        font-weight: 600;
+        @include text-truncate(1);
+        &:hover{
+            text-decoration: none;
+        }
+
+        @include respond-to-mobile{
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.top-left-square{
+    @include border-square('left', 'top')
+}
+
+.top-right-square{
+    @include border-square('right', 'top')
+}
+
+.bottom-left-square{
+    @include border-square('left', 'bottom')
+}
+
+.bottom-right-square{
+    @include border-square('right', 'bottom')
+}
