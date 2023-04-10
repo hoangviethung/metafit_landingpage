@@ -31,6 +31,7 @@
         'views/views.xml',
         'views/header.xml',
         'views/homepage.xml',
+        'views/footer.xml',
     ],
     'images': [
     ],

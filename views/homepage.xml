@@ -16,13 +16,13 @@
                                     <img src="/metafit/static/src/images/banner.png"/>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="/metafit/static/src/images/banner.png"/>
+                                    <img src="/metafit/static/src/images/studio1.png"/>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="/metafit/static/src/images/banner.png"/>
+                                    <img src="/metafit/static/src/images/rose.jpg"/>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="/metafit/static/src/images/banner.png"/>
+                                    <img src="/metafit/static/src/images/studio1.png"/>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -37,7 +37,7 @@
                                     <a href="#">Trải nghiệm ngay</a>
                                 </button>
                             </div>
-                          </div>
+                        </div>
                     </section>
                     <!-- Bio Electrical -->
                     <section class="mf_bio-elec">
@@ -136,7 +136,7 @@
                                         <h2>Fit Club</h2>
                                         <p>Nhóm <span>1:4</span></p>
                                     </div>
-                                    <button class="mf_button_small">
+                                    <button class="mf_button mf_button_small">
                                         <a href="#">Gọi ngay</a>
                                     </button>
                                 </div>
@@ -146,7 +146,7 @@
                                         <h2>Fit Premium</h2>
                                         <p>Nhóm <span>1:2</span></p>
                                     </div>
-                                    <button class="mf_button_small">
+                                    <button class="mf_button mf_button_small">
                                         <a href="#">Gọi ngay</a>
                                     </button>
                                 </div>
@@ -155,7 +155,7 @@
                     </section>
 
                     <!-- Benefit -->
-                    <!-- <section class="mf_benefit">
+                    <section class="mf_benefit">
                         <div class="mf_benefit__content mf_container">
                             <h1 class="mf_title">Lợi ích tập luyện</h1>
                             <div class="mf_benefit__main-content">
@@ -166,47 +166,55 @@
                                     <div class="bottom-right-square"></div>
                                     <div class="text-group">
                                         <div class="text-content">
-                                            <img src="/metafit/static/src/images/Vector.png" />
+                                            <div class="text-content-img">
+                                                <img src="/metafit/static/src/images/Vector.png" />
+                                            </div>
                                             <p>Tiết kiệm thời gian</p>
                                         </div>
                                         <div class="text-content">
-                                            <img src="/metafit/static/src/images/Vector.png" />
-                                            <p>Tiết kiệm thời gian</p>
+                                            <div class="text-content-img">
+                                                <img src="/metafit/static/src/images/Vector.png" />
+                                            </div>
+                                            <p>Kích thích lưu thông máu</p>
                                         </div>
                                         <div class="text-content">
-                                            <img src="/metafit/static/src/images/Vector.png" />
-                                            <p>Tiết kiệm thời gian</p>
+                                            <div class="text-content-img">
+                                                <img src="/metafit/static/src/images/Vector.png" />
+                                            </div>
+                                            <p>Xây dựng cơ bắp</p>
                                         </div>
                                         <div class="text-content">
-                                            <img src="/metafit/static/src/images/Vector.png" />
-                                            <p>Tiết kiệm thời gian</p>
+                                            <div class="text-content-img">
+                                                <img src="/metafit/static/src/images/Vector.png" />
+                                            </div>
+                                            <p>Cải thiện vóc dáng</p>
                                         </div>
                                         <div class="text-content">
-                                            <img src="/metafit/static/src/images/Vector.png" />
-                                            <p>Tiết kiệm thời gian</p>
+                                            <div class="text-content-img">
+                                                <img src="/metafit/static/src/images/Vector.png" />
+                                            </div>
+                                            <p>Cải thiện sức bền</p>
                                         </div>
                                         <div class="text-content">
-                                            <img src="/metafit/static/src/images/Vector.png" />
-                                            <p>Tiết kiệm thời gian asdsad sasad sad sad sadsad asdas</p>
-                                        </div>
-                                        <div class="text-content">
-                                            <img src="/metafit/static/src/images/Vector.png" />
-                                            <p>Tiết kiệm thời gian aa</p>
+                                            <div class="text-content-img">
+                                                <img src="/metafit/static/src/images/Vector.png" />
+                                            </div>
+                                            <p>Cân bằng hệ thống cơ bắp</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="gallery">
                                     <div class="swiper gallery-cards">
                                         <div class="swiper-wrapper">
-                                            <img class="swiper-slide" src="/metafit/static/src/images/benefit1.png"/>
-                                            <div class="swiper-slide">0</div>
-                                            <div class="swiper-slide">1</div>
-                                            <div class="swiper-slide">2</div>
-                                            <div class="swiper-slide">3</div>
-                                            <div class="swiper-slide">4</div>
-                                            <div class="swiper-slide">5</div>
-                                            <div class="swiper-slide">6</div>
+                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit1.png"/></div>
+                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit2.png"/></div>
+                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit3.png"/></div>
+                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit4.png"/></div>
+                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit1.png"/></div>
+                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit2.png"/></div>
+                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit3.png"/></div>
                                         </div>
+                                        <div class="swiper-pagination"></div>
                                     </div>
 
                                 </div>
@@ -215,7 +223,33 @@
                                 <a href="#">Trải nghiệm ngay</a>
                             </button>
                         </div>
-                    </section> -->
+                    </section>
+
+                    <!-- Studio -->
+                    <section class="mf_studio">
+                        <div class="swiper mf_studio_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="/metafit/static/src/images/studio1.png"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/metafit/static/src/images/studio1.png"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/metafit/static/src/images/rose.jpg"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/metafit/static/src/images/studio1.png"/>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="mf_studio__content">
+                                <h1>
+                                    MetaFit Studio
+                                </h1>
+                            </div>
+                        </div>
+                    </section>
 
                     <!-- Contact  -->
                     <section class="mf_contact">
@@ -230,8 +264,8 @@
                                     <p>Ho Chi Minh City</p>
                                     <p class="hotline">Hotline: 0909.999.999</p>
                                     <div class="mf_contact__gr_ico">
-                                        <img src="/metafit/static/src/images/fb-ico.png" alt="Facebook"/>
-                                        <img src="/metafit/static/src/images/yt-ico.png" alt="Youtube"/>
+                                        <a href="#"><img src="/metafit/static/src/images/fb-ico.png" alt="Facebook"/></a>
+                                        <a href="#"><img src="/metafit/static/src/images/yt-ico.png" alt="Youtube"/></a>
                                     </div>
                                 </div>
                                 <div class="mf_contact__main-content-center">

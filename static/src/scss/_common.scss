@@ -34,14 +34,18 @@ img {
 
 .mf_container{
     width: 100%;
-    padding: 0 100px;
+    padding: 0 $space_large;
 
     @include respond-to-mobile{
-        padding:0 20px;
+        padding:0 $space_small;
     }
 
     @include respond-to-tablet{
-        padding:0 20px;
+        padding:0 $space_small;
+    }
+
+    @include respond-to-laptop{
+        padding:0 $space_medium;
     }
 }
 
@@ -53,6 +57,8 @@ img {
     font-family: $font-default;
 
     text-transform: uppercase;
+
+    @include text-truncate(2);
 
     @include respond-to-mobile{
         font-size: 3rem;
@@ -87,6 +93,7 @@ img {
         -o-transition: all .4s ease-in-out;
         -webkit-transition: all .4s ease-in-out;
         transition: all .4s ease-in-out;
+        box-shadow: 0 4px 15px 0 rgb(201 213 212 / 88%);
     }
 
     a{
