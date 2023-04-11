@@ -28,24 +28,20 @@ html {
     scroll-behavior: smooth;
 }
 
-img {
-    width: 100%;
-}
-
 .mf_container{
     width: 100%;
-    padding: 0 $space_large;
+    padding: $spacing_bw_large $space_large;
 
     @include respond-to-mobile{
-        padding:0 $space_small;
+        padding:$spacing_bw_small $space_small;
     }
 
     @include respond-to-tablet{
-        padding:0 $space_small;
+        padding:$spacing_bw_small $space_small;
     }
 
     @include respond-to-laptop{
-        padding:0 $space_medium;
+        padding:$spacing_bw_large $space_medium;
     }
 }
 
@@ -56,7 +52,7 @@ img {
 
     font-family: $font-default;
 
-    margin-top: $spacing_bw_large;
+    margin-top: 0;
 
     text-transform: uppercase;
 
@@ -65,12 +61,11 @@ img {
     @include respond-to-mobile{
         font-size: 1.5rem;
         line-height: 2.25rem;
-        margin-top: $spacing_bw_small;
     }
 
     @include respond-to-tablet{
-        font-size: 3.5rem;
-        line-height: 5.5rem;
+        font-size: 2rem;
+        line-height: 2.75rem;
     }
 }
 
@@ -96,7 +91,6 @@ img {
         -o-transition: all .4s ease-in-out;
         -webkit-transition: all .4s ease-in-out;
         transition: all .4s ease-in-out;
-        box-shadow: 0 4px 15px 0 rgb(201 213 212 / 88%);
     }
 
     a{
@@ -113,10 +107,19 @@ img {
             font-size: 0.875rem;
             line-height: 1.131rem;
         }
+
+        @include respond-to-tablet{
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
     }
 
     @include respond-to-mobile{
         padding: 0.75rem 3rem;
+    }
+
+    @include respond-to-tablet{
+        padding: 1rem 3rem;
     }
 }
 

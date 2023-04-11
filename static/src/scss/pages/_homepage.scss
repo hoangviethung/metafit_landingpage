@@ -1,3 +1,7 @@
+#wrapwrap{
+    scroll-behavior: smooth;
+}
+
 .mf_herobanner {
     .mf_hero {
         &_content{
@@ -32,14 +36,17 @@
                     font-size: 1.5rem;
                     line-height: 2.25rem;
 
-                    width: 141px;
+                    width: 150px;
                     margin:0 auto;
                     margin-bottom: 1rem;
                 };
 
                 @include respond-to-tablet{
-                    font-size: 4.3rem;
-                    line-height: 6.5rem;
+                    font-size: 1.5rem;
+                    line-height: 2.25rem;
+                    width: 150px;
+                    margin:0 auto;
+                    margin-bottom: 1rem;
                 };
             }
 
@@ -53,6 +60,12 @@
                     line-height: 1.313rem;
                     margin-bottom: 1.5rem;
                 };
+
+                @include respond-to-tablet{
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    margin-bottom: 1.5rem;
+                };
             }
 
             button{
@@ -63,11 +76,16 @@
                 text-align: center;
                 left:$space_small;
                 right: $space_small;
+                top: 120px;
+                transform: initial
             };
 
             @include respond-to-tablet{
+                text-align: center;
                 left:$space_small;
                 right: $space_small;
+                top: 180px;
+                transform: initial
             };
 
             @include respond-to-laptop{
@@ -75,23 +93,30 @@
             }
         }
 
-        &_swiper{
-
-            height: 1210px;
+        &_banner_mobile{
+            display: none;
 
             @include respond-to-mobile{
-                height: 790px;
+                display: block;
+                width: 100%;
             }
 
             @include respond-to-tablet{
-                height: 790px;
+                display: block;
+                width: 100%;
             }
         }
-    }
+        &_swiper{
+            min-height: 790px;
+            @include respond-to-mobile{
+                display: none;
+            }
 
-    img{
-        height: 100%;
-        object-fit: cover;
+            @include respond-to-tablet{
+                display: none;
+            }
+
+        }
     }
 
     .swiper-pagination{
@@ -101,6 +126,11 @@
             border: .5px solid $color-primary;
             opacity: 1;
             background-color: transparent;
+
+            @include respond-to-mobile{
+                width: $size_pagination-swiper-small;
+                height: $size_pagination-swiper-small;
+            }
 
             &.swiper-pagination-bullet-active{
                 background-color: $color-primary;
@@ -127,6 +157,14 @@
         bottom:-161px;
         right: 0;
         z-index: 2;
+
+        @include respond-to-mobile{
+            display: none;
+        }
+
+        @include respond-to-tablet{
+            display: none;
+        }
     }
     &-wrapper{
         display: inline-block;
@@ -175,9 +213,23 @@
             @include respond-to-mobile{
                 display: none;
             }
+
+            @include respond-to-tablet{
+                display: none;
+            }
         }
 
         @include respond-to-mobile{
+            display:  flex;
+            flex-direction: column-reverse;
+        }
+
+        @include respond-to-tablet{
+            display:  flex;
+            flex-direction: column-reverse;
+        }
+
+        @include respond-to-laptop{
             display:  flex;
             flex-direction: column-reverse;
         }
@@ -191,6 +243,7 @@
         margin-left: auto;
         margin-right: $space_large;
         margin-bottom: 208px;
+        margin-top: 120px;
         position: inherit;
         z-index: 2;
         @include respond-to-mobile{
@@ -204,7 +257,7 @@
             text-align: center;
             margin-right: $space_small;
             max-width: calc(100% - ($space_small * 2));
-            margin-bottom: 100px;
+            margin-bottom: 0;
         }
         
         @include respond-to-laptop{
@@ -237,7 +290,6 @@
         position: relative;
         margin-bottom: 3.5rem;
         @include border_content();
-        // border-image-source: linear-gradient(90deg, #F3AE5F 0%, #F3A65E 2%, #F28B5A 8%, #F27857 14%, #F26D56 20%, #F26955 27%, #FF5B26 57%, #F31F4F 88%, #D62970 100%);
         .top-left-square,.top-right-square,.bottom-left-square,.bottom-right-square{
             background-color: $color-white;
         }
@@ -269,6 +321,10 @@
         @include respond-to-mobile{
             margin-bottom: 0;
         }
+
+        @include respond-to-tablet{
+            margin-bottom: 0;
+        }
     }
 
     
@@ -285,11 +341,27 @@
             color: $color-primary;
             text-align: center;
             margin-bottom: 56px;
+
+            @include respond-to-mobile{
+                margin-bottom: 1rem;
+            }
+
+            @include respond-to-tablet{
+                margin-bottom: 1rem;
+            }
         }
         .mf_button{
             margin: 0 auto;
             margin-top: 32px;
             margin-bottom: 112px;
+
+            @include respond-to-mobile{
+                display: none;
+            }
+
+            @include respond-to-tablet{
+                display: none;
+            }
         }
 
         .suit_ico{
@@ -302,6 +374,10 @@
             @include respond-to-mobile{
                 display: none;
             }
+
+            @include respond-to-tablet{
+                display: none;
+            }
         }
     }
 
@@ -309,6 +385,42 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 34px;
+
+        .mf_suit_swiper{
+            width: 100%;
+            display: none;
+
+            .swiper-pagination{
+                .swiper-pagination-bullet{
+                    margin:0 4px;
+                    width: $size_pagination-swiper-small;
+                    height: $size_pagination-swiper-small;
+                    background-color: transparent;
+                    border: 1px solid $color-cream-white; 
+                    @include respond-to-laptop{
+                        width: $size-pagination-swiper;
+                        height: $size_pagination-swiper;
+                        margin:0 6px;
+                    }
+                }
+
+                .swiper-pagination-bullet-active{
+                    background: $color-cream-white;
+                }
+            }
+
+            @include respond-to-mobile{
+                display: block;
+            }
+
+            @include respond-to-tablet{
+                display: block;
+            }
+
+            @include respond-to-laptop{
+                display: block;
+            }
+        }
 
         .mf_suit__text{
             display: flex;
@@ -321,13 +433,17 @@
                 margin-right: .5rem;
 
                 @include respond-to-mobile{
-                    font-size: 3rem;
-                    line-height: 0.5rem;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
                 }
 
-                @include respond-to-mobile{
-                    font-size: 3rem;
-                    line-height: 0.5rem;
+                @include respond-to-tablet{
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+
+                @include respond-to-laptop{
+                    line-height: 2.5rem;
                 }
             }
             p{
@@ -339,14 +455,29 @@
                 @include text-truncate(5);
 
                 @include respond-to-mobile{
-                    font-size: 1.2rem;
-                    line-height: 2rem;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
                 }
 
                 @include respond-to-tablet{
                     font-size: 1.5rem;
                     line-height: 2rem;
                 }
+            }
+
+            @include respond-to-mobile{
+                flex-direction: column;
+                text-align: center;
+            }
+
+            @include respond-to-tablet{
+                flex-direction: column;
+                text-align: center;
+            }
+
+            @include respond-to-laptop{
+                flex-direction: column;
+                text-align: center;
             }
         }
 
@@ -356,13 +487,15 @@
             margin-top: 86px;
 
             @include respond-to-mobile{
-                max-width: 100%;
-                margin-top: 0;
+                display: none;
             }
 
             @include respond-to-tablet{
-                max-width: 100%;
-                margin-top: 0;
+                display: none;
+            }
+
+            @include respond-to-laptop{
+                display: none;
             }
 
             @include respond-to-laptop{
@@ -394,28 +527,28 @@
         }
 
         &-center{
-            height: 578px;
+            margin: 0 -44px 0 -66px;
+            img{
+                width: 100%;
+            }
             @include respond-to-mobile{
-                order: -1;
+                order: 2;
                 height: auto;
+                margin: 0;
+                margin-bottom: 20px;
             }
             @include respond-to-tablet{
-                flex: 0 0 100%;
-                order: -1;
-                height: 100%;
-                margin-bottom: 36px;
+                order: 2;
+                height: auto;
+                margin: 0;
+                margin-bottom: 20px;
             }
 
             @include respond-to-laptop{
-                flex: 0 0 100%;
-                order: -1;
-                height: 100%;
-            }
-
-            @media screen and (max-width: 1200px){
-                flex: 0 0 100%;
-                order: -1;
-                height: 100%;
+                order: 2;
+                height: auto;
+                margin: 0;
+                margin-bottom: 20px;
             }
 
             @media screen and (max-width: 1679px){
@@ -425,6 +558,14 @@
 
 
         @include respond-to-mobile{
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        @include respond-to-tablet{
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        @include respond-to-laptop{
             grid-template-columns: repeat(1,1fr);
         }
         
@@ -440,6 +581,14 @@
         z-index: 2;
         right: 0;
         bottom: -180px;
+        
+        @include respond-to-mobile{
+            display: none;
+        }
+
+        @include respond-to-tablet{
+            display: none;
+        }
     }
     &__content{
         display: inline-block;
@@ -447,6 +596,7 @@
         .mf_title{
             text-align: center;
             margin-bottom: 64px;
+
         }
     }
 
@@ -459,6 +609,7 @@
 
         @include respond-to-mobile{
             grid-template-columns: repeat(1, 1fr);
+            margin-bottom: $spacing_bw_small;
         }
 
         @include respond-to-tablet{
@@ -479,6 +630,7 @@
         position: relative;
         img{
             border-radius: 48px;
+            width: 100%;
         }
     }
 
@@ -521,6 +673,7 @@
                     right: -0.5rem;
                     height: 1.2rem;
                     margin-bottom: 0;
+                    bottom: 0;
                 }
 
             }
@@ -560,8 +713,8 @@
             text-transform: uppercase;
 
             @include respond-to-mobile{
-                font-size: 1rem;
-                line-height: 1.5rem;
+                font-size: 1.5rem;
+                line-height: 2.25rem;
             }
             span{
                 font-size: 3.25rem;
@@ -589,10 +742,6 @@
         border-radius: calc($size/2);
         padding: 1rem 5rem;
 
-        &:hover{
-            box-shadow: 0 4px 15px 0 rgba(19, 20, 20, 0.88);
-
-        }
         a{
             font-size: 1.625rem;
             line-height: 2.25rem;
@@ -614,8 +763,8 @@
         }
 
         @include respond-to-mobile{
-            $size: 40px;
-            padding: .5rem 2.5rem;
+            $size: 48px;
+            padding: 0.75rem 3rem;
             bottom: - calc($size/2);
         }
 
@@ -632,19 +781,27 @@
 .mf_benefit{
     background: linear-gradient(47.28deg, #000000 0%, #322B48 52%, #332C44 81%, #352F3D 100%);
     &__content{
+        width: 100%;
         display: inline-block;
         text-align: center;
-        margin-top: 150px;
-        margin-bottom: 150px;
+        padding-left: $spacing_bw_large;
+        padding: $spacing_bw_large 0 $spacing_bw_large $space_large;
         .mf_title{
             color: $color-primary;
             margin-top: 0;
+        }
+
+        @include respond-to-mobile{
+            padding: $spacing_bw_small 0;
+        }
+
+        @include respond-to-tablet{
+            padding: $spacing_bw_small 0;
         }
     }
     &__main-content{
         display: flex;
         align-items: center;
-        min-height: 500px;
         margin-bottom: 30px;
         &-text{
             position: relative;
@@ -669,7 +826,7 @@
                 }
 
                 @include respond-to-tablet{
-                    margin: 20px 30px;
+                    margin: 1.25rem;
                 }
             }
             .text-content{
@@ -684,12 +841,20 @@
                     @include respond-to-mobile{
                         height: 1.5rem;
                     }
+                    @include respond-to-tablet{
+                        height: 1.75rem;
+                    }
                 }
                 img{
                     width: 40px;
                     height: 24px;
 
                     @include respond-to-mobile{
+                        width: 20px;
+                        height: 12px;
+                    }
+
+                    @include respond-to-tablet{
                         width: 20px;
                         height: 12px;
                     }
@@ -707,36 +872,54 @@
                     }
 
                     @include respond-to-tablet{
-                        font-size: 1.5rem;
-                        line-height: 2rem;
+                        font-size: 1.25rem;
+                        line-height: 1.75rem;
                     }
                 }
 
             }
 
-            @media (max-width:1600px){
-                margin-right: 0;
-                margin-bottom: 3rem;
+            @include respond-to-mobile{
+                margin-right: $space_small;
                 width: 100%;
+                margin-bottom: 1.5rem;
+            }
+
+            @include respond-to-tablet{
+                margin-right: $space_small;
+                width: 100%;
+                margin-bottom: 1.5rem;
+            }
+
+            @include respond-to-laptop{
+                margin-bottom: 2rem;
+            }
+
+            @include respond-to-desktop{
+                margin-bottom: 2.5rem;
             }
         }
 
         .gallery{
-            width: 1020px;
+            width: calc(100% - 620px);
             .gallery-cards{
                 height: 532px;
-                min-height: 338px;
+                min-height: 382px;
                 .swiper-wrapper{
                     align-items: center;
 
                     @include respond-to-mobile{
-                        align-items: flex;
+                        align-items: flex-end;
+                    }
+
+                    @include respond-to-tablet{
+                        align-items: flex-end;
                     }
                 }
 
                 .swiper-slide{
                     width: 206px;
-                    height: 338px;
+                    height: 382px;
                     text-align: center;
                     transition: all .3s;
 
@@ -748,12 +931,22 @@
                         height: 136px;
                     }
 
+                    @include respond-to-tablet{
+                        width: 91px;
+                        height: 136px;
+                    }
+
                     &-active{
                         width: 354px !important;
                         height: 532px;
                         transition: all .3s;
 
                         @include respond-to-mobile{
+                            width: 110px !important;
+                            height: 165px;
+                        }
+
+                        @include respond-to-tablet{
                             width: 110px !important;
                             height: 165px;
                         }
@@ -773,11 +966,15 @@
                         border: 0.5px solid $color-cream-white; 
 
                         @include respond-to-mobile{
-                            margin:0 6px;
+                            margin:0 4px;
+                            width: $size_pagination-swiper-small;
+                            height: $size_pagination-swiper-small;
                         }
 
                         @include respond-to-tablet{
-                            margin:0 6px;
+                            margin:0 4px;
+                            width: $size_pagination-swiper-small;
+                            height: $size_pagination-swiper-small;
                         }
                     }
 
@@ -786,6 +983,7 @@
                     }
 
                     @include respond-to-mobile{
+                        line-height: .5rem;
                         left: 50%;
                         transform: translateX(-50%);
                     }
@@ -803,11 +1001,31 @@
                     height: 100%;
                     object-fit: cover;
                 }
+
+                @include respond-to-mobile{
+                    height: 189px;
+                    min-height: 136px;
+                    padding-bottom: 1.5rem;
+                }
+
+                @include respond-to-tablet{
+                    height: 189px;
+                    min-height: 136px;
+                    padding-bottom: 1.5rem;
+                }
             }
 
             @media (max-width:1600px){
                 width: 100%;
             }
+        }
+
+        @include respond-to-mobile{
+            padding-left: $space_small;
+        }
+
+        @include respond-to-tablet{
+            padding-left: $space_small;
         }
 
         @media (max-width:1600px){
@@ -820,10 +1038,15 @@
 .mf_studio{
 
     &_swiper{
-        max-height: 920px;
-        height: 920px;
+        min-height: 200px;
+
+        @include respond-to-mobile{
+            height: 200px;
+        }
     }
+
     img{
+        width: 100%;
         height: 100%;
         object-fit: cover;
     }
@@ -845,31 +1068,58 @@
             color: $color-white;
 
             @include respond-to-mobile{
-                font-size: 6rem;
-                line-height: 8.75rem;
+                font-size: 3rem;
+                line-height: 3rem;
+                margin: $space_small auto;
             }
 
             @include respond-to-tablet{
-                font-size: 8rem;
-                line-height: 10.75rem;
+                font-size: 3rem;
+                line-height: 3rem;
+                margin: $space_small auto;
+            }
+
+            @include respond-to-laptop{
+                font-size: 6rem;
+                line-height: 6rem;
+                margin: $space_medium auto;
             }
         }
     }
 
     .swiper-pagination{
-        margin-bottom: 70px;
+        margin-bottom: 72px;
 
         .swiper-pagination-bullet{
             width: $size-pagination-swiper;
             height: $size-pagination-swiper;
             background-color: transparent;
             border: 0.5px solid $color-black; 
+
+            @include respond-to-mobile{
+                width: $size_pagination-swiper-small;
+                height: $size_pagination-swiper-small;
+            }
+
+            @include respond-to-tablet{
+                width: $size_pagination-swiper-small;
+                height: $size_pagination-swiper-small;
+            }
         }
 
         .swiper-pagination-bullet-active{
             background: $color-black;
         }
 
+        @include respond-to-mobile{
+            margin-bottom: 1rem;
+            bottom: 0;
+        }
+
+        @include respond-to-tablet{
+            margin-bottom: 1rem;
+            bottom: 0;
+        }
 
     }
 
@@ -891,11 +1141,18 @@
         .mf_title{
             text-align: center;
             color: $color-black;
-            margin-top: 130px;
             margin-bottom: 90px;
 
             position: inherit;
             z-index: 3;
+
+            @include respond-to-mobile{
+                margin-bottom: 1.5rem;
+            }
+
+            @include respond-to-tablet{
+                margin-bottom: 1.75rem;
+            }
         }
 
         .contact_ico{
@@ -904,6 +1161,30 @@
             left: 50%;
             transform: translate( -50%);
             z-index: 2;
+
+            @include respond-to-mobile{
+                img {
+                    width: 25%;
+                }
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                transform: initial;
+                top: initial;
+                left:0;
+            }
+
+            @include respond-to-tablet{
+                img {
+                    width: 25%;
+                }
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                transform: initial;
+                top: initial;
+                left:0;
+            }
         }
     }
 
@@ -911,10 +1192,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 52px;
-        margin-bottom: 190px;
-
-
-
         &-left{
             p{
                 font-weight: 400;
@@ -924,6 +1201,16 @@
                 margin-bottom: 1.5rem;
                 &:first-child{
                     margin-top: 46px;
+
+                    @include respond-to-mobile{
+                        margin-top: 40px;
+                        margin-bottom: 0.625rem;
+                    }
+
+                    @include respond-to-tablet{
+                        margin-top: 40px;
+                        margin-bottom: 0.625rem;
+                    }
                 }
 
                 &:last-child{
@@ -931,6 +1218,16 @@
                 }
 
                 @include text-truncate(3);
+
+                @include respond-to-mobile{
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+
+                @include respond-to-tablet{
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
             }
             .hotline{
                 font-weight: 700;
@@ -938,6 +1235,18 @@
                 font-size: 2.75rem;
                 line-height: 4.125rem;   
                 @include text-truncate(2);
+
+                @include respond-to-mobile{
+                    font-size: 1.5rem;
+                    line-height: 2.25rem;
+                    margin-bottom: 0;
+                }
+
+                @include respond-to-tablet{
+                    font-size: 1.5rem;
+                    line-height: 2.25rem;
+                    margin-bottom: 0;
+                }
             }
 
             .mf_contact__gr_ico{
@@ -965,24 +1274,71 @@
                     i{
                         line-height: 1.5rem;
                         font-size: 1.5rem;
+
+                        @include respond-to-mobile{
+                            line-height: 1rem;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    @include respond-to-mobile{
+                        width: 2rem;
+                        height: 2rem;
                     }
                 }
+
+                @include respond-to-mobile{
+                    justify-content: center;
+                    margin-top: 0.625rem;
+                }
+
+                @include respond-to-tablet{
+                    justify-content: center;
+                    margin-top: 0.625rem;
+                }
+
+                @include respond-to-laptop{
+                    justify-content: center;
+                }
+            }
+
+            @include respond-to-mobile{
+                order:3;
+                text-align: center;
+            }
+
+            @include respond-to-tablet{
+                order:3;
+                text-align: center;
             }
 
             @include respond-to-laptop{
                 grid-column: 1 / span 2;
+                text-align: center;
             }
         }
 
         &-center{
             .form_group{
                 margin-bottom: 2rem;
+
+                @include respond-to-desktop{
+                    margin-bottom: 1rem;
+                }
             }
         }
 
         &-right{
             .form_group{
-                margin-bottom: 78px;
+                margin-bottom: 74px;
+
+                @include respond-to-mobile{
+                    margin-bottom: 1.5rem;
+                }
+
+                @include respond-to-tablet{
+                    margin-bottom: 1.5rem;
+                }
             }
 
             .mf_button{
@@ -991,9 +1347,23 @@
                     color: $color-cream-white;
                 }
 
-                &:hover{
-                    box-shadow: 0 4px 15px 0 rgba(19, 20, 20, 0.88);
+                @include respond-to-mobile{
+                    margin: 0 auto;
                 }
+
+                @include respond-to-tablet{
+                    margin: 0 auto;
+                }
+            }
+
+            @include respond-to-mobile{
+                display: flex;
+                flex-direction: column;
+            }
+
+            @include respond-to-tablet{
+                display: flex;
+                flex-direction: column;
             }
         }
 
@@ -1004,6 +1374,16 @@
             color: $color-white;
             font-family: $font-default;
             margin-bottom: 10px;
+
+            @include respond-to-mobile{
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+
+            @include respond-to-tablet{
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
         }
 
         .form_label > span {
@@ -1014,12 +1394,23 @@
             width: 100%;
             opacity: .4;
             background: linear-gradient(90deg, #FFE5E5 0%, #FFE5E5 100%);
-            padding: 24px;
+            padding: 21px;
             border: none;
             border-radius: 15px;
 
+            font-size: 1rem;
+            line-height: 1.5rem;
+
             :focus-visible{
                 outline: none;
+            }
+
+            @include respond-to-mobile{
+                padding: 0.5rem 1.5rem;
+            }
+
+            @include respond-to-tablet{
+                padding: 0.5rem 1.5rem;
             }
         }
 
@@ -1029,9 +1420,11 @@
 
         @include respond-to-mobile{
             grid-template-columns: repeat(1, 1fr);
+            gap: 0;
         }
         @include respond-to-tablet{
             grid-template-columns: repeat(1, 1fr);
+            gap: 0;
         }
 
         @include respond-to-laptop{

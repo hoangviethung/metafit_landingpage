@@ -21,9 +21,18 @@ odoo.define('metafit.theme_metafit', function (require) {
           },
     });
 
+    const suit_swiper = new Swiper(".mf_suit_swiper", {
+        loop:true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+    })
+
     const gallery_swiper = new Swiper(".mf_benefit .gallery-cards", {
-        slidesPerView: 4,
-        spaceBetween: 24,
+        // slidesPerView: 'auto',
+        // spaceBetween: 24,
         loop: true,
         slideToClickedSlide: true,
         autoplay: {
@@ -37,9 +46,9 @@ odoo.define('metafit.theme_metafit', function (require) {
         breakpoints: {
             0: {
               slidesPerView: 3,
-              spaceBetween: 10
+              spaceBetween: 24
             },
-            1200:{
+            480:{
               slidesPerView: 4,
               spaceBetween: 24
             }

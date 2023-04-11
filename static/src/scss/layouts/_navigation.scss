@@ -1,6 +1,7 @@
 
 .mf_navbar{
-
+    width: 100%;
+    padding: 0 $spacing_bw_large;
     position: absolute;
     background: transparent;
     color: white;
@@ -61,6 +62,14 @@
             &:focus{
                 box-shadow: none;
             }
+
+            @include respond-to-mobile{
+                display: none;
+            }
+
+            @include respond-to-tablet{
+                display: none;
+            }
         }
 
         .navbar-toggler-icon{
@@ -69,11 +78,20 @@
                 outline: none;
             }
         }
+
+        @include respond-to-mobile{
+            justify-content: center;
+        }
+
+        @include respond-to-tablet{
+            justify-content: center;
+        }
     }
 
     &.mf_nav_bg{
         background: $color-black;
     }
+
 }
 
 .o_header_affixed .mf_navbar{
