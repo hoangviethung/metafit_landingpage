@@ -1,5 +1,206 @@
-@import url("https://fonts.cdnfonts.com/css/svn-gilroy");
-@import url("https://fonts.cdnfonts.com/css/inter");
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-ExtraLight.woff2") format("woff2"), url("Inter-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-Bold.woff2") format("woff2"), url("Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-ExtraBold.woff2") format("woff2"), url("Inter-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-Black.woff2") format("woff2"), url("Inter-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-Regular.woff2") format("woff2"), url("Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-Light.woff2") format("woff2"), url("Inter-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-Medium.woff2") format("woff2"), url("Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-SemiBold.woff2") format("woff2"), url("Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-Thin.woff2") format("woff2"), url("Inter-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroyBlack.woff2") format("woff2"), url("SVN-GilroyBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroyBlackItalic.woff2") format("woff2"), url("SVN-GilroyBlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroyBoldItalic.woff2") format("woff2"), url("SVN-GilroyBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroyMediumItalic.woff2") format("woff2"), url("SVN-GilroyMediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroyBold.woff2") format("woff2"), url("SVN-GilroyBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroyHeavy.woff2") format("woff2"), url("SVN-GilroyHeavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroyLightItalic.woff2") format("woff2"), url("SVN-GilroyLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-Gilroy.woff2") format("woff2"), url("SVN-Gilroy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroyHeavyItalic.woff2") format("woff2"), url("SVN-GilroyHeavyItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroyMedium.woff2") format("woff2"), url("SVN-GilroyMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroyLight.woff2") format("woff2"), url("SVN-GilroyLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroyItalic.woff2") format("woff2"), url("SVN-GilroyItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy XBold";
+  src: url("SVN-GilroyXBoldItalic.woff2") format("woff2"), url("SVN-GilroyXBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy XLight";
+  src: url("SVN-GilroyXLightItalic.woff2") format("woff2"), url("SVN-GilroyXLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroyThinItalic.woff2") format("woff2"), url("SVN-GilroyThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroyThin.woff2") format("woff2"), url("SVN-GilroyThin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroySemiBoldItalic.woff2") format("woff2"), url("SVN-GilroySemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("SVN-GilroySemiBold.woff2") format("woff2"), url("SVN-GilroySemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy XLight";
+  src: url("SVN-GilroyXLight.woff2") format("woff2"), url("SVN-GilroyXLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy XBold";
+  src: url("SVN-GilroyXBold.woff2") format("woff2"), url("SVN-GilroyXBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -348,12 +549,12 @@ img {
 }
 @media (max-width: 480px) {
   .mf_container {
-    padding: 0 20px;
+    padding: 0 24px;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .mf_container {
-    padding: 0 20px;
+    padding: 0 24px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -367,6 +568,7 @@ img {
   line-height: 6.75rem;
   font-weight: 700;
   font-family: "SVN-Gilroy", sans-serif;
+  margin-top: 120px;
   text-transform: uppercase;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -377,8 +579,9 @@ img {
 }
 @media (max-width: 480px) {
   .mf_title {
-    font-size: 3rem;
-    line-height: 5rem;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-top: 40px;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
@@ -427,7 +630,13 @@ img {
 }
 @media (max-width: 480px) {
   .mf_button a {
-    font-size: 1.3rem;
+    font-size: 0.875rem;
+    line-height: 1.131rem;
+  }
+}
+@media (max-width: 480px) {
+  .mf_button {
+    padding: 0.75rem 3rem;
   }
 }
 
@@ -494,9 +703,6 @@ img {
     transition: all 0.5s;
   }
 }
-.mf_navbar-links .mf_collapse .o_extra_menu_items {
-  display: none;
-}
 .mf_navbar-links .mf_collapse .nav-item {
   text-align: center;
 }
@@ -531,14 +737,14 @@ img {
 .mf_navbar-links .navbar-toggler-icon:focus-visible {
   outline: none;
 }
-.mf_navbar.test {
+.mf_navbar.mf_nav_bg {
   background: #000000;
 }
 
 .o_header_affixed .mf_navbar {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.o_header_affixed .mf_navbar.test {
+.o_header_affixed .mf_navbar.mf_nav_bg {
   background: #000000;
 }
 
@@ -581,8 +787,11 @@ img {
 }
 @media (max-width: 480px) {
   .mf_herobanner .mf_hero_content h1 {
-    font-size: 3.3rem;
-    line-height: 5.5rem;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    width: 141px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
@@ -603,8 +812,9 @@ img {
 }
 @media (max-width: 480px) {
   .mf_herobanner .mf_hero_content p {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    margin-bottom: 1.5rem;
   }
 }
 .mf_herobanner .mf_hero_content button {
@@ -612,12 +822,15 @@ img {
 }
 @media (max-width: 480px) {
   .mf_herobanner .mf_hero_content {
-    left: 20px;
+    text-align: center;
+    left: 24px;
+    right: 24px;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .mf_herobanner .mf_hero_content {
-    left: 20px;
+    left: 24px;
+    right: 24px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -630,12 +843,12 @@ img {
 }
 @media (max-width: 480px) {
   .mf_herobanner .mf_hero_swiper {
-    height: 850px;
+    height: 790px;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .mf_herobanner .mf_hero_swiper {
-    height: 850px;
+    height: 790px;
   }
 }
 .mf_herobanner img {
@@ -643,8 +856,8 @@ img {
   object-fit: cover;
 }
 .mf_herobanner .swiper-pagination .swiper-pagination-bullet {
-  width: 12.68px;
-  height: 12.68px;
+  width: 12px;
+  height: 12px;
   border: 0.5px solid #FF5B26;
   opacity: 1;
   background-color: transparent;
@@ -659,12 +872,69 @@ img {
   margin: 0 12px;
 }
 
+.mf_bio-elec {
+  background: linear-gradient(46.46deg, #F3AE5F 0%, #F3A65E 2%, #F28B5A 8%, #F27857 14%, #F26D56 20%, #F26955 27%, #FF5B26 57%, #F31F4F 88%, #D62970 100%);
+}
 .mf_bio-elec-wrapper {
   display: inline-block;
   width: 100%;
-  background-image: url("/metafit/static/src/images/bio_elec.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+.mf_bio-elec-wrapper .mf_bio_elec-img .img-desktop {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+}
+@media (max-width: 480px) {
+  .mf_bio-elec-wrapper .mf_bio_elec-img .img-desktop {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .mf_bio-elec-wrapper .mf_bio_elec-img .img-desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mf_bio-elec-wrapper .mf_bio_elec-img .img-desktop {
+    display: none;
+  }
+}
+.mf_bio-elec-wrapper .mf_bio_elec-img .img-mobile {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 480px) {
+  .mf_bio-elec-wrapper .mf_bio_elec-img .img-mobile {
+    display: block;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .mf_bio-elec-wrapper .mf_bio_elec-img .img-mobile {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mf_bio-elec-wrapper .mf_bio_elec-img .img-mobile {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .mf_bio-elec-wrapper .mf_bio_elec-img .img-mobile {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .mf_bio-elec-wrapper .mf_button {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .mf_bio-elec-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .mf_bio-elec__content {
   max-width: 994px;
@@ -672,20 +942,22 @@ img {
   margin-left: auto;
   margin-right: 100px;
   margin-bottom: 208px;
+  position: inherit;
+  z-index: 2;
 }
 @media (max-width: 480px) {
   .mf_bio-elec__content {
     text-align: center;
-    margin-right: 20px;
-    max-width: calc(100% - 40px);
-    margin-bottom: 100px;
+    margin-right: 24px;
+    max-width: calc(100% - 48px);
+    margin-bottom: 0;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .mf_bio-elec__content {
     text-align: center;
-    margin-right: 20px;
-    max-width: calc(100% - 40px);
+    margin-right: 24px;
+    max-width: calc(100% - 48px);
     margin-bottom: 100px;
   }
 }
@@ -747,10 +1019,10 @@ img {
 }
 @media (max-width: 480px) {
   .mf_bio-elec__main-content p {
-    margin: 1rem 1rem;
+    margin: 1.5rem;
     -webkit-line-clamp: 20;
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
@@ -759,6 +1031,11 @@ img {
     -webkit-line-clamp: 10;
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .mf_bio-elec__main-content {
+    margin-bottom: 0;
   }
 }
 
@@ -773,7 +1050,6 @@ img {
 .mf_suit__content h1 {
   color: #FF5B26;
   text-align: center;
-  margin-top: 120px;
   margin-bottom: 56px;
 }
 .mf_suit__content .mf_button {
@@ -788,10 +1064,15 @@ img {
   bottom: -120px;
   z-index: 10;
 }
+@media (max-width: 480px) {
+  .mf_suit__content .suit_ico {
+    display: none;
+  }
+}
 .mf_suit__main_content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
 }
 .mf_suit__main_content .mf_suit__text {
   display: flex;
@@ -915,7 +1196,7 @@ img {
 }
 @media (max-width: 480px) {
   .mf_suit__main_content {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -927,7 +1208,6 @@ img {
 }
 .mf_training__content .mf_title {
   text-align: center;
-  margin-top: 120px;
   margin-bottom: 64px;
 }
 .mf_training__main-content {
@@ -961,7 +1241,7 @@ img {
   position: relative;
 }
 .mf_training__content-item img {
-  border-radius: 80px;
+  border-radius: 48px;
 }
 .mf_training__item-title, .mf_training .mf_button_small {
   position: absolute;
@@ -973,6 +1253,7 @@ img {
   top: 36px;
   color: #FFE5E5;
   font-family: "Inter", sans-serif;
+  width: 80%;
   text-align: center;
 }
 .mf_training__item-title h2 {
@@ -981,6 +1262,7 @@ img {
   line-height: 5rem;
   margin-bottom: 1rem;
   text-transform: capitalize;
+  display: inline-block;
 }
 .mf_training__item-title h2::before {
   content: "";
@@ -998,12 +1280,13 @@ img {
     left: -1rem;
     right: -0.5rem;
     height: 1.2rem;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 480px) {
   .mf_training__item-title h2 {
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
@@ -1037,13 +1320,25 @@ img {
   line-height: 2.5rem;
   text-transform: uppercase;
 }
+@media (max-width: 480px) {
+  .mf_training__item-title p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 .mf_training__item-title p span {
   font-size: 3.25rem;
   line-height: 3.875rem;
 }
 @media (max-width: 480px) {
+  .mf_training__item-title p span {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+}
+@media (max-width: 480px) {
   .mf_training__item-title {
-    top: 24px;
+    top: 14px;
   }
 }
 .mf_training .mf_button_small {
@@ -1066,7 +1361,8 @@ img {
 }
 @media (max-width: 480px) {
   .mf_training .mf_button_small a {
-    font-size: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.131rem;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
@@ -1077,7 +1373,7 @@ img {
 @media (max-width: 480px) {
   .mf_training .mf_button_small {
     padding: 0.5rem 2.5rem;
-    bottom: -29px;
+    bottom: -20px;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
@@ -1130,7 +1426,7 @@ img {
 }
 @media (max-width: 480px) {
   .mf_benefit__main-content-text .text-group {
-    margin: 10px 30px;
+    margin: 1rem;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
@@ -1148,9 +1444,20 @@ img {
   align-items: center;
   margin-right: 1rem;
 }
+@media (max-width: 480px) {
+  .mf_benefit__main-content-text .text-content-img {
+    height: 1.5rem;
+  }
+}
 .mf_benefit__main-content-text .text-content img {
-  width: 44px;
-  height: 26px;
+  width: 40px;
+  height: 24px;
+}
+@media (max-width: 480px) {
+  .mf_benefit__main-content-text .text-content img {
+    width: 20px;
+    height: 12px;
+  }
 }
 .mf_benefit__main-content-text .text-content p {
   margin-bottom: 0;
@@ -1165,8 +1472,8 @@ img {
 }
 @media (max-width: 480px) {
   .mf_benefit__main-content-text .text-content p {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
@@ -1192,18 +1499,35 @@ img {
 .mf_benefit__main-content .gallery .gallery-cards .swiper-wrapper {
   align-items: center;
 }
+@media (max-width: 480px) {
+  .mf_benefit__main-content .gallery .gallery-cards .swiper-wrapper {
+    align-items: flex;
+  }
+}
 .mf_benefit__main-content .gallery .gallery-cards .swiper-slide {
   width: 206px;
   height: 278px;
   text-align: center;
   transition: all 0.3s;
-  border-top-right-radius: 40px;
+  border-top-right-radius: 32px;
   overflow: hidden;
+}
+@media (max-width: 480px) {
+  .mf_benefit__main-content .gallery .gallery-cards .swiper-slide {
+    width: 91px;
+    height: 136px;
+  }
 }
 .mf_benefit__main-content .gallery .gallery-cards .swiper-slide-active {
   width: 323px !important;
   height: 436px;
   transition: all 0.3s;
+}
+@media (max-width: 480px) {
+  .mf_benefit__main-content .gallery .gallery-cards .swiper-slide-active {
+    width: 110px !important;
+    height: 165px;
+  }
 }
 .mf_benefit__main-content .gallery .gallery-cards .swiper-pagination {
   width: auto;
@@ -1211,8 +1535,8 @@ img {
 }
 .mf_benefit__main-content .gallery .gallery-cards .swiper-pagination .swiper-pagination-bullet {
   margin: 0 12px;
-  width: 12.68px;
-  height: 12.68px;
+  width: 12px;
+  height: 12px;
   background-color: transparent;
   border: 0.5px solid #FFE5E5;
 }
@@ -1297,8 +1621,8 @@ img {
   margin-bottom: 70px;
 }
 .mf_studio .swiper-pagination .swiper-pagination-bullet {
-  width: 12.68px;
-  height: 12.68px;
+  width: 12px;
+  height: 12px;
   background-color: transparent;
   border: 0.5px solid #000000;
 }

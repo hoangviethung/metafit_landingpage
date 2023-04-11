@@ -13,16 +13,7 @@
                         <div class="swiper mf_hero_swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="/metafit/static/src/images/banner.png"/>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/metafit/static/src/images/studio1.png"/>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/metafit/static/src/images/rose.jpg"/>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/metafit/static/src/images/studio1.png"/>
+                                    <img src="/metafit_landingpage/static/src/images/banner.png"/>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -42,7 +33,10 @@
                     <!-- Bio Electrical -->
                     <section class="mf_bio-elec">
                         <div class="mf_bio-elec-wrapper">
-                            <!-- <img src="/metafit/static/src/images/bio_elec.png"/> -->
+                            <div class="mf_bio_elec-img">
+                                <img class="img-desktop" src="/metafit_landingpage/static/src/images/bio.png"/>
+                                <img class="img-mobile" src="/metafit_landingpage/static/src/images/bio.png"/>
+                            </div>
                             <div class="mf_bio-elec__content">
                                 <h1 class="mf_title">
                                     Xung điện sinh học BIO ELECTRICAL
@@ -69,7 +63,7 @@
                     <section class="mf_suit">
                         <div class="mf_suit__content mf_container">
                             <div class="suit_ico">
-                                <img src="/metafit/static/src/images/contact.png" />
+                                <img src="/metafit_landingpage/static/src/images/contact.png" />
                             </div>
                             <h1 class="mf_title">Bộ suit symboint</h1>
                             <div class="mf_suit__main_content">
@@ -97,7 +91,7 @@
                                     </div>
                                 </div>
                                 <div class="mf_suit__main_content-center">
-                                    <img src="/metafit/static/src/images/Rectangle.png" alt="Suit Symbiont" />
+                                    <img src="/metafit_landingpage/static/src/images/suit.png" alt="Suit Symbiont" />
                                 </div>
                                 <div class="mf_suit__main_content-right">
                                     <div class="mf_suit__text">
@@ -131,7 +125,7 @@
                             <h1 class="mf_title">Hình thức tập luyện</h1>
                             <div class="mf_training__main-content">
                                 <div class="mf_training__content-item">
-                                    <img src="/metafit/static/src/images/training-1.png" alt="Fit Club" />
+                                    <img src="/metafit_landingpage/static/src/images/training-1.png" alt="Fit Club" />
                                     <div class="mf_training__item-title">
                                         <h2>Fit Club</h2>
                                         <p>Nhóm <span>1:4</span></p>
@@ -141,7 +135,7 @@
                                     </button>
                                 </div>
                                 <div class="mf_training__content-item">
-                                    <img src="/metafit/static/src/images/training-2.png" alt="Fit Premium" />
+                                    <img src="/metafit_landingpage/static/src/images/training-2.png" alt="Fit Premium" />
                                     <div class="mf_training__item-title">
                                         <h2>Fit Premium</h2>
                                         <p>Nhóm <span>1:2</span></p>
@@ -167,37 +161,37 @@
                                     <div class="text-group">
                                         <div class="text-content">
                                             <div class="text-content-img">
-                                                <img src="/metafit/static/src/images/Vector.png" />
+                                                <img src="/metafit_landingpage/static/src/images/Vector.png" />
                                             </div>
                                             <p>Tiết kiệm thời gian</p>
                                         </div>
                                         <div class="text-content">
                                             <div class="text-content-img">
-                                                <img src="/metafit/static/src/images/Vector.png" />
+                                                <img src="/metafit_landingpage/static/src/images/Vector.png" />
                                             </div>
                                             <p>Kích thích lưu thông máu</p>
                                         </div>
                                         <div class="text-content">
                                             <div class="text-content-img">
-                                                <img src="/metafit/static/src/images/Vector.png" />
+                                                <img src="/metafit_landingpage/static/src/images/Vector.png" />
                                             </div>
                                             <p>Xây dựng cơ bắp</p>
                                         </div>
                                         <div class="text-content">
                                             <div class="text-content-img">
-                                                <img src="/metafit/static/src/images/Vector.png" />
+                                                <img src="/metafit_landingpage/static/src/images/Vector.png" />
                                             </div>
                                             <p>Cải thiện vóc dáng</p>
                                         </div>
                                         <div class="text-content">
                                             <div class="text-content-img">
-                                                <img src="/metafit/static/src/images/Vector.png" />
+                                                <img src="/metafit_landingpage/static/src/images/Vector.png" />
                                             </div>
                                             <p>Cải thiện sức bền</p>
                                         </div>
                                         <div class="text-content">
                                             <div class="text-content-img">
-                                                <img src="/metafit/static/src/images/Vector.png" />
+                                                <img src="/metafit_landingpage/static/src/images/Vector.png" />
                                             </div>
                                             <p>Cân bằng hệ thống cơ bắp</p>
                                         </div>
@@ -206,13 +200,13 @@
                                 <div class="gallery">
                                     <div class="swiper gallery-cards">
                                         <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit1.png"/></div>
-                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit2.png"/></div>
-                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit3.png"/></div>
-                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit4.png"/></div>
-                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit1.png"/></div>
-                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit2.png"/></div>
-                                            <div class="swiper-slide"><img src="/metafit/static/src/images/benefit3.png"/></div>
+                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit1.png"/></div>
+                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit2.png"/></div>
+                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit3.png"/></div>
+                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit4.png"/></div>
+                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit1.png"/></div>
+                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit2.png"/></div>
+                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit3.png"/></div>
                                         </div>
                                         <div class="swiper-pagination"></div>
                                     </div>
@@ -230,16 +224,16 @@
                         <div class="swiper mf_studio_swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="/metafit/static/src/images/studio1.png"/>
+                                    <img src="/metafit_landingpage/static/src/images/studio1.png"/>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="/metafit/static/src/images/studio1.png"/>
+                                    <img src="/metafit_landingpage/static/src/images/studio1.png"/>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="/metafit/static/src/images/rose.jpg"/>
+                                    <img src="/metafit_landingpage/static/src/images/rose.jpg"/>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="/metafit/static/src/images/studio1.png"/>
+                                    <img src="/metafit_landingpage/static/src/images/studio1.png"/>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -255,7 +249,7 @@
                     <section class="mf_contact">
                         <div class="mf_contact__content mf_container">
                             <div class="contact_ico">
-                                <img src="/metafit/static/src/images/contact.png" />
+                                <img src="/metafit_landingpage/static/src/images/contact.png" />
                             </div>
                             <h1 class="mf_title">Liên hệ Metafit</h1>
                             <div class="mf_contact__main-content">
@@ -264,8 +258,8 @@
                                     <p>Ho Chi Minh City</p>
                                     <p class="hotline">Hotline: 0909.999.999</p>
                                     <div class="mf_contact__gr_ico">
-                                        <a href="#"><img src="/metafit/static/src/images/fb-ico.png" alt="Facebook"/></a>
-                                        <a href="#"><img src="/metafit/static/src/images/yt-ico.png" alt="Youtube"/></a>
+                                        <a href="#"><img src="/metafit_landingpage/static/src/images/fb-ico.png" alt="Facebook"/></a>
+                                        <a href="#"><img src="/metafit_landingpage/static/src/images/yt-ico.png" alt="Youtube"/></a>
                                     </div>
                                 </div>
                                 <div class="mf_contact__main-content-center">

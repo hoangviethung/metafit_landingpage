@@ -2,30 +2,9 @@ odoo.define('metafit.theme_metafit', function (require) {
     "use strict";
 
     $('.navbar-toggler').click(function(){
-        $(".mf_navbar").toggleClass("test");
+        $(".mf_navbar").toggleClass("mf_nav_bg");
 
     })
-
-    // $(window).scroll(function(){
-    //     const nav = $('mf_navbar')
-    //     const top = 200;
-    //     if($(window).scrollTop() >= top){
-    //         console.log('hehe');
-    //         nav.addClass('test')
-    //     }else{
-    //         console.log('hihi');
-    //         nav.removeClass('test')
-    //     }
-    // })
-
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-        if (scroll >= 50) {
-            header.addClass("scrolled");
-        } else {
-            header.removeClass("scrolled");
-        }
-    });
 
     const hero_swiper = new Swiper(".mf_hero_swiper", {
         loop:true,
@@ -44,7 +23,7 @@ odoo.define('metafit.theme_metafit', function (require) {
 
     const gallery_swiper = new Swiper(".mf_benefit .gallery-cards", {
         slidesPerView: 5,
-        spaceBetween: 25,
+        spaceBetween: 10,
         loop: true,
         slideToClickedSlide: true,
         autoplay: {
@@ -56,14 +35,9 @@ odoo.define('metafit.theme_metafit', function (require) {
         },
 
         breakpoints: {
-            480: {
-              slidesPerView: 2,
-              spaceBetween: 20
-            },
-            // when window width is >= 640px
-            640: {
+            0: {
               slidesPerView: 3,
-              spaceBetween: 25
+              spaceBetween: 10
             },
             1200:{
               slidesPerView: 5,

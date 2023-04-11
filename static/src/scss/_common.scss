@@ -56,13 +56,16 @@ img {
 
     font-family: $font-default;
 
+    margin-top: $spacing_bw_large;
+
     text-transform: uppercase;
 
     @include text-truncate(2);
 
     @include respond-to-mobile{
-        font-size: 3rem;
-        line-height: 5rem;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        margin-top: $spacing_bw_small;
     }
 
     @include respond-to-tablet{
@@ -107,8 +110,13 @@ img {
         }
 
         @include respond-to-mobile{
-            font-size: 1.3rem;
+            font-size: 0.875rem;
+            line-height: 1.131rem;
         }
+    }
+
+    @include respond-to-mobile{
+        padding: 0.75rem 3rem;
     }
 }
 

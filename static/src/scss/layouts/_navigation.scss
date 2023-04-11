@@ -29,10 +29,6 @@
                 }
             }
 
-            .o_extra_menu_items{
-                display: none;
-            }
-
             .nav-item{
                 text-align: center;
                 @media screen and (max-width: 992px){
@@ -75,7 +71,7 @@
         }
     }
 
-    &.test{
+    &.mf_nav_bg{
         background: $color-black;
     }
 }
@@ -83,7 +79,7 @@
 .o_header_affixed .mf_navbar{
     background-color: rgba(0,0,0, .5);
 
-    &.test{
+    &.mf_nav_bg{
         background: $color-black;
     }
 }

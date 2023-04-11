@@ -8,7 +8,7 @@
             top: 50%;
             left: 100px;
             transform: translateY(-50%);
-            
+
             color: white;
 
             h1 {
@@ -29,8 +29,12 @@
                 @include text-truncate(4);
 
                 @include respond-to-mobile{
-                    font-size: 3.3rem;
-                    line-height: 5.5rem;
+                    font-size: 1.5rem;
+                    line-height: 2.25rem;
+
+                    width: 141px;
+                    margin:0 auto;
+                    margin-bottom: 1rem;
                 };
 
                 @include respond-to-tablet{
@@ -45,8 +49,9 @@
                 @include text-truncate(4);
 
                 @include respond-to-mobile{
-                    font-size: 1.2rem;
-                    line-height: 2rem;
+                    font-size: 0.875rem;
+                    line-height: 1.313rem;
+                    margin-bottom: 1.5rem;
                 };
             }
 
@@ -55,11 +60,14 @@
             }
 
             @include respond-to-mobile{
+                text-align: center;
                 left:$space_small;
+                right: $space_small;
             };
 
             @include respond-to-tablet{
                 left:$space_small;
+                right: $space_small;
             };
 
             @include respond-to-laptop{
@@ -72,11 +80,11 @@
             height: 1210px;
 
             @include respond-to-mobile{
-                height: 850px;
+                height: 790px;
             }
 
             @include respond-to-tablet{
-                height: 850px;
+                height: 790px;
             }
         }
     }
@@ -113,13 +121,61 @@
 
 .mf_bio-elec{
 
-
+    background: linear-gradient(46.46deg, #F3AE5F 0%, #F3A65E 2%, #F28B5A 8%, #F27857 14%, #F26D56 20%, #F26955 27%, #FF5B26 57%, #F31F4F 88%, #D62970 100%);
     &-wrapper{
         display: inline-block;
         width: 100%;
-        background-image: url('/metafit/static/src/images/bio_elec.png');
-        background-repeat: no-repeat;
-        background-size: cover;
+
+        .mf_bio_elec-img{
+            .img-desktop{
+                width: 45%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                z-index: 1;
+
+                @include respond-to-mobile{
+                    display: none;
+                }
+                @include respond-to-tablet{
+                    display: none;
+                }
+                @include respond-to-laptop{
+                    display: none;
+                }
+            }
+
+            .img-mobile{
+                width: 100%;
+                height: 100%;
+
+                @include respond-to-mobile{
+                    display: block;
+                }
+                @include respond-to-tablet{
+                    display: block;
+                }
+                @include respond-to-laptop{
+                    display: block;
+                }
+
+                @include respond-to-desktop{
+                    display: none;
+                }
+            }
+        }
+
+        .mf_button{
+            @include respond-to-mobile{
+                display: none;
+            }
+        }
+
+        @include respond-to-mobile{
+            display:  flex;
+            flex-direction: column-reverse;
+        }
+
     }
 
     &__content{
@@ -129,11 +185,13 @@
         margin-left: auto;
         margin-right: $space_large;
         margin-bottom: 208px;
+        position: inherit;
+        z-index: 2;
         @include respond-to-mobile{
             text-align: center;
             margin-right: $space_small;
             max-width: calc(100% - ($space_small * 2));
-            margin-bottom: 100px;
+            margin-bottom: 0;
         }
 
         @include respond-to-tablet{
@@ -188,10 +246,10 @@
             @include text-truncate(7);
 
             @include respond-to-mobile{
-                margin: 1rem 1rem;
+                margin:1.5rem;
                 -webkit-line-clamp: 20;
-                font-size: 1.2rem;
-                line-height: 2rem;
+                font-size: 1rem;
+                line-height: 1.5rem;
             }
 
             @include respond-to-tablet{
@@ -200,6 +258,10 @@
                 font-size: 1.5rem;
                 line-height: 2rem;
             }
+        }
+
+        @include respond-to-mobile{
+            margin-bottom: 0;
         }
     }
 
@@ -216,7 +278,6 @@
         h1{
             color: $color-primary;
             text-align: center;
-            margin-top: 120px;
             margin-bottom: 56px;
         }
         .mf_button{
@@ -231,13 +292,17 @@
             left: -40px;
             bottom: -120px;
             z-index: 10;
+
+            @include respond-to-mobile{
+                display: none;
+            }
         }
     }
 
     &__main_content{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 34px;
 
         .mf_suit__text{
             display: flex;
@@ -354,7 +419,7 @@
 
 
         @include respond-to-mobile{
-            flex-direction: column;
+            grid-template-columns: repeat(1,1fr);
         }
         
     }
@@ -368,7 +433,6 @@
 
         .mf_title{
             text-align: center;
-            margin-top: 120px;
             margin-bottom: 64px;
         }
     }
@@ -401,7 +465,7 @@
     &__content-item{
         position: relative;
         img{
-            border-radius: 80px;
+            border-radius: 48px;
         }
     }
 
@@ -416,6 +480,7 @@
         top: 36px;
         color: $color-cream-white;
         font-family: $font-secondary;
+        width: 80%;
         text-align: center;
         h2{
             position: relative;
@@ -423,6 +488,7 @@
             line-height: 5rem;
             margin-bottom: 1rem;
             text-transform: capitalize;
+            display: inline-block;
 
             &::before{
                 content: '';
@@ -441,13 +507,15 @@
                     left: -1rem;
                     right: -0.5rem;
                     height: 1.2rem;
+                    margin-bottom: 0;
                 }
 
             }
 
+
             @include respond-to-mobile{
-                font-size: 1.8rem;
-                line-height: 2rem;
+                font-size: 2rem;
+                line-height: 3rem;
             };
 
             @include respond-to-tablet{
@@ -477,14 +545,24 @@
             font-size: 2rem;
             line-height: 2.5rem;
             text-transform: uppercase;
+
+            @include respond-to-mobile{
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
             span{
                 font-size: 3.25rem;
                 line-height: 3.875rem;
+
+                @include respond-to-mobile{
+                    font-size: 1.5rem;
+                    line-height: 2.25rem;
+                }
             }
         }
 
         @include respond-to-mobile{
-            top: 24px;
+            top: 14px;
         }
 
     }
@@ -513,7 +591,8 @@
             text-decoration: none;
 
             @include respond-to-mobile{
-                font-size: 1rem;
+                font-size: 0.875rem;
+                line-height: 1.131rem;
             }
 
             @include respond-to-tablet{
@@ -522,7 +601,7 @@
         }
 
         @include respond-to-mobile{
-            $size: 58px;
+            $size: 40px;
             padding: .5rem 2.5rem;
             bottom: - calc($size/2);
         }
@@ -573,7 +652,7 @@
                 margin: 44px 56px;
 
                 @include respond-to-mobile{
-                    margin: 10px 30px;
+                    margin: 1rem;
                 }
 
                 @include respond-to-tablet{
@@ -588,10 +667,19 @@
                     display: flex;
                     align-items: center;
                     margin-right: 1rem;
+
+                    @include respond-to-mobile{
+                        height: 1.5rem;
+                    }
                 }
                 img{
-                    width: 44px;
-                    height: 26px;
+                    width: 40px;
+                    height: 24px;
+
+                    @include respond-to-mobile{
+                        width: 20px;
+                        height: 12px;
+                    }
                 }
                 p{
                     margin-bottom: 0;
@@ -601,8 +689,8 @@
                     @include text-truncate(3);
 
                     @include respond-to-mobile{
-                        font-size: 1.2rem;
-                        line-height: 2rem;
+                        font-size: 1rem;
+                        line-height: 1.5rem;
                     }
 
                     @include respond-to-tablet{
@@ -627,6 +715,10 @@
                 min-height: 298px;
                 .swiper-wrapper{
                     align-items: center;
+
+                    @include respond-to-mobile{
+                        align-items: flex;
+                    }
                 }
 
                 .swiper-slide{
@@ -635,12 +727,23 @@
                     text-align: center;
                     transition: all .3s;
 
-                    border-top-right-radius: 40px;
+                    border-top-right-radius: 32px;
                     overflow: hidden;
+
+                    @include respond-to-mobile{
+                        width: 91px;
+                        height: 136px;
+                    }
+
                     &-active{
                         width: 323px !important;
                         height: 436px;
                         transition: all .3s;
+
+                        @include respond-to-mobile{
+                            width: 110px !important;
+                            height: 165px;
+                        }
                     }
                 }
 
