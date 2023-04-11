@@ -22,8 +22,8 @@ odoo.define('metafit.theme_metafit', function (require) {
     });
 
     const gallery_swiper = new Swiper(".mf_benefit .gallery-cards", {
-        slidesPerView: 5,
-        spaceBetween: 10,
+        slidesPerView: 4,
+        spaceBetween: 24,
         loop: true,
         slideToClickedSlide: true,
         autoplay: {
@@ -40,8 +40,8 @@ odoo.define('metafit.theme_metafit', function (require) {
               spaceBetween: 10
             },
             1200:{
-              slidesPerView: 5,
-              spaceBetween: 25
+              slidesPerView: 4,
+              spaceBetween: 24
             }
         }
 

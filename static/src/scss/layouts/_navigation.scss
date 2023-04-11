@@ -38,12 +38,12 @@
 
             .nav-link{
                 padding: 1.25rem;
-
-                font-weight: 400;
-                font-size: 1.375rem;
-                line-height: 1.75rem;
-                color: $color-cream-white;
-                font-family: $font-secondary;
+                color: $color-white;
+                span{
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    line-height: 2.25rem;
+                }
                 &.active{
                     color: $color-primary;
                 }
@@ -77,7 +77,7 @@
 }
 
 .o_header_affixed .mf_navbar{
-    background-color: rgba(0,0,0, .5);
+    background: linear-gradient(90deg, #000000 0%, #322B48 52%, #332C44 81%, #352F3D 100%);
 
     &.mf_nav_bg{
         background: $color-black;
