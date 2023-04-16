@@ -107,7 +107,7 @@
             }
         }
         &_swiper{
-            min-height: 790px;
+            height: 100vh;
             @include respond-to-mobile{
                 display: none;
             }

@@ -9,6 +9,7 @@
     'website': "",
     'depends': ['website'],
     'data': [
+        'data/menu_data.xml',
         'views/views.xml',
         'views/header.xml',
         'views/homepage.xml',

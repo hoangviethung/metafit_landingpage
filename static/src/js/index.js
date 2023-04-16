@@ -6,6 +6,16 @@ odoo.define('metafit.theme_metafit', function (require) {
 
     })
 
+    $(function(){
+      if($('#wrapwrap').is('.homepage')){
+
+        $('.mf_navbar').addClass('mf_navbar_position_absolute')
+      }
+      else{
+        $('.mf_navbar').addClass('mf_navbar_position_initial')
+      }
+    });
+
     const hero_swiper = new Swiper(".mf_hero_swiper", {
         loop:true,
         effect: 'fade',
@@ -13,7 +23,7 @@ odoo.define('metafit.theme_metafit', function (require) {
             crossFade: true
         },
         autoplay: {
-            delay: 3000,
+            delay: 5000,
           },
         pagination: {
             el: ".swiper-pagination",
@@ -31,12 +41,10 @@ odoo.define('metafit.theme_metafit', function (require) {
     })
 
     const gallery_swiper = new Swiper(".mf_benefit .gallery-cards", {
-        // slidesPerView: 'auto',
-        // spaceBetween: 24,
         loop: true,
         slideToClickedSlide: true,
         autoplay: {
-            delay: 3000,
+            delay: 5000,
           },
         pagination: {
             el: ".swiper-pagination",
@@ -63,7 +71,7 @@ odoo.define('metafit.theme_metafit', function (require) {
             crossFade: true
         },
         autoplay: {
-            delay: 3000,
+            delay: 5000,
           },
         pagination: {
             el: ".swiper-pagination",

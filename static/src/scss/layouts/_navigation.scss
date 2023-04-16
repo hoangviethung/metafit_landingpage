@@ -2,8 +2,6 @@
 .mf_navbar{
     width: 100%;
     padding: 0 $spacing_bw_large;
-    position: absolute;
-    background: transparent;
     color: white;
     min-height: 128px;
     &-links{
@@ -11,7 +9,6 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        align-items: center;
 
         .mf_collapse{
             display: flex;
@@ -100,4 +97,18 @@
     &.mf_nav_bg{
         background: $color-black;
     }
+}
+
+.mf_navbar_position_absolute{
+    position: absolute;
+    background: transparent;
+}
+
+.mf_navbar_position_initial{
+    position: inherit;
+    background: linear-gradient(90deg, #000000 0%, #322B48 52%, #332C44 81%, #352F3D 100%);
+}
+
+header .navbar-brand.logo img, .o_header_affixed.o_header_is_scrolled .navbar-brand img{
+    height: 100%;
 }

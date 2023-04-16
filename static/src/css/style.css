@@ -680,8 +680,6 @@ html {
 .mf_navbar {
   width: 100%;
   padding: 0 120px;
-  position: absolute;
-  background: transparent;
   color: white;
   min-height: 128px;
 }
@@ -690,7 +688,6 @@ html {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
 }
 .mf_navbar-links .mf_collapse {
   display: flex;
@@ -774,6 +771,20 @@ html {
 }
 .o_header_affixed .mf_navbar.mf_nav_bg {
   background: #000000;
+}
+
+.mf_navbar_position_absolute {
+  position: absolute;
+  background: transparent;
+}
+
+.mf_navbar_position_initial {
+  position: inherit;
+  background: linear-gradient(90deg, #000000 0%, #322B48 52%, #332C44 81%, #352F3D 100%);
+}
+
+header .navbar-brand.logo img, .o_header_affixed.o_header_is_scrolled .navbar-brand img {
+  height: 100%;
 }
 
 .mf_footer {
@@ -907,7 +918,7 @@ html {
   }
 }
 .mf_herobanner .mf_hero_swiper {
-  min-height: 790px;
+  height: 100vh;
 }
 @media (max-width: 480px) {
   .mf_herobanner .mf_hero_swiper {
