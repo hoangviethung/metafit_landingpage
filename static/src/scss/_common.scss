@@ -46,8 +46,8 @@ html {
 }
 
 .mf_title{
-    font-size: 4.5rem;
-    line-height: 6.75rem;
+    font-size: 3rem;
+    line-height: 4rem;
     font-weight: 700;
 
     font-family: $font-default;
@@ -70,7 +70,7 @@ html {
 }
 
 .mf_button{
-    padding: 0.75rem 4.25rem;
+    padding: 0.5rem 2.875rem;
     border-radius: 2.125rem;
     border: none;
     background-size: 300% 100%;
@@ -95,8 +95,8 @@ html {
 
     a{
         color: $color-secondary;
-        font-size: 1.75rem;
-        line-height: 2.625rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
         font-weight: 600;
         @include text-truncate(1);
         &:hover{

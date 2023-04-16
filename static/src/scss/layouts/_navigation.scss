@@ -4,12 +4,13 @@
     padding: 0 $spacing_bw_large;
     color: white;
     min-height: 128px;
+    background: linear-gradient(90deg, #000000 0%, #322B48 52%, #332C44 81%, #352F3D 100%);
     &-links{
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-
+        align-items: center;
         .mf_collapse{
             display: flex;
             @media screen and (max-width: 992px) {
@@ -35,12 +36,12 @@
             }
 
             .nav-link{
-                padding: 1.25rem;
+                padding: 1.313rem;
                 color: $color-white;
                 span{
-                    font-weight: 600;
-                    font-size: 1.5rem;
-                    line-height: 2.25rem;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    font-weight: 400;
                 }
                 &.active{
                     color: $color-primary;
@@ -97,16 +98,6 @@
     &.mf_nav_bg{
         background: $color-black;
     }
-}
-
-.mf_navbar_position_absolute{
-    position: absolute;
-    background: transparent;
-}
-
-.mf_navbar_position_initial{
-    position: inherit;
-    background: linear-gradient(90deg, #000000 0%, #322B48 52%, #332C44 81%, #352F3D 100%);
 }
 
 header .navbar-brand.logo img, .o_header_affixed.o_header_is_scrolled .navbar-brand img{

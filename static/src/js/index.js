@@ -6,16 +6,6 @@ odoo.define('metafit.theme_metafit', function (require) {
 
     })
 
-    $(function(){
-      if($('#wrapwrap').is('.homepage')){
-
-        $('.mf_navbar').addClass('mf_navbar_position_absolute')
-      }
-      else{
-        $('.mf_navbar').addClass('mf_navbar_position_initial')
-      }
-    });
-
     const hero_swiper = new Swiper(".mf_hero_swiper", {
         loop:true,
         effect: 'fade',
@@ -57,6 +47,10 @@ odoo.define('metafit.theme_metafit', function (require) {
               spaceBetween: 24
             },
             480:{
+              slidesPerView: 3,
+              spaceBetween: 24
+            },
+            1441:{
               slidesPerView: 4,
               spaceBetween: 24
             }

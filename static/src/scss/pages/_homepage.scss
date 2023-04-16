@@ -16,13 +16,13 @@
             color: white;
 
             h1 {
-                font-size: 5.25rem;
+                font-size: 4.5rem;
                 font-weight: 700;
                 font-family: $font-default;
-                line-height: 7.5rem;
+                line-height: 5.375rem;
 
                 margin-top: 0;
-                margin-bottom: 1rem;
+                margin-bottom: .5rem;
 
                 background: linear-gradient(0deg, #F36563 0%, #F36360 26%, #F35E57 45%, #F35447 62%, #F34730 77%, #F33614 92%, #F32A00 100%);
                 -webkit-background-clip: text;
@@ -51,8 +51,10 @@
             }
 
             p{
-                font-size: 1.5rem;
-                line-height: 2.25rem;
+                font-size: 1.125rem;
+                line-height: 2rem;
+                font-weight: 300;
+                margin-bottom: 2rem;
                 @include text-truncate(4);
 
                 @include respond-to-mobile{
@@ -123,7 +125,7 @@
         .swiper-pagination-bullet{
             width: $size-pagination-swiper;
             height: $size-pagination-swiper;
-            border: .5px solid $color-primary;
+            border: 2px solid $color-primary;
             opacity: 1;
             background-color: transparent;
 
@@ -242,8 +244,8 @@
 
         margin-left: auto;
         margin-right: $space_large;
-        margin-bottom: 208px;
-        margin-top: 120px;
+        margin-bottom: 224px;
+        margin-top: 72px;
         position: inherit;
         z-index: 2;
         @include respond-to-mobile{
@@ -289,16 +291,18 @@
     &__main-content{
         position: relative;
         margin-bottom: 3.5rem;
+        width: 713px;
+        margin-left: auto;
         @include border_content();
         .top-left-square,.top-right-square,.bottom-left-square,.bottom-right-square{
             background-color: $color-white;
         }
         p{
-            margin: 2.625rem 5.125rem;
+            margin: 3rem 1.5rem;
 
-            font-size: 2rem;
-            line-height: 3rem;
-            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            font-weight: 300;
             color: $color-white;
 
             @include text-truncate(7);
@@ -320,10 +324,12 @@
 
         @include respond-to-mobile{
             margin-bottom: 0;
+            width: 100%;
         }
 
         @include respond-to-tablet{
             margin-bottom: 0;
+            width: 100%;
         }
     }
 
@@ -352,8 +358,7 @@
         }
         .mf_button{
             margin: 0 auto;
-            margin-top: 32px;
-            margin-bottom: 112px;
+            margin-top: 1.5rem;
 
             @include respond-to-mobile{
                 display: none;
@@ -396,7 +401,7 @@
                     width: $size_pagination-swiper-small;
                     height: $size_pagination-swiper-small;
                     background-color: transparent;
-                    border: 1px solid $color-cream-white; 
+                    border: 2px solid $color-cream-white; 
                     @include respond-to-laptop{
                         width: $size-pagination-swiper;
                         height: $size_pagination-swiper;
@@ -428,8 +433,8 @@
             h6{
                 color: $color-primary;
                 font-weight: 700;
-                font-size: 3.5rem;
-                line-height: 1.5rem;
+                font-size: 2rem;
+                line-height: 1.375rem;
                 margin-right: .5rem;
 
                 @include respond-to-mobile{
@@ -447,8 +452,8 @@
                 }
             }
             p{
-                font-size: 1.75rem;
-                line-height: 2.625rem;
+                font-size: 1.25rem;
+                line-height: 1.75rem;
                 color: $color-white;
                 margin-bottom: 0;
 
@@ -604,7 +609,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 4.5rem;
-        margin-bottom: 140px;
         justify-content: center;
 
         @include respond-to-mobile{
@@ -642,29 +646,30 @@
     }
 
     &__item-title{
-        top: 36px;
+        top: 1rem;
         color: $color-cream-white;
         font-family: $font-secondary;
         width: 80%;
         text-align: center;
         h2{
             position: relative;
-            font-size: 4rem;
-            line-height: 6rem;
-            margin-bottom: 1rem;
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-bottom: .5rem;
             text-transform: capitalize;
             display: inline-block;
 
             &::before{
                 content: '';
                 background: linear-gradient(90deg, #F3AE5F 0%, #F3A65E 2%, #F28B5A 8%, #F27857 14%, #F26D56 20%, #F26955 27%, #FF5B26 57%, #F31F4F 88%, #D62970 100%);;
-                height: 1.625rem;
+                height: 1.375rem;
 
                 position: absolute;
                 z-index: -1;
-                bottom: 0.75rem;
-                left: -2.25rem;
+                bottom: -0.05rem;
+                left: -22px;
                 right: -1.25rem;
+                width: calc(100% + 44px);
 
                 transform: skew(343deg);
 
@@ -682,48 +687,31 @@
             @include respond-to-mobile{
                 font-size: 2rem;
                 line-height: 3rem;
+                margin-bottom: 0;
             };
 
             @include respond-to-tablet{
                 font-size: 2.9rem;
                 line-height: 4rem;
+                margin-bottom: 0;
             };
 
             @include respond-to-laptop{
                 font-size: 2.9rem;
                 line-height: 4rem;
             };
-
-            @media (min-width: 1024px) and (max-width: 1200px){
-                font-size: 2.9rem;
-                line-height: 4rem;
-            }
-
-            @media (min-width:1200px) and (max-width: 1440px){
-                font-size: 2.5rem;
-                line-height: 3.625rem;
-            }
         }
 
         p{
             text-align: center;
             font-weight: 700;
-            font-size: 2rem;
-            line-height: 3rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
             text-transform: uppercase;
-
-            @include respond-to-mobile{
-                font-size: 1.5rem;
-                line-height: 2.25rem;
-            }
             span{
-                font-size: 3.25rem;
-                line-height: 3.875rem;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
 
-                @include respond-to-mobile{
-                    font-size: 1.5rem;
-                    line-height: 2.25rem;
-                }
             }
         }
 
@@ -735,16 +723,16 @@
 
     .mf_button_small{
 
-        $size: 74px;
+        $size: 46px;
         bottom: - calc($size/2);
         background-image: linear-gradient(90deg, #000000 0%, #322B48 52%, #332C44 81%, #352F3D 100%);
         border: 3px solid #F6664B;
         border-radius: calc($size/2);
-        padding: 1rem 5rem;
+        padding: .5rem 4.75rem;
 
         a{
-            font-size: 1.625rem;
-            line-height: 2.25rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
             color: $color-cream-white;
             font-family: $font-secondary;
 
@@ -770,10 +758,6 @@
 
         @include respond-to-tablet{
             padding: 1rem 3.5rem;
-        }
-
-        @media (min-width:1200px) and (max-width: 1440px){
-            padding: 1rem 3rem;
         }
     }
 }
@@ -805,12 +789,9 @@
         margin-bottom: 30px;
         &-text{
             position: relative;
-            max-width: 620px;
-            width: 620px;
+            max-width: 455px;
+            width: 455px;
             color: $color-cream-white;
-
-            margin-right: 70px;
-
             border-color: red;
             @include border_content();
             border-image-source: linear-gradient(90deg, #F3AE5F 0%, #F3A65E 2%, #F28B5A 8%, #F27857 14%, #F26D56 20%, #F26955 27%, #FF5B26 57%, #F31F4F 88%, #D62970 100%);
@@ -819,7 +800,7 @@
             }
 
             .text-group{
-                margin: 44px 56px;
+                margin: 1.875rem 2.875rem;
 
                 @include respond-to-mobile{
                     margin: 1rem;
@@ -833,7 +814,7 @@
                 display: flex;
                 text-align: left;
                 &-img{
-                    height: 2.625rem;
+                    height: 1.75rem;
                     display: flex;
                     align-items: center;
                     margin-right: 1rem;
@@ -846,8 +827,8 @@
                     }
                 }
                 img{
-                    width: 40px;
-                    height: 24px;
+                    width: 30px;
+                    height: 18px;
 
                     @include respond-to-mobile{
                         width: 20px;
@@ -861,8 +842,8 @@
                 }
                 p{
                     margin-bottom: 0;
-                    font-size: 1.75rem;
-                    line-height: 2.625rem;
+                    font-size: 1.25rem;
+                    line-height: 1.75rem;
                     
                     @include text-truncate(3);
 
@@ -894,17 +875,14 @@
             @include respond-to-laptop{
                 margin-bottom: 2rem;
             }
-
-            @include respond-to-desktop{
-                margin-bottom: 2.5rem;
-            }
         }
 
         .gallery{
-            width: calc(100% - 620px);
+            width: calc(100% - 455px);
             .gallery-cards{
                 height: 532px;
-                min-height: 382px;
+                min-height: 354px;
+                margin-left: 4rem;
                 .swiper-wrapper{
                     align-items: center;
 
@@ -923,17 +901,19 @@
                     text-align: center;
                     transition: all .3s;
 
-                    border-top-right-radius: 32px;
+                    border-top-right-radius: 120px;
                     overflow: hidden;
 
                     @include respond-to-mobile{
                         width: 91px;
                         height: 136px;
+                        border-top-right-radius: 44px;
                     }
 
                     @include respond-to-tablet{
                         width: 91px;
                         height: 136px;
+                        border-top-right-radius: 44px;
                     }
 
                     &-active{
@@ -963,7 +943,7 @@
                         width: $size-pagination-swiper;
                         height: $size-pagination-swiper;
                         background-color: transparent;
-                        border: 0.5px solid $color-cream-white; 
+                        border: 2px solid $color-cream-white; 
 
                         @include respond-to-mobile{
                             margin:0 4px;
@@ -1006,16 +986,23 @@
                     height: 189px;
                     min-height: 136px;
                     padding-bottom: 1.5rem;
+                    margin-left: 0;
                 }
 
                 @include respond-to-tablet{
                     height: 189px;
                     min-height: 136px;
                     padding-bottom: 1.5rem;
+                    margin-left: 0;
+                }
+
+                @include respond-to-laptop{
+                    margin-left: 0;
                 }
             }
 
-            @media (max-width:1600px){
+            @media (max-width:1024px){
+                margin-left: 0;
                 width: 100%;
             }
         }
@@ -1028,7 +1015,7 @@
             padding-left: $space_small;
         }
 
-        @media (max-width:1600px){
+        @media (max-width:1024px){
             flex-direction: column;
         }
         
@@ -1063,8 +1050,8 @@
         text-align: center;
 
         h1{
-            font-size: 12.5rem;
-            line-height: 12.5rem;
+            font-size: 8.5rem;
+            line-height: 8.5rem;
             color: $color-white;
 
             @include respond-to-mobile{
@@ -1094,7 +1081,7 @@
             width: $size-pagination-swiper;
             height: $size-pagination-swiper;
             background-color: transparent;
-            border: 0.5px solid $color-black; 
+            border: 2px solid $color-black; 
 
             @include respond-to-mobile{
                 width: $size_pagination-swiper-small;
@@ -1322,6 +1309,9 @@
             .form_group{
                 margin-bottom: 2rem;
 
+                &:last-child{
+                    margin-bottom: 0;
+                }
                 @include respond-to-desktop{
                     margin-bottom: 1rem;
                 }
@@ -1330,7 +1320,7 @@
 
         &-right{
             .form_group{
-                margin-bottom: 74px;
+                margin-bottom: 71px;
 
                 @include respond-to-mobile{
                     margin-bottom: 1.5rem;
@@ -1396,7 +1386,7 @@
             background: linear-gradient(90deg, #FFE5E5 0%, #FFE5E5 100%);
             padding: 21px;
             border: none;
-            border-radius: 15px;
+            border-radius: 34px;
 
             font-size: 1rem;
             line-height: 1.5rem;
@@ -1431,4 +1421,8 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
+}
+
+.img_bg{
+    opacity: .5;
 }
