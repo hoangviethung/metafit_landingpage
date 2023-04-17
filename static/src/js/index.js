@@ -9,6 +9,7 @@ odoo.define('metafit.theme_metafit', function (require) {
     const hero_swiper = new Swiper(".mf_hero_swiper", {
         loop:true,
         effect: 'fade',
+        allowTouchMove: false,
         fadeEffect: {
             crossFade: true
         },

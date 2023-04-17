@@ -22,7 +22,7 @@
                         <img class="mf_hero_banner_mobile" src="/metafit_landingpage/static/src/images/banner_mobile.png" />
                         <div class="mf_hero_content">
                             <h1>
-                                SMART. INNOVATIVE. EFFECTIVE
+                                B.E.S.T Bio Electrical Smart Training
                             </h1>
                             <p>
                                 Thế hệ phòng tập mới, ứng dụng công nghệ mang tính cách mạng để đạt hiệu quả trong tập luyện.
@@ -37,12 +37,12 @@
                         <img class="img_bg" src="/metafit_landingpage/static/src/images/wave1.png" />
                         <div class="mf_bio-elec-wrapper">
                             <div class="mf_bio_elec-img">
-                                <img class="img-desktop" src="/metafit_landingpage/static/src/images/bio.png"/>
-                                <img class="img-mobile" src="/metafit_landingpage/static/src/images/bio.png"/>
+                                <img class="img-desktop" src="/metafit_landingpage/static/src/images/test2.png"/>
+                                <img class="img-mobile" src="/metafit_landingpage/static/src/images/bio1.png"/>
                             </div>
                             <div class="mf_bio-elec__content">
                                 <h1 class="mf_title">
-                                    Xung điện sinh học BIO ELECTRICAL
+                                    Bio Electrical - Xung điện sinh học
                                 </h1>
                                 <div class="mf_bio-elec__main-content">
                                     <div class="top-left-square"></div>
@@ -50,10 +50,7 @@
                                     <div class="bottom-left-square"></div>
                                     <div class="bottom-right-square"></div>
                                     <p>
-                                        Xung điện sinh học là dòng điện tự nhiên của cơ thể người, 
-                                        chúng kích hoạt mọi sự vận động của cơ bắp. 
-                                        Bộ suit SYMBIONT được thiết kế dựa trên nguyên lý hoạt động này để tạo ra một mô hình tập luyện mới đầy tính đột phá: 
-                                        mô phỏng tín hiệu của não gửi đến cơ để gây ra sự vận động của cơ.
+                                        Xung điện sinh học là dòng điện tự nhiên của cơ thể người, chúng kích hoạt mọi sự vận động  của cơ bắp. Bộ suit SYMBIONT được thiết kế dựa trên nguyên lý hoạt động này để tạo ra một mô hình tập luyện mới đầy tính đột phá: gửi xung điện trực tiếp đến cơ để gây ra sự vận động của cơ.
                                     </p>
                                 </div>
                                 <button class="mf_button">
@@ -68,7 +65,7 @@
                             <div class="suit_ico">
                                 <img src="/metafit_landingpage/static/src/images/contact.png" />
                             </div>
-                            <h1 class="mf_title">Bộ suit symboint</h1>
+                            <h1 class="mf_title">Bộ suit Symbiont - ứng dụng của công nghệ BET</h1>
                             <div class="mf_suit__main_content">
                                 <div class="swiper mf_suit_swiper">
                                     <div class="swiper-wrapper">
@@ -76,10 +73,7 @@
                                             <div class="mf_suit__text">
                                                 <h6>1.</h6>
                                                 <p>
-                                                    Sản phẩm của sự kết hợp
-                                                    giữa ngành khoa học thần 
-                                                    kinh, y học, sinh học, vật liệu 
-                                                    mới, công nghệ mới. 
+                                                    Sản phẩm của sự kết hợp giữa ngành khoa học thần kinh, y học, sinh học, vật liệu mới, công nghệ mới. 
                                                 </p>
                                             </div>
                                         </div>
@@ -87,10 +81,7 @@
                                             <div class="mf_suit__text">
                                                 <h6>2.</h6>
                                                 <p>
-                                                    Sản phẩm của sự kết hợp
-                                                    giữa ngành khoa học thần 
-                                                    kinh, y học, sinh học, vật liệu 
-                                                    mới, công nghệ mới. 
+                                                    Tích hợp các cảm biến sinh học 
                                                 </p>
                                             </div>
                                         </div>
@@ -98,10 +89,7 @@
                                             <div class="mf_suit__text">
                                                 <h6>3.</h6>
                                                 <p>
-                                                    Sản phẩm của sự kết hợp
-                                                    giữa ngành khoa học thần 
-                                                    kinh, y học, sinh học, vật liệu 
-                                                    mới, công nghệ mới. 
+                                                    Tích hợp 24 điện cực khô phân bổ trên các nhóm cơ chính 
                                                 </p>
                                             </div>
                                         </div>
@@ -109,10 +97,7 @@
                                             <div class="mf_suit__text">
                                                 <h6>4.</h6>
                                                 <p>
-                                                    Sản phẩm của sự kết hợp
-                                                    giữa ngành khoa học thần 
-                                                    kinh, y học, sinh học, vật liệu 
-                                                    mới, công nghệ mới. 
+                                                    Chẩn đoán sức khỏe cơ bắp 
                                                 </p>
                                             </div>
                                         </div>
@@ -120,10 +105,7 @@
                                             <div class="mf_suit__text">
                                                 <h6>5.</h6>
                                                 <p>
-                                                    Sản phẩm của sự kết hợp
-                                                    giữa ngành khoa học thần 
-                                                    kinh, y học, sinh học, vật liệu 
-                                                    mới, công nghệ mới. 
+                                                    Làm bằng chất liệu công nghệ cao, kháng khuẩn, độ bền cao 
                                                 </p>
                                             </div>
                                         </div>
@@ -131,10 +113,7 @@
                                             <div class="mf_suit__text">
                                                 <h6>6.</h6>
                                                 <p>
-                                                    Sản phẩm của sự kết hợp
-                                                    giữa ngành khoa học thần 
-                                                    kinh, y học, sinh học, vật liệu 
-                                                    mới, công nghệ mới. 
+                                                    Dễ dàng giặt bằng máy thông thường 
                                                 </p>
                                             </div>
                                         </div>
@@ -145,22 +124,19 @@
                                     <div class="mf_suit__text">
                                         <h6>1.</h6>
                                         <p>
-                                            Sản phẩm của sự kết hợp
-                                            giữa ngành khoa học thần 
-                                            kinh, y học, sinh học, vật liệu 
-                                            mới, công nghệ mới. 
+                                            Sản phẩm của sự kết hợp giữa ngành khoa học thần kinh, y học, sinh học, vật liệu mới, công nghệ mới. 
                                         </p>
                                     </div>
                                     <div class="mf_suit__text">
                                         <h6>2.</h6>
                                         <p>
-                                            Tích hợp các cảm biến sinh học.
+                                            Tích hợp các cảm biến sinh học
                                         </p>
                                     </div>
                                     <div class="mf_suit__text">
                                         <h6>3.</h6>
                                         <p>
-                                            Tích hợp 24 điện cực khô phân bổ trên các nhóm cơ chính.
+                                            Tích hợp 24 điện cực khô phân bổ trên các nhóm cơ chính
                                         </p>
                                     </div>
                                 </div>
@@ -324,8 +300,8 @@
                             <h1 class="mf_title">Liên hệ Metafit</h1>
                             <div class="mf_contact__main-content">
                                 <div class="mf_contact__main-content-left">
-                                    <p>92-94 Nam Kỳ Khởi Nghĩa, phường Bến Nghé, quận 1, TP.HCM.</p>
-                                    <p class="hotline">Hotline: 0372491999</p>
+                                    <p>16 Phạm Ngọc Thạch, phường 6, quận 3, TP.HCM.</p>
+                                    <p class="hotline">Hotline: 0286.27.27.626</p>
                                     <div class="mf_contact__gr_ico">
                                         <a href="#"><i class="fa fa-facebook"></i></a>
                                         <a href="#"><i class="fa fa-youtube-play"></i></a>

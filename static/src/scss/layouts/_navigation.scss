@@ -4,7 +4,8 @@
     padding: 0 $spacing_bw_large;
     color: white;
     min-height: 128px;
-    background: linear-gradient(90deg, #000000 0%, #322B48 52%, #332C44 81%, #352F3D 100%);
+    position: absolute;
+    background: transparent;
     &-links{
         width: 100%;
         display: flex;
@@ -92,8 +93,34 @@
 
 }
 
+.mf_language{
+    img{
+        width: 24px;
+        height: 24px;
+    }
+    .btn-outline-secondary{
+        background-color: transparent;
+
+        &.dropdown-toggle.show{
+            background: transparent;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+
+        &:focus-visible{
+            outline: none;
+        }
+
+        &:focus{
+            box-shadow: none;
+        }
+    }
+   
+}
+
 .o_header_affixed .mf_navbar{
-    background: linear-gradient(90deg, #000000 0%, #322B48 52%, #332C44 81%, #352F3D 100%);
+    background: #04030E;
 
     &.mf_nav_bg{
         background: $color-black;
@@ -101,5 +128,5 @@
 }
 
 header .navbar-brand.logo img, .o_header_affixed.o_header_is_scrolled .navbar-brand img{
-    height: 100%;
+    max-height: 60px;
 }
