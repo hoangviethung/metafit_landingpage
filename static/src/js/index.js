@@ -6,6 +6,18 @@ odoo.define('metafit.theme_metafit', function (require) {
 
     })
 
+    $(function() {
+      var loc = window.location.pathname ; // returns the full URL
+      // if loc.path
+      // if(.test(loc)) {
+      //   $('#main').addClass('tech');
+      // }
+      if(loc != '/'){
+        $('.mf_navbar').css({'background-color': '#04030E', 'position': 'unset'})
+      }
+      console.log(loc);
+    });
+
     const hero_swiper = new Swiper(".mf_hero_swiper", {
         loop:true,
         effect: 'fade',
