@@ -7,11 +7,7 @@ odoo.define('metafit.theme_metafit', function (require) {
     })
 
     $(function() {
-      var loc = window.location.pathname ; // returns the full URL
-      // if loc.path
-      // if(.test(loc)) {
-      //   $('#main').addClass('tech');
-      // }
+      let loc = window.location.pathname;
       if(loc != '/'){
         $('.mf_navbar').css({'background-color': '#04030E', 'position': 'unset'})
       }
@@ -19,7 +15,6 @@ odoo.define('metafit.theme_metafit', function (require) {
     });
 
     const hero_swiper = new Swiper(".mf_hero_swiper", {
-        loop:true,
         effect: 'fade',
         allowTouchMove: false,
         fadeEffect: {
@@ -35,7 +30,6 @@ odoo.define('metafit.theme_metafit', function (require) {
     });
 
     const suit_swiper = new Swiper(".mf_suit_swiper", {
-        loop:true,
 
         pagination: {
           el: ".swiper-pagination",
@@ -44,8 +38,8 @@ odoo.define('metafit.theme_metafit', function (require) {
     })
 
     const gallery_swiper = new Swiper(".mf_benefit .gallery-cards", {
-        loop: true,
         slideToClickedSlide: true,
+        loop: true,
         autoplay: {
             delay: 5000,
           },
@@ -72,7 +66,6 @@ odoo.define('metafit.theme_metafit', function (require) {
       });
 
     const studio_swiper = new Swiper('.mf_studio_swiper', {
-        loop: true,
         effect: 'fade',
         fadeEffect: {
             crossFade: true
