@@ -110,9 +110,12 @@
         }
         &_swiper{
             height: 100vh;
-            // img {
-            //     width: 100%;
-            // }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: left;
+            }
             @include respond-to-mobile{
                 display: none;
             }
@@ -177,7 +180,6 @@
 
         .mf_bio_elec-img{
             .img-desktop{
-                width: 45%;
                 height: 100%;
                 object-fit: cover;
                 // position: absolute;
@@ -1337,6 +1339,14 @@
                 &:last-child{
                     margin-bottom: 0;
                 }
+
+                @include respond-to-mobile{
+                    margin-bottom: 1rem;
+
+                    &:last-child{
+                        margin-bottom: 1rem;
+                    }
+                }
                 @include respond-to-desktop{
                     margin-bottom: 1rem;
                 }
@@ -1347,6 +1357,16 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            .form_group{
+                display: flex;
+                flex-direction: column;
+
+                @include respond-to-mobile{
+                    margin-bottom: 1.5rem;
+                }
+            }
+
             .mf_button{
                 padding-top: 21px;
                 padding-bottom: 21px;
