@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <template id="metafit_homepage"
-              inherit_id="website.homepage"
-              name="Template Header Theme MetaFit" active="True">
+    <template id="metafit_homepage" inherit_id="website.homepage" name="Template Header Theme MetaFit" active="True">
         <xpath expr="//t[@t-call='website.layout']" position="replace">
             <t t-call="website.layout">
                 <t t-set="pageName" t-value="'homepage'"/>
@@ -17,7 +15,7 @@
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
-                            
+
                         </div>
                         <img class="mf_hero_banner_mobile" src="/metafit_landingpage/static/src/images/banner_mobile.png" />
                         <div class="mf_hero_content">
@@ -179,7 +177,8 @@
                                     <img src="/metafit_landingpage/static/src/images/training-1.png" alt="Fit Club" />
                                     <div class="mf_training__item-title">
                                         <h2>Fit Club</h2>
-                                        <p>Nhóm <span>1:4</span></p>
+                                        <p>Nhóm <span>1:4</span>
+                                        </p>
                                     </div>
                                     <button class="mf_button mf_button_small">
                                         <a href="#">Gọi ngay</a>
@@ -189,7 +188,8 @@
                                     <img src="/metafit_landingpage/static/src/images/training-2.png" alt="Fit Premium" />
                                     <div class="mf_training__item-title">
                                         <h2>Fit Premium</h2>
-                                        <p>Nhóm <span>1:2</span></p>
+                                        <p>Nhóm <span>1:2</span>
+                                        </p>
                                     </div>
                                     <button class="mf_button mf_button_small">
                                         <a href="#">Gọi ngay</a>
@@ -251,13 +251,27 @@
                                 <div class="gallery">
                                     <div class="swiper gallery-cards">
                                         <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit1.png"/></div>
-                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit2.png"/></div>
-                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit3.png"/></div>
-                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit4.png"/></div>
-                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit1.png"/></div>
-                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit2.png"/></div>
-                                            <div class="swiper-slide"><img src="/metafit_landingpage/static/src/images/benefit3.png"/></div>
+                                            <div class="swiper-slide">
+                                                <img src="/metafit_landingpage/static/src/images/benefit1.png"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/metafit_landingpage/static/src/images/benefit2.png"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/metafit_landingpage/static/src/images/benefit3.png"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/metafit_landingpage/static/src/images/benefit4.png"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/metafit_landingpage/static/src/images/benefit1.png"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/metafit_landingpage/static/src/images/benefit2.png"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/metafit_landingpage/static/src/images/benefit3.png"/>
+                                            </div>
                                         </div>
                                         <div class="swiper-pagination"></div>
                                     </div>
@@ -300,30 +314,35 @@
                                     <p>16 Phạm Ngọc Thạch, phường 6, quận 3, TP.HCM.</p>
                                     <p class="hotline">Hotline: 0286.27.27.626</p>
                                     <div class="mf_contact__gr_ico">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-youtube-play"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="mf_contact__main-content-center">
                                     <div class="form_group">
-                                        <label class="form_label" for="name">Tên của bạn<span>*</span></label>
-                                        <input type="text" id="name"/>
+                                        <label class="form_label" for="name">Tên của bạn<span>*</span>
+                                        </label>
+                                        <input class="form-control" type="text" id="name"/>
                                     </div>
 
                                     <div class="form_group">
-                                        <label class="form_label" for="phone">Số điện thoại<span>*</span></label>
-                                        <input type="text" id="phone"/>
+                                        <label class="form_label" for="phone">Số điện thoại<span>*</span>
+                                        </label>
+                                        <input class="form-control" type="text" id="phone"/>
                                     </div>
                                     <div class="form_group">
                                         <label class="form_label" for="email">Email</label>
-                                        <input type="email" id="email"/>
+                                        <input class="form-control" type="email" id="email"/>
                                     </div>
                                 </div>
                                 <div class="mf_contact__main-content-right">
                                     <div class="form_group">
                                         <label class="form_label" for="desc">Tin nhắn của bạn</label>
-                                        <textarea id="desc" name="desc">
-                                        </textarea>
+                                        <textarea class="form-control" id="desc" name="desc"></textarea>
                                     </div>
                                     <button class="mf_button">
                                         <a href="#">Gửi đi</a>
@@ -336,5 +355,4 @@
             </t>
         </xpath>
     </template>
-
 </odoo>

@@ -1,18 +1,17 @@
-
-.mf_navbar{
+.mf_navbar {
     width: 100%;
     padding: 0 $spacing_bw_large;
     color: white;
     min-height: 128px;
     position: absolute;
     background: transparent;
-    &-links{
+    &-links {
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
-        .mf_collapse{
+        .mf_collapse {
             display: flex;
             @media screen and (max-width: 992px) {
                 position: absolute;
@@ -23,116 +22,119 @@
                 background: transparent;
                 background-color: $color-black;
 
-                &.show{
-                    left:0;
-                    transition: all .5s;
+                &.show {
+                    left: 0;
+                    transition: all 0.5s;
                 }
             }
 
-            .nav-item{
+            .nav-item {
                 text-align: center;
-                @media screen and (max-width: 992px){
+                @media screen and (max-width: 992px) {
                     padding: 1rem 2rem;
                 }
             }
 
-            .nav-link{
+            .nav-link {
                 padding: 1.313rem;
                 color: $color-white;
-                span{
+                span {
                     font-size: 1rem;
                     line-height: 1.5rem;
                     font-weight: 400;
                 }
-                &.active{
+                &.active {
                     color: $color-primary;
                 }
 
-                &:hover{
+                &:hover {
                     color: $color-primary;
                 }
             }
         }
 
-        .navbar-toggler{
-            &:focus-visible{
+        .navbar-toggler {
+            &:focus-visible {
                 outline: none;
             }
-            &:focus{
+            &:focus {
                 box-shadow: none;
             }
 
-            @include respond-to-mobile{
+            @include respond-to-mobile {
                 display: none;
             }
 
-            @include respond-to-tablet{
+            @include respond-to-tablet {
                 display: none;
             }
         }
 
-        .navbar-toggler-icon{
+        .navbar-toggler-icon {
             filter: brightness(0) invert(1);
-            &:focus-visible{
+            &:focus-visible {
                 outline: none;
             }
         }
 
-        @include respond-to-mobile{
+        @include respond-to-mobile {
             justify-content: center;
         }
 
-        @include respond-to-tablet{
+        @include respond-to-tablet {
             justify-content: center;
         }
     }
-
-    &.mf_nav_bg{
+    &.mf_nav_bg {
         background: $color-black;
     }
-
+    @include respond-to-mobile {
+        min-height: 72px;
+    }
 }
 
-.mf_language{
-    img{
+.mf_language {
+    img {
         width: 24px;
         height: 24px;
     }
-    .btn-outline-secondary{
+    .btn-outline-secondary {
         background-color: transparent;
-
-        &.dropdown-toggle.show{
+        &.dropdown-toggle.show {
             background: transparent;
-            &:focus{
+            &:focus {
                 box-shadow: none;
             }
         }
-
-        &:focus-visible{
+        &:focus-visible {
             outline: none;
         }
-
-        &:focus{
+        &:focus {
             box-shadow: none;
         }
     }
-   
 }
 
-.o_header_affixed .mf_navbar{
-    background: #04030E;
-
-    &.mf_nav_bg{
-        background: $color-black;
+.o_header_affixed {
+    .mf_navbar {
+        background: #04030e;
+        &.mf_nav_bg {
+            background: $color-black;
+        }
     }
 }
 
-header .navbar-brand.logo img, .o_header_affixed.o_header_is_scrolled .navbar-brand img{
-    max-height: 60px;
+header {
+    .navbar-brand.logo img,
+    .o_header_affixed.o_header_is_scrolled .navbar-brand img {
+        max-height: 60px;
+        height: auto;
+        min-height: 40px;
+    }
 }
 
-.navbar-brand{
-    @include respond-to-mobile{
+.navbar-brand {
+    @include respond-to-mobile {
         margin-right: 0;
     }
 }

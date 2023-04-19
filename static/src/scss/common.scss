@@ -28,24 +28,24 @@ html {
     scroll-behavior: smooth;
 }
 
-.mf_container{
+.mf_container {
     width: 100%;
     padding: $spacing_bw_large $space_large;
 
-    @include respond-to-mobile{
-        padding:$spacing_bw_small $space_small;
+    @include respond-to-mobile {
+        padding: $spacing_bw_small $space_small;
     }
 
-    @include respond-to-tablet{
-        padding:$spacing_bw_small $space_small;
+    @include respond-to-tablet {
+        padding: $spacing_bw_small $space_small;
     }
 
-    @include respond-to-laptop{
-        padding:$spacing_bw_large $space_medium;
+    @include respond-to-laptop {
+        padding: $spacing_bw_large $space_medium;
     }
 }
 
-.mf_title{
+.mf_title {
     font-size: 3rem;
     line-height: 4rem;
     font-weight: 700;
@@ -58,84 +58,94 @@ html {
 
     @include text-truncate(2);
 
-    @include respond-to-mobile{
+    @include respond-to-mobile {
         font-size: 1.5rem;
         line-height: 2.25rem;
     }
 
-    @include respond-to-tablet{
+    @include respond-to-tablet {
         font-size: 2rem;
         line-height: 2.75rem;
     }
 }
 
-.mf_button{
+.mf_button {
     padding: 0.5rem 2.875rem;
     min-width: 220px;
     border-radius: 2.125rem;
     border: none;
     background-size: 300% 100%;
-    -o-moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    -o-moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 
-    background-image: linear-gradient(90deg, #E8ABBE 0%, #E4BDCB 8%, #E1CCD6 18%, #E0D1DA 26%, #E1CAD5 46%, #E6B8C8 75%, #E8ADC0 87%, #E0D1DA 100%);;
+    background-image: linear-gradient(
+        90deg,
+        #e8abbe 0%,
+        #e4bdcb 8%,
+        #e1ccd6 18%,
+        #e0d1da 26%,
+        #e1cad5 46%,
+        #e6b8c8 75%,
+        #e8adc0 87%,
+        #e0d1da 100%
+    );
 
-    &:focus-visible{
+    &:focus-visible {
         outline: none;
     }
 
-    &:hover{
+    &:hover {
         background-position: 99% 0;
-        -o-moz-transition: all .4s ease-in-out;
-        -o-transition: all .4s ease-in-out;
-        -webkit-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
+        -o-moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
     }
 
-    a{
+    a {
         color: $color-secondary;
         font-size: 1rem;
         line-height: 1.5rem;
         font-weight: 600;
         @include text-truncate(1);
-        &:hover{
+        &:hover {
             text-decoration: none;
         }
 
-        @include respond-to-mobile{
+        @include respond-to-mobile {
             font-size: 0.875rem;
             line-height: 1.131rem;
         }
 
-        @include respond-to-tablet{
+        @include respond-to-tablet {
             font-size: 1rem;
             line-height: 1.5rem;
         }
     }
 
-    @include respond-to-mobile{
+    @include respond-to-mobile {
         padding: 0.75rem 3rem;
     }
 
-    @include respond-to-tablet{
+    @include respond-to-tablet {
         padding: 1rem 3rem;
     }
 }
 
-.top-left-square{
-    @include border-square('left', 'top')
+.top-left-square {
+    @include border-square("left", "top");
 }
 
-.top-right-square{
-    @include border-square('right', 'top')
+.top-right-square {
+    @include border-square("right", "top");
 }
 
-.bottom-left-square{
-    @include border-square('left', 'bottom')
+.bottom-left-square {
+    @include border-square("left", "bottom");
 }
 
-.bottom-right-square{
-    @include border-square('right', 'bottom')
+.bottom-right-square {
+    @include border-square("right", "bottom");
 }

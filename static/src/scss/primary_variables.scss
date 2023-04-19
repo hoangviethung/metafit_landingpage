@@ -1,0 +1,48 @@
+$font-default: "SVN-Gilroy", sans-serif;
+$font-secondary: "Inter", sans-serif;
+
+//colors
+$color-white: #ffffff;
+$color-orange: #3fc0b6;
+$color-black: #000000;
+$color-black-1: #242424;
+
+$color-primary: #ff5b26;
+$color-secondary: #120f2f;
+$color-cream-white: #ffe5e5;
+$color-cream-white-1: #efdcdc;
+
+//fon-size
+$font-size-h1: 36px;
+$font-size-h6: 14px;
+$font-size-subheading: 25px;
+$font-size-text: 14px;
+$font-size-s: 15px;
+$font-size-demo: 40px;
+$font-size-form: 12px;
+$font-sub-head: 16px;
+$font-sub-blog: 20px;
+
+$spacing_bw_large: 120px;
+$spacing_bw_small: 40px;
+
+$space_large: 100px;
+$space_medium: 50px;
+$space_small: 24px;
+
+$size-pagination-swiper: 12px;
+$size_pagination-swiper-small: 8px;
+$space-pagination-swiper: 12px;
+
+$o-color-palettes: map-merge(
+    $o-color-palettes,
+    (
+        "base-1": (
+            "o-color-1": $color-primary,
+            "o-color-2": $color-orange,
+            "o-color-3": $color-secondary,
+            "o-color-4": #ffffff,
+            "o-color-5": #222222,
+        ),
+    )
+);
