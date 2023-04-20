@@ -63,7 +63,7 @@
                             <div class="suit_ico">
                                 <img src="/metafit_landingpage/static/src/images/contact.png" />
                             </div>
-                            <h1 class="mf_title">Bộ suit Symbiont - ứng dụng của công nghệ BET</h1>
+                            <h1 class="mf_title">Symbiont - Ứng dụng của công nghệ BET</h1>
                             <div class="mf_suit__main_content">
                                 <div class="swiper mf_suit_swiper">
                                     <div class="swiper-wrapper">
@@ -177,8 +177,10 @@
                                     <img src="/metafit_landingpage/static/src/images/training-1.png" alt="Fit Club" />
                                     <div class="mf_training__item-title">
                                         <h2>Fit Club</h2>
-                                        <p>Nhóm <span>1:4</span>
-                                        </p>
+                                        <p>Fit Club: <span>4 người tập</span></p>
+                                        <p class="mf_training_text">Tập luyện giờ đây thật hào hứng với các bài tập nhóm tạo sự
+                                            tương tác giữa những người tập. Các động tác được thiết kế
+                                            sinh động, linh hoạt giúp tăng hiệu quả và cải thiện cảm xúc</p>
                                     </div>
                                     <button class="mf_button mf_button_small">
                                         <a href="#">Gọi ngay</a>
@@ -188,8 +190,10 @@
                                     <img src="/metafit_landingpage/static/src/images/training-2.png" alt="Fit Premium" />
                                     <div class="mf_training__item-title">
                                         <h2>Fit Premium</h2>
-                                        <p>Nhóm <span>1:2</span>
-                                        </p>
+                                        <p>Fit Premium: <span>2 người tập</span></p>
+                                        <p class="mf_training_text">Trải nghiệm không gian tập luyện riêng tư, lộ trình tập
+                                            luyện được chăm sóc bởi Huấn luyện viên giúp người tập
+                                             đạt hiệu quả tốt nhất.</p>
                                     </div>
                                     <button class="mf_button mf_button_small">
                                         <a href="#">Gọi ngay</a>
