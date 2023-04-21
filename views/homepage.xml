@@ -1,202 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
-    <template id="metafit_homepage" inherit_id="website.homepage" name="Template Header Theme MetaFit" active="True">
+    <template id="mf_homepage" inherit_id="website.homepage" name="Home MetaFit" active="True">
         <xpath expr="//t[@t-call='website.layout']" position="replace">
             <t t-call="website.layout">
-                <t t-set="pageName" t-value="'homepage'"/>
-                <div id="wrap" class="oe_structure mf_homepage">
+                <t t-set="pageName" t-value="'wrapwrap_mf_homepage'"/>
+                <div id="wrap" class="oe_structure oe_structure_mf_homepage">
                     <!-- Hero Banner  -->
                     <section class="mf_herobanner" id="home">
-                        <div class="swiper mf_hero_swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="/metafit_landingpage/static/src/images/banner.png"/>
+                        <div class="container h-100">
+                            <div class="row h-100 align-items-center">
+                                <div class="col-lg-5">
+                                    <div class="mf_hero_content">
+                                        <h1 class="content_title">
+                                        B.E.S.T
+                                            <br/>
+                                        Bio Electrical
+                                            <br/>
+                                        Smart Training</h1>
+                                        <p class="content_desc">Thế hệ phòng tập mới, ứng dụng công nghệ mang tính cách mạng để đạt hiệu quả trong tập luyện.</p>
+                                        <button class="mf_button">
+                                            <a href="#contact">Trải nghiệm ngay</a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="mf_hero_image">
+                                        <img src="/metafit_landingpage/static/src/images/hero-banner/model.png"/>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
-
-                        </div>
-                        <img class="mf_hero_banner_mobile" src="/metafit_landingpage/static/src/images/banner_mobile.png" />
-                        <div class="mf_hero_content">
-                            <h1>
-                                B.E.S.T Bio Electrical Smart Training
-                            </h1>
-                            <p>
-                                Thế hệ phòng tập mới, ứng dụng công nghệ mang tính cách mạng để đạt hiệu quả trong tập luyện.
-                            </p>
-                            <button class="mf_button">
-                                <a href="#">Trải nghiệm ngay</a>
-                            </button>
                         </div>
                     </section>
                     <!-- Bio Electrical -->
                     <section class="mf_bio-elec" id="about">
-                        <img class="img_bg" src="/metafit_landingpage/static/src/images/wave1.png" />
-                        <div class="mf_bio-elec-wrapper">
-                            <div class="mf_bio_elec-img">
-                                <img class="img-desktop" src="/metafit_landingpage/static/src/images/test2.png"/>
-                                <img class="img-mobile" src="/metafit_landingpage/static/src/images/bio1.png"/>
-                            </div>
-                            <div class="mf_bio-elec__content">
-                                <h1 class="mf_title">
-                                    Bio Electrical - Xung điện sinh học
-                                </h1>
-                                <div class="mf_bio-elec__main-content">
-                                    <div class="top-left-square"></div>
-                                    <div class="top-right-square"></div>
-                                    <div class="bottom-left-square"></div>
-                                    <div class="bottom-right-square"></div>
-                                    <p>
-                                        Xung điện sinh học là dòng điện tự nhiên của cơ thể người, chúng kích hoạt mọi sự vận động  của cơ bắp. Bộ suit SYMBIONT được thiết kế dựa trên nguyên lý hoạt động này để tạo ra một mô hình tập luyện mới đầy tính đột phá: gửi xung điện trực tiếp đến cơ để gây ra sự vận động của cơ.
-                                    </p>
+                        <img class="decorate decorate_style--01" src="/metafit_landingpage/static/src/images/decorate/1.png" />
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="mf_bio-elec__image">
+                                        <img src="/metafit_landingpage/static/src/images/bio-electrical.png"/>
+                                    </div>
                                 </div>
-                                <button class="mf_button">
-                                    <a href="#">Trải nghiệm ngay</a>
-                                </button>
+                                <div class="col-lg-7">
+                                    <div class="mf_bio-elec__content">
+                                        <h1 class="mf_title">Bio Electrical<br/>
+                                        Xung điện sinh học </h1>
+                                        <div class="mf_bio-elec__main-content">
+                                            <div class="top-left-square"></div>
+                                            <div class="top-right-square"></div>
+                                            <div class="bottom-left-square"></div>
+                                            <div class="bottom-right-square"></div>
+                                            <p>
+                                        Xung điện sinh học là dòng điện tự nhiên của cơ thể người, chúng kích hoạt mọi sự vận động  của cơ bắp. Bộ suit SYMBIONT được thiết kế dựa trên nguyên lý hoạt động này để tạo ra một mô hình tập luyện mới đầy tính đột phá: gửi xung điện trực tiếp đến cơ để gây ra sự vận động của cơ.
+                                            </p>
+                                        </div>
+                                        <button class="mf_button">
+                                            <a href="#contact">Trải nghiệm ngay</a>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
                     <!-- Suit Symbiont -->
                     <section class="mf_suit" id="suit">
-                        <div class="mf_suit__content mf_container">
-                            <div class="suit_ico">
-                                <img src="/metafit_landingpage/static/src/images/contact.png" />
-                            </div>
-                            <h1 class="mf_title">Symbiont - Ứng dụng của công nghệ BET</h1>
-                            <div class="mf_suit__main_content">
-                                <div class="swiper mf_suit_swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="mf_suit__text">
-                                                <h6>1.</h6>
-                                                <p>
+                        <img class="decorate decorate_style--02" src="/metafit_landingpage/static/src/images/decorate/2.png" />
+                        <div class="container">
+                            <div class="mf_suit__content">
+                                <h1 class="mf_title">Symbiont
+                                    <br/>
+                                    Ứng dụng của công nghệ BET
+                                </h1>
+                                <div class="mf_suit__main_content">
+                                    <div class="swiper mf_suit_swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="mf_suit__text">
+                                                    <h6>1.</h6>
+                                                    <p>
                                                     Sản phẩm của sự kết hợp giữa ngành khoa học thần kinh, y học, sinh học, vật liệu mới, công nghệ mới. 
-                                                </p>
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="mf_suit__text">
-                                                <h6>2.</h6>
-                                                <p>
+                                            <div class="swiper-slide">
+                                                <div class="mf_suit__text">
+                                                    <h6>2.</h6>
+                                                    <p>
                                                     Tích hợp các cảm biến sinh học 
-                                                </p>
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="mf_suit__text">
-                                                <h6>3.</h6>
-                                                <p>
+                                            <div class="swiper-slide">
+                                                <div class="mf_suit__text">
+                                                    <h6>3.</h6>
+                                                    <p>
                                                     Tích hợp 24 điện cực khô phân bổ trên các nhóm cơ chính 
-                                                </p>
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="mf_suit__text">
-                                                <h6>4.</h6>
-                                                <p>
+                                            <div class="swiper-slide">
+                                                <div class="mf_suit__text">
+                                                    <h6>4.</h6>
+                                                    <p>
                                                     Chẩn đoán sức khỏe cơ bắp 
-                                                </p>
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="mf_suit__text">
-                                                <h6>5.</h6>
-                                                <p>
+                                            <div class="swiper-slide">
+                                                <div class="mf_suit__text">
+                                                    <h6>5.</h6>
+                                                    <p>
                                                     Làm bằng chất liệu công nghệ cao, kháng khuẩn, độ bền cao 
-                                                </p>
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="mf_suit__text">
-                                                <h6>6.</h6>
-                                                <p>
+                                            <div class="swiper-slide">
+                                                <div class="mf_suit__text">
+                                                    <h6>6.</h6>
+                                                    <p>
                                                     Dễ dàng giặt bằng máy thông thường 
-                                                </p>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="swiper-pagination"></div>
                                     </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <div class="mf_suit__main_content-left">
-                                    <div class="mf_suit__text">
-                                        <h6>1.</h6>
-                                        <p>
+                                    <div class="mf_suit__main_content-left">
+                                        <div class="mf_suit__text">
+                                            <h6>1.</h6>
+                                            <p>
                                             Sản phẩm của sự kết hợp giữa ngành khoa học thần kinh, y học, sinh học, vật liệu mới, công nghệ mới. 
-                                        </p>
-                                    </div>
-                                    <div class="mf_suit__text">
-                                        <h6>2.</h6>
-                                        <p>
+                                            </p>
+                                        </div>
+                                        <div class="mf_suit__text">
+                                            <h6>2.</h6>
+                                            <p>
                                             Tích hợp các cảm biến sinh học
-                                        </p>
-                                    </div>
-                                    <div class="mf_suit__text">
-                                        <h6>3.</h6>
-                                        <p>
+                                            </p>
+                                        </div>
+                                        <div class="mf_suit__text">
+                                            <h6>3.</h6>
+                                            <p>
                                             Tích hợp 24 điện cực khô phân bổ trên các nhóm cơ chính
-                                        </p>
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mf_suit__main_content-center">
-                                    <img src="/metafit_landingpage/static/src/images/suit.png" alt="Suit Symbiont" />
-                                </div>
-                                <div class="mf_suit__main_content-right">
-                                    <div class="mf_suit__text">
-                                        <h6>4.</h6>
-                                        <p>
+                                    <div class="mf_suit__main_content-center">
+                                        <img src="/metafit_landingpage/static/src/images/suit.png" alt="Suit Symbiont" />
+                                    </div>
+                                    <div class="mf_suit__main_content-right">
+                                        <div class="mf_suit__text">
+                                            <h6>4.</h6>
+                                            <p>
                                             Chẩn đoán sức khỏe cơ bắp.
-                                        </p>
-                                    </div>
-                                    <div class="mf_suit__text">
-                                        <h6>5.</h6>
-                                        <p>
+                                            </p>
+                                        </div>
+                                        <div class="mf_suit__text">
+                                            <h6>5.</h6>
+                                            <p>
                                             Làm bằng chất liệu công nghệ cao, kháng khuẩn, độ bền cao.
-                                        </p>
-                                    </div>
-                                    <div class="mf_suit__text">
-                                        <h6>6.</h6>
-                                        <p>
+                                            </p>
+                                        </div>
+                                        <div class="mf_suit__text">
+                                            <h6>6.</h6>
+                                            <p>
                                             Dễ dàng giặt bằng máy thông thường.
-                                        </p>
+                                            </p>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <button class="mf_button">
+                                        <a href="#contact">Thử ngay</a>
+                                    </button>
                                 </div>
                             </div>
-                            <button class="mf_button">
-                                <a href="#">Thử ngay</a>
-                            </button>
                         </div>
                     </section>
                     <!-- Training Format -->
                     <section class="mf_training" id="program">
-                        <img class="img_bg" src="/metafit_landingpage/static/src/images/wave2.png" />
-                        <div class="mf_training__content mf_container">
+                        <img class="decorate decorate_style--01" src="/metafit_landingpage/static/src/images/decorate/1.png" />
+                        <div class="container">
                             <h1 class="mf_title">Hình thức tập luyện</h1>
                             <div class="mf_training__main-content">
                                 <div class="mf_training__content-item">
                                     <img src="/metafit_landingpage/static/src/images/training-1.png" alt="Fit Club" />
-                                    <div class="mf_training__item-title">
-                                        <h2>Fit Club</h2>
-                                        <p>Fit Club: <span>4 người tập</span></p>
-                                        <p class="mf_training_text">Tập luyện giờ đây thật hào hứng với các bài tập nhóm tạo sự
+                                    <div class="mf_training__item-content">
+                                        <h2 class="mf_training_title">Fit Club</h2>
+                                        <p class="mf_training_subtitle">Fit Club: <span>4 người tập</span>
+                                        </p>
+                                        <p class="mf_training_desc">Tập luyện giờ đây thật hào hứng với các bài tập nhóm tạo sự
                                             tương tác giữa những người tập. Các động tác được thiết kế
                                             sinh động, linh hoạt giúp tăng hiệu quả và cải thiện cảm xúc</p>
                                     </div>
                                     <button class="mf_button mf_button_small">
-                                        <a href="#">Gọi ngay</a>
+                                        <a href="#contact">Gọi ngay</a>
                                     </button>
                                 </div>
                                 <div class="mf_training__content-item">
                                     <img src="/metafit_landingpage/static/src/images/training-2.png" alt="Fit Premium" />
-                                    <div class="mf_training__item-title">
-                                        <h2>Fit Premium</h2>
-                                        <p>Fit Premium: <span>2 người tập</span></p>
-                                        <p class="mf_training_text">Trải nghiệm không gian tập luyện riêng tư, lộ trình tập
+                                    <div class="mf_training__item-content">
+                                        <h2 class="mf_training_title">Fit Premium</h2>
+                                        <p class="mf_training_subtitle">Fit Premium: <span>2 người tập</span>
+                                        </p>
+                                        <p class="mf_training_desc">Trải nghiệm không gian tập luyện riêng tư, lộ trình tập
                                             luyện được chăm sóc bởi Huấn luyện viên giúp người tập
                                              đạt hiệu quả tốt nhất.</p>
                                     </div>
                                     <button class="mf_button mf_button_small">
-                                        <a href="#">Gọi ngay</a>
+                                        <a href="#contact">Gọi ngay</a>
                                     </button>
                                 </div>
                             </div>
@@ -205,86 +217,94 @@
 
                     <!-- Benefit -->
                     <section class="mf_benefit" id="benefit">
-                        <div class="mf_benefit__content">
+                        <div class="container">
                             <h1 class="mf_title">Lợi ích tập luyện</h1>
-                            <div class="mf_benefit__main-content">
-                                <div class="mf_benefit__main-content-text">
-                                    <div class="top-left-square"></div>
-                                    <div class="top-right-square"></div>
-                                    <div class="bottom-left-square"></div>
-                                    <div class="bottom-right-square"></div>
-                                    <div class="text-group">
-                                        <div class="text-content">
-                                            <div class="text-content-img">
-                                                <img src="/metafit_landingpage/static/src/images/Vector.png" />
+                            <div class="mf_benefit_wrapper">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="mf_benefit__main-content-text">
+                                            <div class="top-left-square"></div>
+                                            <div class="top-right-square"></div>
+                                            <div class="bottom-left-square"></div>
+                                            <div class="bottom-right-square"></div>
+                                            <div class="text-group">
+                                                <div class="text-content">
+                                                    <div class="text-content-img">
+                                                        <img src="/metafit_landingpage/static/src/images/Vector.png" />
+                                                    </div>
+                                                    <p>Tiết kiệm thời gian</p>
+                                                </div>
+                                                <div class="text-content">
+                                                    <div class="text-content-img">
+                                                        <img src="/metafit_landingpage/static/src/images/Vector.png" />
+                                                    </div>
+                                                    <p>Kích thích lưu thông máu</p>
+                                                </div>
+                                                <div class="text-content">
+                                                    <div class="text-content-img">
+                                                        <img src="/metafit_landingpage/static/src/images/Vector.png" />
+                                                    </div>
+                                                    <p>Xây dựng cơ bắp</p>
+                                                </div>
+                                                <div class="text-content">
+                                                    <div class="text-content-img">
+                                                        <img src="/metafit_landingpage/static/src/images/Vector.png" />
+                                                    </div>
+                                                    <p>Cải thiện vóc dáng</p>
+                                                </div>
+                                                <div class="text-content">
+                                                    <div class="text-content-img">
+                                                        <img src="/metafit_landingpage/static/src/images/Vector.png" />
+                                                    </div>
+                                                    <p>Cải thiện sức bền</p>
+                                                </div>
+                                                <div class="text-content">
+                                                    <div class="text-content-img">
+                                                        <img src="/metafit_landingpage/static/src/images/Vector.png" />
+                                                    </div>
+                                                    <p>Cân bằng hệ thống cơ bắp</p>
+                                                </div>
                                             </div>
-                                            <p>Tiết kiệm thời gian</p>
                                         </div>
-                                        <div class="text-content">
-                                            <div class="text-content-img">
-                                                <img src="/metafit_landingpage/static/src/images/Vector.png" />
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="swiper gallery-cards">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="/metafit_landingpage/static/src/images/benefit/1.png"/>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/metafit_landingpage/static/src/images/benefit/2.png"/>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/metafit_landingpage/static/src/images/benefit/3.png"/>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/metafit_landingpage/static/src/images/benefit/4.png"/>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/metafit_landingpage/static/src/images/benefit/1.png"/>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/metafit_landingpage/static/src/images/benefit/2.png"/>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/metafit_landingpage/static/src/images/benefit/3.png"/>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/metafit_landingpage/static/src/images/benefit/4.png"/>
+                                                </div>
                                             </div>
-                                            <p>Kích thích lưu thông máu</p>
-                                        </div>
-                                        <div class="text-content">
-                                            <div class="text-content-img">
-                                                <img src="/metafit_landingpage/static/src/images/Vector.png" />
-                                            </div>
-                                            <p>Xây dựng cơ bắp</p>
-                                        </div>
-                                        <div class="text-content">
-                                            <div class="text-content-img">
-                                                <img src="/metafit_landingpage/static/src/images/Vector.png" />
-                                            </div>
-                                            <p>Cải thiện vóc dáng</p>
-                                        </div>
-                                        <div class="text-content">
-                                            <div class="text-content-img">
-                                                <img src="/metafit_landingpage/static/src/images/Vector.png" />
-                                            </div>
-                                            <p>Cải thiện sức bền</p>
-                                        </div>
-                                        <div class="text-content">
-                                            <div class="text-content-img">
-                                                <img src="/metafit_landingpage/static/src/images/Vector.png" />
-                                            </div>
-                                            <p>Cân bằng hệ thống cơ bắp</p>
+                                            <div class="swiper-pagination"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="gallery">
-                                    <div class="swiper gallery-cards">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="/metafit_landingpage/static/src/images/benefit1.png"/>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="/metafit_landingpage/static/src/images/benefit2.png"/>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="/metafit_landingpage/static/src/images/benefit3.png"/>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="/metafit_landingpage/static/src/images/benefit4.png"/>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="/metafit_landingpage/static/src/images/benefit1.png"/>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="/metafit_landingpage/static/src/images/benefit2.png"/>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="/metafit_landingpage/static/src/images/benefit3.png"/>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-
+                                <div class="text-center mt-4">
+                                    <button class="mf_button">
+                                        <a href="#contact">Trải nghiệm ngay</a>
+                                    </button>
                                 </div>
                             </div>
-                            <button class="mf_button">
-                                <a href="#">Trải nghiệm ngay</a>
-                            </button>
                         </div>
                     </section>
 
@@ -293,36 +313,51 @@
                         <div class="swiper mf_studio_swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="/metafit_landingpage/static/src/images/studio1.png"/>
+                                    <img src="/metafit_landingpage/static/src/images/studio/1.png"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/metafit_landingpage/static/src/images/studio/2.png"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/metafit_landingpage/static/src/images/studio/3.png"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/metafit_landingpage/static/src/images/studio/4.png"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/metafit_landingpage/static/src/images/studio/5.png"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/metafit_landingpage/static/src/images/studio/6.png"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/metafit_landingpage/static/src/images/studio/7.png"/>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="mf_studio__content">
-                                <h1>
+                                <div class="mf_studio__title">
                                     MetaFit Studio
-                                </h1>
+                                </div>
                             </div>
                         </div>
                     </section>
 
                     <!-- Contact  -->
                     <section class="mf_contact" id="contact">
-                        <img class="img_bg" src="/metafit_landingpage/static/src/images/wave3.png" />
-                        <div class="mf_contact__content mf_container">
-                            <div class="contact_ico">
-                                <img src="/metafit_landingpage/static/src/images/contact.png" />
-                            </div>
+                        <img class="decorate decorate_style--03" src="/metafit_landingpage/static/src/images/decorate/3.png" />
+                        <div class="container">
                             <h1 class="mf_title">Liên hệ Metafit</h1>
                             <div class="mf_contact__main-content">
                                 <div class="mf_contact__main-content-left">
-                                    <p>16 Phạm Ngọc Thạch, phường 6, quận 3, TP.HCM.</p>
+                                    <p class="address">16 Phạm Ngọc Thạch, phường 6, quận 3, TP.HCM.</p>
                                     <p class="hotline">Hotline: 0286.27.27.626</p>
-                                    <div class="mf_contact__gr_ico">
+                                    <div class="socials">
                                         <a href="#">
-                                            <i class="fa fa-facebook"></i>
+                                            <img src="/metafit_landingpage/static/src/images/facebook.png" />
                                         </a>
                                         <a href="#">
-                                            <i class="fa fa-youtube-play"></i>
+                                            <img src="/metafit_landingpage/static/src/images/youtube.png" />
                                         </a>
                                     </div>
                                 </div>

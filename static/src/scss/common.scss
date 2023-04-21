@@ -1,3 +1,7 @@
+[class*="wrapwrap_mf_"] {
+    scroll-behavior: smooth;
+}
+
 *:focus {
     outline: 0 !important;
 }
@@ -13,6 +17,7 @@
     text-decoration: none;
     font-family: $font-default;
     font-size: 16px;
+
     &:focus,
     &:active {
         outline: none !important;
@@ -46,26 +51,20 @@ html {
 }
 
 .mf_title {
-    font-size: 2.4rem;
-    line-height: 4rem;
+    font-size: 38px;
     font-weight: 700;
-
+    line-height: 1.4;
     font-family: $font-default;
-
     margin-top: 0;
-
+    margin-bottom: 0;
     text-transform: uppercase;
 
-    @include text-truncate(2);
-
-    @include respond-to-mobile {
-        font-size: 1.5rem;
-        line-height: 2.25rem;
+    @media (max-width: 992px) {
+        font-size: 32px;
     }
 
-    @include respond-to-tablet {
-        font-size: 2rem;
-        line-height: 2.75rem;
+    @media (max-width: 767.98px) {
+        font-size: 24px;
     }
 }
 
@@ -80,17 +79,15 @@ html {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 
-    background-image: linear-gradient(
-        90deg,
-        #e8abbe 0%,
-        #e4bdcb 8%,
-        #e1ccd6 18%,
-        #e0d1da 26%,
-        #e1cad5 46%,
-        #e6b8c8 75%,
-        #e8adc0 87%,
-        #e0d1da 100%
-    );
+    background-image: linear-gradient(90deg,
+            #e8abbe 0%,
+            #e4bdcb 8%,
+            #e1ccd6 18%,
+            #e0d1da 26%,
+            #e1cad5 46%,
+            #e6b8c8 75%,
+            #e8adc0 87%,
+            #e0d1da 100%);
 
     &:focus-visible {
         outline: none;
@@ -110,6 +107,7 @@ html {
         line-height: 1.5rem;
         font-weight: 600;
         @include text-truncate(1);
+
         &:hover {
             text-decoration: none;
         }
@@ -131,6 +129,40 @@ html {
 
     @include respond-to-tablet {
         padding: 1rem 3rem;
+    }
+}
+
+.decorate {
+    pointer-events: none;
+
+    &_style--01 {
+        position: absolute;
+        bottom: -90px;
+        right: -50px;
+        z-index: 2;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &_style--02 {
+        position: absolute;
+        left: -40px;
+        bottom: -55px;
+        z-index: 10;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &_style--03 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: 50%;
+        width: 100%;
     }
 }
 

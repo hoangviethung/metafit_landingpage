@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="template_header_default_metafit" inherit_id="website.template_header_default" name="Template Header Default MetaFit" active="True">
+    </template>
+</odoo>

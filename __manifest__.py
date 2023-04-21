@@ -11,7 +11,7 @@
     'data': [
         'data/menu_data.xml',
         'views/views.xml',
-        'views/header.xml',
+        'views/website_templates.xml',
         'views/homepage.xml',
         'views/footer.xml',
     ],
@@ -32,7 +32,8 @@
             '/metafit_landingpage/static/src/scss/pages/homepage.scss',
             '/metafit_landingpage/static/src/libs/swiper/swiper-bundle.min.css',
             '/metafit_landingpage/static/src/libs/swiper/swiper-bundle.min.js',
-            '/metafit_landingpage/static/src/js/index.js',
+            '/metafit_landingpage/static/src/js/menu.js',
+            '/metafit_landingpage/static/src/js/home.js',
         ],
         'web._assets_primary_variables': [
             '/metafit_landingpage/static/src/scss/primary_variables.scss'
