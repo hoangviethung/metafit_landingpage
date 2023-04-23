@@ -1,42 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
     <data>
-    
-        <record id="menu_metafit_about" model="website.menu">
-            <field name="name">About</field>
-            <field name="url">/#about</field>
+        <record id="menu_metafit_bio_electrical" model="website.menu">
+            <field name="name">Xung điện sinh học</field>
+            <field name="url">/#bio_electrical</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="sequence" type="int">20</field>
         </record>
-    
+
         <record id="menu_metafit_benefit" model="website.menu">
-            <field name="name">Benefits</field>
-            <field name="url">/#benefit</field>
+            <field name="name">Công nghệ</field>
+            <field name="url">/#symbiont</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="sequence" type="int">21</field>
         </record>
-    
+
         <record id="menu_metafit_program" model="website.menu">
-            <field name="name">Programs</field>
-            <field name="url">/#program</field>
+            <field name="name">Hình thức</field>
+            <field name="url">/#training</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="sequence" type="int">22</field>
         </record>
-    
+
         <record id="menu_metafit_gallery" model="website.menu">
-            <field name="name">Gallery</field>
-            <field name="url">/#gallery</field>
+            <field name="name">Lợi ích</field>
+            <field name="url">/#benefit</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="sequence" type="int">23</field>
         </record>
-    
+
         <record id="menu_metafit_contact" model="website.menu">
-            <field name="name">Contact</field>
+            <field name="name">Liên hệ</field>
             <field name="url">/#contact</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="sequence" type="int">24</field>
         </record>
-    
     </data>
 </odoo>

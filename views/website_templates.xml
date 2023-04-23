@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <template id="template_header_default_metafit" inherit_id="website.template_header_default" name="Template Header Default MetaFit" active="True">
+    <!-- HEADER -->
+    <template id="template_header_default" inherit_id="website.template_header_default" name="Template Header Default MetaFit" active="True">
+        <xpath expr="//t[@t-call='website.placeholder_header_call_to_action']" position="replace">
+        </xpath>
+        <xpath expr="//t[@t-call='website.placeholder_header_language_selector']" position="before">
+            <t t-call="website.placeholder_header_call_to_action">
+                <t t-set="_div_classes" t-valuef="ms-lg-4"/>
+            </t>
+        </xpath>
+        <xpath expr="//t[@t-call='website.placeholder_header_language_selector']" position="replace">
+            <t t-call="website.placeholder_header_language_selector">
+                <t t-set="_div_classes" t-valuef="my-auto ms-lg-4"/>
+            </t>
+        </xpath>
     </template>
-</odoo>
+    <!-- BUTTON CALL TO ACTION IN HEADER -->
+    <template id="header_call_to_action" inherit_id="website.header_call_to_action" name="Header Call to Action MetaFit" active="True">
+        <xpath expr="//a[hasclass('btn_cta')]" position="replace">
+            <a href="tel:02862727626" class="btn btn_cta">Liên hệ ngay</a>
+        </xpath>
+    </template>
+    <!-- FOOTER COPYRIGHT -->
+    <template id="footer_copyright_company_name" inherit_id="website.footer_copyright_company_name" name="Footer Copyright Company Name Metafit">
+        <xpath expr="//span[hasclass('o_footer_copyright_name')]" position="replace">
+            <span class="o_footer_copyright_name me-2">Copyright &amp;copy; by MetaFit 2023</span>
+        </xpath>
+    </template>
+    <!-- FOOTER DEFAULT -->
+    <template id="footer_custom" inherit_id="website.footer_custom" name="Footer Default Metafit">
+        <xpath expr="//div[@id='footer']" position="replace">
+        </xpath>
+    </template>
+</odoo> 

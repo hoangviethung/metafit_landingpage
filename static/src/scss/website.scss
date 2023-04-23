@@ -2,12 +2,11 @@
     .o_header_affixed {
         .navbar {
             @media (min-width: 922px) {
-                background-color: #04030E;
+                background-color: #04030e;
                 padding-top: 20px;
                 padding-bottom: 20px;
             }
         }
-
     }
 
     .navbar {
@@ -15,14 +14,14 @@
         top: 0;
         width: 100%;
         background-color: transparent;
-        transition: .3s all ease-in-out;
+        transition: 0.3s all ease-in-out;
         box-shadow: unset !important;
         padding-top: 40px;
         padding-bottom: 40px;
 
         @media (max-width: 992px) {
             position: static;
-            background-color: #04030E;
+            background-color: #04030e;
             padding-top: 20px;
             padding-bottom: 20px;
 
@@ -31,6 +30,24 @@
             }
         }
 
+        .btn_cta {
+            color: #ffffff;
+            background: linear-gradient(
+                90deg,
+                rgba(243, 174, 95, 0.2) 0%,
+                rgba(243, 166, 94, 0.2) 2%,
+                rgba(242, 139, 90, 0.2) 8%,
+                rgba(242, 120, 87, 0.2) 14%,
+                rgba(242, 109, 86, 0.2) 20%,
+                rgba(242, 105, 85, 0.2) 27%,
+                rgba(255, 91, 38, 0.2) 57%,
+                rgba(243, 31, 79, 0.2) 88%,
+                rgba(214, 41, 112, 0.2) 100%
+            );
+            @media (max-width: 992px) {
+                margin-top: 8px;
+            }
+        }
     }
 
     .navbar-nav {
@@ -38,12 +55,9 @@
 
         .nav-link {
             color: #ffffff;
-            padding-right: 22px;
-            padding-left: 22px;
-            color: #ffffff;
 
             &.active {
-                color: $color-primary;
+                color: $mf-color-primary;
             }
 
             &:focus {
@@ -51,7 +65,12 @@
             }
 
             &:hover {
-                color: $color-primary;
+                color: $mf-color-primary;
+            }
+
+            @media (min-width: 992.98px) {
+                padding-right: 22px;
+                padding-left: 22px;
             }
         }
     }
@@ -101,7 +120,10 @@
         .dropdown-menu {
             .dropdown-item {
                 &.active {
-                    background-color: rgba($color: $color-primary, $alpha: .2);
+                    background-color: rgba(
+                        $color: $mf-color-primary,
+                        $alpha: 0.2
+                    );
                 }
             }
         }

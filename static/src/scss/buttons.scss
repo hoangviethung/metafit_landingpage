@@ -1,0 +1,59 @@
+.btn-check:focus + .btn,
+.btn:focus {
+    box-shadow: unset;
+}
+
+.btn {
+    font-weight: 500;
+    transition: 0.3s all ease-in-out;
+    border-width: 0;
+    background-size: 300% 100%;
+
+    &.min-width-large {
+        min-width: 220px;
+    }
+
+    &:hover {
+        background-position: 99% 0;
+    }
+}
+
+.btn-primary {
+    color: $gray-900;
+    background-image: linear-gradient(
+        90deg,
+        #f3ae5f 0%,
+        #f3a65e 2%,
+        #f28b5a 8%,
+        #f27857 14%,
+        #f26d56 20%,
+        #f26955 27%,
+        #ff5b26 57%,
+        #f31f4f 88%,
+        #d62970 100%
+    );
+}
+
+.btn-light {
+    background-image: linear-gradient(
+        90deg,
+        #e8abbe 0%,
+        #e4bdcb 8%,
+        #e1ccd6 18%,
+        #e0d1da 26%,
+        #e1cad5 46%,
+        #e6b8c8 75%,
+        #e8adc0 87%,
+        #e0d1da 100%
+    );
+}
+
+.btn-dark {
+    background-image: linear-gradient(
+        46.13deg,
+        #000000 0%,
+        #322b48 52%,
+        #332c44 81%,
+        #352f3d 100%
+    );
+}

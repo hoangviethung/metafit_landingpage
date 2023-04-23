@@ -1,0 +1,12 @@
+form {
+    label {
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+}
+
+.form-control {
+    border-radius: 1rem;
+    background-color: rgba($color: #ffe5e5, $alpha: 0.4);
+    border-width: 0;
+}

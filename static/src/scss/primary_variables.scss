@@ -1,43 +1,50 @@
-$font-default: "SVN-Gilroy", sans-serif;
-$font-secondary: "Inter", sans-serif;
+// FONTS
+$mf-font-default: "SVN-Gilroy", sans-serif;
 
-//colors
-$color-orange: #3fc0b6;
-$color-black: #242424;
+// BACKGROUND
+$mf-background-orange: linear-gradient(
+    46.46deg,
+    #f3ae5f 0%,
+    #f3a65e 2%,
+    #f28b5a 8%,
+    #f27857 14%,
+    #f26d56 20%,
+    #f26955 27%,
+    #ff5b26 57%,
+    #f31f4f 88%,
+    #d62970 100%
+);
+$mf-background-dark: linear-gradient(
+    46.13deg,
+    #000000 0%,
+    #322b48 52%,
+    #332c44 81%,
+    #352f3d 100%
+);
 
-$color-primary: #ff5b26;
-$color-secondary: #120f2f;
-$color-cream-white: #ffe5e5;
-$color-cream-white-1: #efdcdc;
+//COLORS
+$mf-color-primary: #ff5c33;
+$mf-color-secondary: #120f2f;
+$mf-color-pastel-pink: #ffe5e5;
 
-//fon-size
-$font-size-h1: 36px;
-$font-size-h6: 14px;
-$font-size-subheading: 25px;
-$font-size-text: 14px;
-$font-size-s: 15px;
-$font-size-demo: 40px;
-$font-size-form: 12px;
-$font-sub-head: 16px;
-$font-sub-blog: 20px;
+//SPACING SIZE
+$mf-spacing-section-lg: 80px;
+$mf-spacing-section-md: 60px;
+$mf-spacing-section-sm: 40px;
 
-$spacing_bw_large: 80px;
-$spacing_bw_medium: 60px;
-$spacing_bw_small: 40px;
+$mf-size-pagination-swiper: 12px;
+$mf-spacing-pagination-swiper: 12px;
 
-$space_large: 100px;
-$space_medium: 50px;
-$space_small: 24px;
-
-$size-pagination-swiper: 12px;
-$size_pagination-swiper-small: 8px;
-$space-pagination-swiper: 12px;
-
-$o-color-palettes: map-merge($o-color-palettes,
-        ("base-1": ("o-color-1": $color-primary,
-                "o-color-2": $color-orange,
-                "o-color-3": $color-secondary,
-                "o-color-4": #ffffff,
-                "o-color-5": #222222,
-            ),
-        ));
+// OVERWIRTE ODOO
+$o-color-palettes: map-merge(
+    $o-color-palettes,
+    (
+        "base-1": (
+            "o-color-1": $mf-color-primary,
+            "o-color-2": $mf-color-secondary,
+            "o-color-3": $mf-color-pastel-pink,
+            "o-color-4": #ffffff,
+            "o-color-5": #212529,
+        ),
+    )
+);

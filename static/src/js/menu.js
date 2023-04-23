@@ -1,6 +1,5 @@
 odoo.define("metafit.content.menu", function (require) {
     ("use strict");
-    const config = require("web.config");
     const publicWidget = require("web.public.widget");
     require("website.content.menu");
 

@@ -8,22 +8,22 @@ odoo.define("metafit.home", function (require) {
         xmlDependencies: [],
         events: {},
         start: function () {
-            const suit_swiper = new Swiper(".mf_suit_swiper", {
+            const symbiont_swiper = new Swiper(".symbiont-swiper", {
                 speed: 500,
                 autoplay: {
                     delay: 3000,
                 },
                 pagination: {
-                    el: ".mf_suit_swiper .swiper-pagination",
+                    el: ".symbiont-swiper .swiper-pagination",
                     clickable: true,
                 },
             });
 
-            const gallery_swiper = new Swiper(".mf_benefit .gallery-cards", {
+            const benefit_swiper = new Swiper(".benefit-swiper", {
                 slideToClickedSlide: true,
                 loop: true,
                 pagination: {
-                    el: ".mf_benefit .swiper-pagination",
+                    el: ".benefit-swiper .swiper-pagination",
                     clickable: true,
                 },
                 speed: 500,
@@ -43,7 +43,7 @@ odoo.define("metafit.home", function (require) {
                 },
             });
 
-            const studio_swiper = new Swiper(".mf_studio_swiper", {
+            const studio_swiper = new Swiper(".studio-swiper", {
                 effect: "fade",
                 fadeEffect: {
                     crossFade: true,
@@ -53,7 +53,7 @@ odoo.define("metafit.home", function (require) {
                 },
                 speed: 1000,
                 pagination: {
-                    el: ".mf_studio_swiper .swiper-pagination",
+                    el: ".studio-swiper .swiper-pagination",
                     clickable: true,
                 },
                 breakpoints: {
