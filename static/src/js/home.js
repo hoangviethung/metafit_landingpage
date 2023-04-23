@@ -2,11 +2,14 @@ odoo.define("metafit.home", function (require) {
     "use strict";
 
     const publicWidget = require("web.public.widget");
+    const ajax = require('web.ajax');
 
     publicWidget.registry.MetafitHome = publicWidget.Widget.extend({
         selector: ".wrapwrap_mf_homepage",
         xmlDependencies: [],
-        events: {},
+        events: {
+            'click #submit_mf_form_contact': '_onClickSubmitContact',
+        },
         start: function () {
             const symbiont_swiper = new Swiper(".symbiont-swiper", {
                 speed: 500,
@@ -65,7 +68,41 @@ odoo.define("metafit.home", function (require) {
                 }
             });
 
+            $('.mf_form_contact').submit((e) => {
+                e.preventDefault();
+            })
+
+            $('.mf_form_contact').validate({
+                rules: {
+                    name: {
+                        lettersonly: true,
+                        required: true,
+                        minlength: 12
+                    },
+                    phone: {
+                        minlength:10,
+                        maxlength:10,
+                        required: true,
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    desc:{
+                        required: true,
+                    }
+                }
+            })
+
             return this._super.apply(this, arguments);
         },
+
+        _onClickSubmitContact: function(e){
+            let form_data = $('#mf_contactus_form').serializeArray().reduce(function(obj, item) {
+                obj[item.name] = item.value;
+                return obj;
+            }, {});
+            ajax.jsonRpc("/test", 'call', form_data)
+        }
     });
 });

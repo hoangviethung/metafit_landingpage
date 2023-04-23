@@ -35,6 +35,8 @@
             # JS
             '/metafit_landingpage/static/src/libs/swiper/swiper-bundle.min.css',
             '/metafit_landingpage/static/src/libs/swiper/swiper-bundle.min.js',
+            '/metafit_landingpage/static/src/libs/validate/jquery.validate.js',
+            '/metafit_landingpage/static/src/libs/validate/additional-methods.js',
             '/metafit_landingpage/static/src/js/menu.js',
             '/metafit_landingpage/static/src/js/home.js',
         ],

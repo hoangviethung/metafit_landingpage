@@ -341,22 +341,22 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
-                                    <form class="mf_form_contact" method="post">
+                                    <form id="mf_contactus_form" class="mf_form_contact">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form_group">
                                                     <label class="form_label" for="name">Tên của bạn<span>*</span>
                                                     </label>
-                                                    <input class="form-control" type="text" id="name"/>
+                                                    <input class="form-control" type="text" id="name" name="name"/>
                                                 </div>
                                                 <div class="form_group">
                                                     <label class="form_label" for="phone">Số điện thoại<span>*</span>
                                                     </label>
-                                                    <input class="form-control" type="text" id="phone"/>
+                                                    <input class="form-control" type="text" id="phone" name="phone"/>
                                                 </div>
                                                 <div class="form_group">
                                                     <label class="form_label" for="email">Email</label>
-                                                    <input class="form-control" type="email" id="email"/>
+                                                    <input class="form-control" type="email" id="email" name="email"/>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -365,7 +365,7 @@
                                                     <textarea class="form-control" id="desc" name="desc"></textarea>
                                                 </div>
                                                 <div class="form_submit">
-                                                    <button class="btn btn-dark w-100">Gửi đi</button>
+                                                    <button id="submit_mf_form_contact" class="btn btn-dark w-100" type="submit">Gửi đi</button>
                                                 </div>
                                             </div>
                                         </div>
