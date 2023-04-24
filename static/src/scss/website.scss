@@ -2,7 +2,7 @@
     .o_header_affixed {
         .navbar {
             @media (min-width: 922px) {
-                background-color: #04030e;
+                background-color: $mf-background-header-dark;
                 padding-top: 20px;
                 padding-bottom: 20px;
             }
@@ -21,7 +21,7 @@
 
         @media (max-width: 992px) {
             position: static;
-            background-color: #04030e;
+            background-color: $mf-background-header-dark;
             padding-top: 20px;
             padding-bottom: 20px;
 
@@ -67,8 +67,7 @@
             &:hover {
                 color: $mf-color-primary;
             }
-
-            @media (min-width: 992.98px) {
+            @media (min-width: 1200px) {
                 padding-right: 22px;
                 padding-left: 22px;
             }

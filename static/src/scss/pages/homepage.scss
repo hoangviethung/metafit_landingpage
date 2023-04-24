@@ -1,6 +1,6 @@
 .mf_section_hero_banner {
     height: 100vh;
-    background-image: url("../../images/hero-banner/background-pc.png");
+    background-image: url("../../images/hero-banner/background-desktop.png");
     background-size: cover;
     background-position: center center;
 
@@ -62,7 +62,7 @@
 
 .mf_section_bio_electrical {
     position: relative;
-    background: $mf-background-orange;
+    background: $mf-background-section-orange;
 
     .image {
         position: relative;
@@ -133,7 +133,7 @@
 }
 
 .mf_section_symbiont {
-    background: $mf-background-dark;
+    background: $mf-background-section-dark;
     padding: $mf-spacing-section-lg 0;
 
     .symbiont-swiper {
@@ -256,7 +256,7 @@
 }
 
 .mf_section_training {
-    background: $mf-background-orange;
+    background: $mf-background-section-orange;
     padding: $mf-spacing-section-lg 0;
 
     .list-training {
@@ -307,13 +307,13 @@
         .title {
             position: relative;
             font-size: 32px;
-            margin-bottom: 8px;
+            margin-bottom: 16px;
             text-transform: capitalize;
             display: inline-block;
 
             &::before {
                 content: "";
-                background: $mf-background-orange;
+                background: $mf-background-section-orange;
                 height: 22px;
                 position: absolute;
                 z-index: -1;
@@ -325,28 +325,9 @@
 
             @media (max-width: 576px) {
                 font-size: 24px;
+                margin-bottom: 8px;
             }
         }
-
-        .subtitle {
-            font-size: 16px;
-            text-align: center;
-            font-weight: 700;
-            text-transform: uppercase;
-
-            span {
-                font-size: 24px;
-            }
-
-            @media (max-width: 576px) {
-                font-size: 14px;
-
-                span {
-                    font-size: 20px;
-                }
-            }
-        }
-
         .description {
             margin-bottom: 0;
 
@@ -382,7 +363,7 @@
 }
 
 .mf_section_benefit {
-    background: $mf-background-dark;
+    background: $mf-background-section-dark;
     padding: $mf-spacing-section-lg 0;
 
     .mf_benefit_wrapper {
@@ -559,7 +540,7 @@
 }
 
 .mf_section_contact {
-    background: $mf-background-orange;
+    background: $mf-background-section-orange;
     padding: $mf-spacing-section-lg 0;
 
     .mf_title {
@@ -648,11 +629,21 @@
         }
     }
 
+    form {
+        label {
+            color: #ffffff;
+        }
+    }
+
     .form_group {
         text-align: left;
         + .form_group {
             margin-top: 16px;
         }
+    }
+
+    .form-control {
+        background-color: rgba($color: #ffe5e5, $alpha: 0.4);
     }
 
     .form_submit {

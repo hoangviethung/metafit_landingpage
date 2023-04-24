@@ -2,13 +2,13 @@ odoo.define("metafit.home", function (require) {
     "use strict";
 
     const publicWidget = require("web.public.widget");
-    const ajax = require('web.ajax');
+    const ajax = require("web.ajax");
 
     publicWidget.registry.MetafitHome = publicWidget.Widget.extend({
         selector: ".wrapwrap_mf_homepage",
         xmlDependencies: [],
         events: {
-            'click #submit_mf_form_contact': '_onClickSubmitContact',
+            "click #submit_mf_form_contact": "_onClickSubmitContact",
         },
         start: function () {
             const symbiont_swiper = new Swiper(".symbiont-swiper", {
@@ -16,6 +16,7 @@ odoo.define("metafit.home", function (require) {
                 autoplay: {
                     delay: 3000,
                 },
+                loop: true,
                 pagination: {
                     el: ".symbiont-swiper .swiper-pagination",
                     clickable: true,
@@ -31,6 +32,9 @@ odoo.define("metafit.home", function (require) {
                 },
                 speed: 500,
                 slidesPerView: 2.4,
+                autoplay: {
+                    delay: 3000,
+                },
                 effect: "creative",
                 creativeEffect: {
                     limitProgress: 24,
@@ -42,7 +46,13 @@ odoo.define("metafit.home", function (require) {
                         scale: 0.8,
                         translate: ["98%", 0, 0],
                     },
-
+                },
+                breakpoints: {
+                    1440: {
+                        autoplay: {
+                            delay: 5000,
+                        },
+                    },
                 },
             });
 
@@ -55,6 +65,7 @@ odoo.define("metafit.home", function (require) {
                     delay: 3000,
                 },
                 speed: 1000,
+                loop: true,
                 pagination: {
                     el: ".studio-swiper .swiper-pagination",
                     clickable: true,
@@ -65,44 +76,46 @@ odoo.define("metafit.home", function (require) {
                             delay: 5000,
                         },
                     },
-                }
+                },
             });
 
-            $('.mf_form_contact').submit((e) => {
+            $(".mf_form_contact").submit((e) => {
                 e.preventDefault();
-            })
+            });
 
-            $('.mf_form_contact').validate({
+            $(".mf_form_contact").validate({
                 rules: {
                     name: {
                         lettersonly: true,
                         required: true,
-                        minlength: 12
+                        minlength: 12,
                     },
                     phone: {
-                        minlength:10,
-                        maxlength:10,
+                        minlength: 10,
+                        maxlength: 10,
                         required: true,
                     },
                     email: {
                         required: true,
-                        email: true
+                        email: true,
                     },
-                    desc:{
+                    desc: {
                         required: true,
-                    }
-                }
-            })
+                    },
+                },
+            });
 
             return this._super.apply(this, arguments);
         },
 
-        _onClickSubmitContact: function(e){
-            let form_data = $('#mf_contactus_form').serializeArray().reduce(function(obj, item) {
-                obj[item.name] = item.value;
-                return obj;
-            }, {});
-            ajax.jsonRpc("/test", 'call', form_data)
-        }
+        _onClickSubmitContact: function (e) {
+            let form_data = $("#mf_contactus_form")
+                .serializeArray()
+                .reduce(function (obj, item) {
+                    obj[item.name] = item.value;
+                    return obj;
+                }, {});
+            ajax.jsonRpc("/website/form/landingpage", "call", form_data);
+        },
     });
 });

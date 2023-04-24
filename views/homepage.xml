@@ -36,7 +36,8 @@
                             <div class="row">
                                 <div class="col-lg-5">
                                     <div class="image">
-                                        <img src="/metafit_landingpage/static/src/images/bio-electrical.png"/>
+                                        <img class="d-none d-lg-block" src="/metafit_landingpage/static/src/images/bio-electrical/desktop.png"/>
+                                        <img class="d-lg-none" src="/metafit_landingpage/static/src/images/bio-electrical/mobile.png"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
@@ -177,11 +178,7 @@
                                     <img src="/metafit_landingpage/static/src/images/training/1.png" alt="Fit Club" />
                                     <div class="content">
                                         <h3 class="title">Fit Club</h3>
-                                        <h4 class="subtitle">Fit Club: <span>4 người tập</span>
-                                        </h4>
-                                        <p class="description">Tập luyện giờ đây thật hào hứng với các bài tập nhóm tạo sự
-                                            tương tác giữa những người tập. Các động tác được thiết kế
-                                            sinh động, linh hoạt giúp tăng hiệu quả và cải thiện cảm xúc</p>
+                                        <p class="description">Tập luyện giờ đây thật hào hứng với các bài tập nhóm tạo sự tương tác giữa những người tập. Các động tác được thiết kế sinh động, linh hoạt giúp tăng hiệu quả và cải thiện cảm xúc</p>
                                     </div>
                                     <a class="btn btn-dark min-width-large" href="#contact">Gọi ngay</a>
                                 </div>
@@ -189,11 +186,7 @@
                                     <img src="/metafit_landingpage/static/src/images/training/2.png" alt="Fit Premium" />
                                     <div class="content">
                                         <h3 class="title">Fit Premium</h3>
-                                        <h4 class="subtitle">Fit Premium: <span>2 người tập</span>
-                                        </h4>
-                                        <p class="description">Trải nghiệm không gian tập luyện riêng tư, lộ trình tập
-                                            luyện được chăm sóc bởi Huấn luyện viên giúp người tập
-                                             đạt hiệu quả tốt nhất.</p>
+                                        <p class="description">Trải nghiệm không gian tập luyện riêng tư, lộ trình tập luyện được chăm sóc bởi Huấn luyện viên giúp người tập đạt hiệu quả tốt nhất.</p>
                                     </div>
                                     <a class="btn btn-dark min-width-large" href="#contact">Gọi ngay</a>
                                 </div>
@@ -341,22 +334,22 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
-                                    <form id="mf_contactus_form" class="mf_form_contact">
+                                    <form class="mf_form_contact" method="post">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form_group">
                                                     <label class="form_label" for="name">Tên của bạn<span>*</span>
                                                     </label>
-                                                    <input class="form-control" type="text" id="name" name="name"/>
+                                                    <input class="form-control" type="text" id="name"/>
                                                 </div>
                                                 <div class="form_group">
                                                     <label class="form_label" for="phone">Số điện thoại<span>*</span>
                                                     </label>
-                                                    <input class="form-control" type="text" id="phone" name="phone"/>
+                                                    <input class="form-control" type="text" id="phone"/>
                                                 </div>
                                                 <div class="form_group">
                                                     <label class="form_label" for="email">Email</label>
-                                                    <input class="form-control" type="email" id="email" name="email"/>
+                                                    <input class="form-control" type="email" id="email"/>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -365,7 +358,7 @@
                                                     <textarea class="form-control" id="desc" name="desc"></textarea>
                                                 </div>
                                                 <div class="form_submit">
-                                                    <button id="submit_mf_form_contact" class="btn btn-dark w-100" type="submit">Gửi đi</button>
+                                                    <button class="btn btn-dark w-100">Gửi đi</button>
                                                 </div>
                                             </div>
                                         </div>

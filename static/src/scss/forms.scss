@@ -1,12 +1,13 @@
 form {
     label {
-        color: #ffffff;
         margin-bottom: 10px;
+        &.error {
+            margin-top: 10px;
+        }
     }
 }
 
 .form-control {
-    border-radius: 1rem;
-    background-color: rgba($color: #ffe5e5, $alpha: 0.4);
+    border-radius: 1.25rem;
     border-width: 0;
 }

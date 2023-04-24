@@ -2,7 +2,7 @@
 $mf-font-default: "SVN-Gilroy", sans-serif;
 
 // BACKGROUND
-$mf-background-orange: linear-gradient(
+$mf-background-section-orange: linear-gradient(
     46.46deg,
     #f3ae5f 0%,
     #f3a65e 2%,
@@ -14,13 +14,14 @@ $mf-background-orange: linear-gradient(
     #f31f4f 88%,
     #d62970 100%
 );
-$mf-background-dark: linear-gradient(
+$mf-background-section-dark: linear-gradient(
     46.13deg,
     #000000 0%,
     #322b48 52%,
     #332c44 81%,
     #352f3d 100%
 );
+$mf-background-header-dark: #04030e;
 
 //COLORS
 $mf-color-primary: #ff5c33;
