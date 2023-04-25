@@ -24,6 +24,7 @@
     'assets': {
         'web.assets_frontend':[
             # SCSS
+            '/metafit_landingpage/static/src/libs/swiper/swiper-bundle.min.css',
             '/metafit_landingpage/static/src/scss/mixins.scss',
             '/metafit_landingpage/static/src/scss/common.scss',
             '/metafit_landingpage/static/src/scss/forms.scss',
@@ -33,7 +34,6 @@
             '/metafit_landingpage/static/src/scss/website.scss',
             '/metafit_landingpage/static/src/scss/pages/homepage.scss',
             # JS
-            '/metafit_landingpage/static/src/libs/swiper/swiper-bundle.min.css',
             '/metafit_landingpage/static/src/libs/swiper/swiper-bundle.min.js',
             '/metafit_landingpage/static/src/libs/validate/jquery.validate.js',
             '/metafit_landingpage/static/src/libs/validate/additional-methods.js',

@@ -3,5 +3,8 @@
     .o_footer_copyright_name {
         display: block;
         text-align: center;
+        @media (max-width: 576px) {
+            font-size: 14px;
+        }
     }
 }

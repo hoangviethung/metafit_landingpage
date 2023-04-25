@@ -4,6 +4,11 @@
     <template id="template_header_default" inherit_id="website.template_header_default" name="Template Header Default MetaFit" active="True">
         <xpath expr="//t[@t-call='website.placeholder_header_call_to_action']" position="replace">
         </xpath>
+        <xpath expr="//t[@t-call='website.placeholder_header_brand']" position="replace">
+            <t t-call="website.placeholder_header_brand">
+                <t t-set="_link_class" t-valuef=""/>
+            </t>
+        </xpath>
         <xpath expr="//t[@t-call='website.placeholder_header_language_selector']" position="before">
             <t t-call="website.placeholder_header_call_to_action">
                 <t t-set="_div_classes" t-valuef="ms-lg-4"/>

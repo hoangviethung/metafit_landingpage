@@ -10,7 +10,14 @@
     background-size: 300% 100%;
 
     &.min-width-large {
-        min-width: 220px;
+        min-width: 13.75rem;
+        @media (max-width: 576px) {
+            min-width: 10rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding: 0.25rem 1rem;
     }
 
     &:hover {
