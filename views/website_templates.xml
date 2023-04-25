@@ -23,7 +23,7 @@
     <!-- BUTTON CALL TO ACTION IN HEADER -->
     <template id="header_call_to_action" inherit_id="website.header_call_to_action" name="Header Call to Action MetaFit" active="True">
         <xpath expr="//a[hasclass('btn_cta')]" position="replace">
-            <a href="tel:02862727626" class="btn btn_cta">Liên hệ ngay</a>
+            <a href="tel:02862727626" class="btn btn-primary btn_cta">Liên hệ ngay</a>
         </xpath>
     </template>
     <!-- FOOTER COPYRIGHT -->

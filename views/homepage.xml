@@ -174,8 +174,8 @@
                             <h2 class="mf_title text-center">Hình thức tập luyện</h2>
                             <div class="list-training">
                                 <div class="item-training">
-                                    <img class="d-none d-lg-block" src="/metafit_landingpage/static/src/images/training/1-desktop.png" alt="Fit Club" />
-                                    <img class="d-lg-none" src="/metafit_landingpage/static/src/images/training/1-mobile.png" alt="Fit Club" />
+                                    <img class="d-none d-md-block" src="/metafit_landingpage/static/src/images/training/1-desktop.png" alt="Fit Club" />
+                                    <img class="d-md-none" src="/metafit_landingpage/static/src/images/training/1-mobile.png" alt="Fit Club" />
                                     <div class="content">
                                         <h3 class="title">Fit Club</h3>
                                         <p class="description">Tập luyện giờ đây thật hào hứng với các bài tập nhóm tạo sự tương tác giữa những người tập. Các động tác được thiết kế sinh động, linh hoạt giúp tăng hiệu quả và cải thiện cảm xúc</p>
@@ -183,8 +183,8 @@
                                     <a class="btn btn-dark min-width-large" href="#contact">Gọi ngay</a>
                                 </div>
                                 <div class="item-training">
-                                    <img class="d-none d-lg-block" src="/metafit_landingpage/static/src/images/training/2-desktop.png" alt="Fit Premium" />
-                                    <img class="d-lg-none" src="/metafit_landingpage/static/src/images/training/2-mobile.png" alt="Fit Premium" />
+                                    <img class="d-none d-md-block" src="/metafit_landingpage/static/src/images/training/2-desktop.png" alt="Fit Premium" />
+                                    <img class="d-md-none" src="/metafit_landingpage/static/src/images/training/2-mobile.png" alt="Fit Premium" />
                                     <div class="content">
                                         <h3 class="title">Fit Premium</h3>
                                         <p class="description">Trải nghiệm không gian tập luyện riêng tư, lộ trình tập luyện được chăm sóc bởi Huấn luyện viên giúp người tập đạt hiệu quả tốt nhất.</p>
@@ -249,30 +249,11 @@
                                     <div class="col-lg-7">
                                         <div class="swiper benefit-swiper">
                                             <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="/metafit_landingpage/static/src/images/benefit/1.png"/>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="/metafit_landingpage/static/src/images/benefit/2.png"/>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="/metafit_landingpage/static/src/images/benefit/3.png"/>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="/metafit_landingpage/static/src/images/benefit/4.png"/>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="/metafit_landingpage/static/src/images/benefit/1.png"/>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="/metafit_landingpage/static/src/images/benefit/2.png"/>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="/metafit_landingpage/static/src/images/benefit/3.png"/>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="/metafit_landingpage/static/src/images/benefit/4.png"/>
-                                                </div>
+                                                <t t-foreach="range(9)" t-as="studio">
+                                                    <div class="swiper-slide">
+                                                        <img t-att-src="'/metafit_landingpage/static/src/images/benefit/' + str(studio_index + 1) + '.png'" />
+                                                    </div>
+                                                </t>
                                             </div>
                                             <div class="swiper-pagination"></div>
                                         </div>
@@ -288,27 +269,11 @@
                     <section class="mf_section_studio" id="studio">
                         <div class="swiper studio-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="/metafit_landingpage/static/src/images/studio/1.png"/>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/metafit_landingpage/static/src/images/studio/2.png"/>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/metafit_landingpage/static/src/images/studio/3.png"/>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/metafit_landingpage/static/src/images/studio/4.png"/>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/metafit_landingpage/static/src/images/studio/5.png"/>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/metafit_landingpage/static/src/images/studio/6.png"/>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/metafit_landingpage/static/src/images/studio/7.png"/>
-                                </div>
+                                <t t-foreach="range(8)" t-as="studio">
+                                    <div class="swiper-slide">
+                                        <img t-att-src="'/metafit_landingpage/static/src/images/studio/' + str(studio_index + 1) + '.png'" />
+                                    </div>
+                                </t>
                             </div>
                             <div class="swiper-pagination"></div>
                             <h2 class="watermark">
@@ -335,7 +300,7 @@
                                                 <img src="/metafit_landingpage/static/src/images/icons/facebook.png" />
                                             </a>
                                             <a href="#">
-                                                <img src="/metafit_landingpage/static/src/images//icons/youtube.png" />
+                                                <img src="/metafit_landingpage/static/src/images/icons/youtube.png" />
                                             </a>
                                         </div>
                                     </div>
