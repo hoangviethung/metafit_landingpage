@@ -7,7 +7,7 @@
     .content {
         .title {
             color: $mf-color-primary;
-            font-size: 56px;
+            font-size: 48px;
             font-weight: 700;
             margin-bottom: 8px;
             text-transform: uppercase;
@@ -28,7 +28,7 @@
             }
 
             @media (max-width: 1200px) {
-                font-size: 44px;
+                font-size: 40px;
             }
 
             @media (max-width: 576px) {
@@ -54,7 +54,7 @@
         @media (max-width: 992px) {
             position: relative;
             text-align: center;
-            padding-top: calc(80px + 16px);
+            padding-top: calc(#{$mf-max-size-logo-default} + 40px + 16px);
             z-index: 2;
         }
     }
@@ -125,18 +125,15 @@
     }
 
     .content-box {
-        margin-bottom: 56px;
-        margin-top: 32px;
-
+        margin: 32px 0;
         p {
-            padding: 48px 24px;
             font-size: 20px;
             font-weight: 300;
             color: #ffffff;
+            margin-bottom: 0;
 
             @media (max-width: 1200px) {
                 font-size: 16px;
-                padding: 32px 16px;
             }
         }
 
@@ -186,7 +183,10 @@
                 font-size: 32px;
                 margin-right: 8px;
                 margin-bottom: 0;
-
+                @media (min-width: 993px) {
+                    height: fit-content;
+                    margin-top: -10px;
+                }
                 @media (max-width: 576px) {
                     font-size: 24px;
                 }
@@ -211,15 +211,8 @@
 
         .content-right,
         .content-left {
-            max-width: 500px;
-
             @media (max-width: 992px) {
                 display: none;
-            }
-
-            @media (max-width: 1440px) {
-                flex: 0 0 48%;
-                max-width: 100%;
             }
         }
 
@@ -298,10 +291,9 @@
         img {
             border-radius: 48px;
             width: 100%;
+            object-fit: cover;
             @media (max-width: 576px) {
                 border-radius: 72px;
-                height: 250px;
-                object-fit: cover;
             }
         }
     }
@@ -343,8 +335,7 @@
         }
         .description {
             margin-bottom: 0;
-
-            @media (max-width: 1200px) {
+            @media (max-width: 576px) {
                 display: none;
             }
         }
@@ -403,7 +394,6 @@
         flex-direction: column;
         gap: 16px;
         width: 100%;
-        padding: 24px;
 
         .item-benefit {
             display: flex;
@@ -474,6 +464,7 @@
         mix-blend-mode: soft-light;
         text-align: center;
         margin-bottom: 0;
+        pointer-events: none;
 
         @media (max-width: 1200px) {
             font-size: 60px;

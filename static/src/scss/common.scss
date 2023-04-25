@@ -11,21 +11,22 @@
     border: 10px solid #ffffff;
     border-image-slice: 1;
     border-width: 1px;
+    padding: 24px;
 
     .top-left-square {
-        @include border-square("left", "top", 16px);
+        @include border-square("left", "top", 12px);
     }
 
     .top-right-square {
-        @include border-square("right", "top", 16px);
+        @include border-square("right", "top", 12px);
     }
 
     .bottom-left-square {
-        @include border-square("left", "bottom", 16px);
+        @include border-square("left", "bottom", 12px);
     }
 
     .bottom-right-square {
-        @include border-square("right", "bottom", 16px);
+        @include border-square("right", "bottom", 12px);
     }
 
     &.border-color-primary {
@@ -59,6 +60,10 @@
                 #d62970 100%
             );
         }
+    }
+
+    @media (max-width: 576px) {
+        padding: 16px;
     }
 }
 

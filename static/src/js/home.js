@@ -2,14 +2,11 @@ odoo.define("metafit.home", function (require) {
     "use strict";
 
     const publicWidget = require("web.public.widget");
-    const ajax = require("web.ajax");
 
     publicWidget.registry.MetafitHome = publicWidget.Widget.extend({
         selector: ".wrapwrap_mf_homepage",
         xmlDependencies: [],
-        events: {
-            "click #submit_mf_form_contact": "_onClickSubmitContact",
-        },
+        events: {},
         start: function () {
             const symbiont_swiper = new Swiper(".symbiont-swiper", {
                 speed: 500,
@@ -106,16 +103,6 @@ odoo.define("metafit.home", function (require) {
             });
 
             return this._super.apply(this, arguments);
-        },
-
-        _onClickSubmitContact: function (e) {
-            let form_data = $("#mf_contactus_form")
-                .serializeArray()
-                .reduce(function (obj, item) {
-                    obj[item.name] = item.value;
-                    return obj;
-                }, {});
-            ajax.jsonRpc("/website/form/landingpage", "call", form_data);
         },
     });
 });
