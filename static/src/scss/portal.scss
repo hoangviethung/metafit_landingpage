@@ -1,10 +1,14 @@
 .o_footer_copyright {
     background: $mf-background-section-dark;
+    .container {
+        &.py-3 {
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
+        }
+    }
     .o_footer_copyright_name {
+        font-size: 14px;
         display: block;
         text-align: center;
-        @media (max-width: 576px) {
-            font-size: 14px;
-        }
     }
 }

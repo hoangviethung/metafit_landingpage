@@ -105,9 +105,13 @@
 
     .content {
         position: relative;
-        padding: $mf-spacing-section-lg 0;
+        padding: $mf-spacing-section-lg * 2 0;
         text-align: right;
         z-index: 2;
+
+        @media (max-width: 1440px) {
+            padding: $mf-spacing-section-lg 0;
+        }
 
         @media (max-width: 1200px) {
             padding: $mf-spacing-section-md 0;
@@ -209,11 +213,19 @@
             }
         }
 
-        .content-right,
-        .content-left {
+        .content-left,
+        .content-right {
+            max-width: 80%;
             @media (max-width: 992px) {
                 display: none;
             }
+            @media (max-width: 1200px) {
+                max-width: 100%;
+            }
+        }
+
+        .content-right {
+            margin-left: auto;
         }
 
         .content-center {
@@ -221,13 +233,14 @@
             height: 100%;
             justify-content: center;
             align-items: center;
-            margin: 0 -44px 0 -66px;
-
+            margin: 0 -100px;
             img {
                 width: 100%;
                 height: auto;
             }
-
+            @media (max-width: 1200px) {
+                margin: 0 -66px;
+            }
             @media (max-width: 992px) {
                 order: 2;
                 height: auto;
@@ -307,14 +320,14 @@
     }
 
     .content {
-        top: 16px;
+        top: 24px;
         color: $mf-color-pastel-pink;
         width: 80%;
         text-align: center;
 
         .title {
             position: relative;
-            font-size: 32px;
+            font-size: 44px;
             margin-bottom: 16px;
             padding: 0 22px;
             text-transform: capitalize;
@@ -332,12 +345,15 @@
                 width: 100%;
                 transform: translateX(-50%) skew(343deg);
             }
+            @media (max-width: 992px) {
+                font-size: 32px;
+            }
         }
         .description {
             margin-bottom: 0;
-            @media (max-width: 576px) {
-                display: none;
-            }
+        }
+        @media (max-width: 576px) {
+            top: 24px;
         }
     }
 
@@ -392,22 +408,18 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 8px;
         width: 100%;
 
         .item-benefit {
             display: flex;
-            gap: 16px;
+            gap: 8px;
 
             p {
                 color: $mf-color-pastel-pink;
                 font-size: 20px;
                 margin-bottom: 0;
             }
-        }
-
-        @media (max-width: 992px) {
-            gap: 8px;
         }
     }
 
@@ -497,7 +509,7 @@
 
 .mf_section_contact {
     background: $mf-background-section-orange;
-    padding: $mf-spacing-section-lg 0;
+    padding: $mf-spacing-section-lg 0 $mf-spacing-section-lg * 2;
 
     .mf_title {
         margin-top: 32px;
@@ -556,8 +568,15 @@
         .socials {
             display: flex;
             justify-content: center;
-            gap: 16px;
-            margin-top: 32px;
+            gap: 8px;
+            margin-top: 16px;
+            > a {
+                display: inline-block;
+                img {
+                    width: 56px;
+                    height: 56px;
+                }
+            }
         }
 
         @media (max-width: 992px) {
@@ -569,7 +588,7 @@
     .mf_form_contact {
         .col-md-6 {
             + .col-md-6 {
-                @media (max-width: 576px) {
+                @media (max-width: 768px) {
                     margin-top: 24px;
                 }
             }
@@ -593,7 +612,7 @@
         text-align: left;
         + .form_group {
             margin-top: 16px;
-            @media (max-width: 576px) {
+            @media (max-width: 768px) {
                 margin-top: 24px;
             }
         }
@@ -604,16 +623,14 @@
     }
 
     .form_submit {
-        text-align: center;
+        text-align: left;
         margin-top: calc(24px + 10px + 16px);
         .btn {
-            width: 100%;
-            @media (max-width: 576px) {
-                width: fit-content;
-            }
+            width: 50%;
         }
-        @media (max-width: 576px) {
+        @media (max-width: 768px) {
             margin-top: 24px;
+            text-align: center;
         }
     }
 
@@ -630,10 +647,10 @@
     }
 
     @media (max-width: 1200px) {
-        padding: $mf-spacing-section-md 0;
+        padding: $mf-spacing-section-md 0 $mf-spacing-section-md * 2;
     }
 
     @media (max-width: 992px) {
-        padding: $mf-spacing-section-sm 0;
+        padding: $mf-spacing-section-sm 0 $mf-spacing-section-sm * 2;
     }
 }
