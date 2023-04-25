@@ -50,7 +50,7 @@
                                             <div class="bottom-right-square"></div>
                                             <p>Xung điện sinh học là dòng điện tự nhiên của cơ thể người, chúng kích hoạt mọi sự vận động  của cơ bắp. Bộ suit SYMBIONT được thiết kế dựa trên nguyên lý hoạt động này để tạo ra một mô hình tập luyện mới đầy tính đột phá: gửi xung điện trực tiếp đến cơ để gây ra sự vận động của cơ.</p>
                                         </div>
-                                        <a class="btn btn-light min-width-large" href="#contact">Trải nghiệm ngay</a>
+                                        <a class="btn btn-light min-width-large d-none d-lg-inline-block" href="#contact">Trải nghiệm ngay</a>
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +174,8 @@
                             <h2 class="mf_title text-center">Hình thức tập luyện</h2>
                             <div class="list-training">
                                 <div class="item-training">
-                                    <img src="/metafit_landingpage/static/src/images/training/1.png" alt="Fit Club" />
+                                    <img class="d-none d-lg-block" src="/metafit_landingpage/static/src/images/training/1-desktop.png" alt="Fit Club" />
+                                    <img class="d-lg-none" src="/metafit_landingpage/static/src/images/training/1-mobile.png" alt="Fit Club" />
                                     <div class="content">
                                         <h3 class="title">Fit Club</h3>
                                         <p class="description">Tập luyện giờ đây thật hào hứng với các bài tập nhóm tạo sự tương tác giữa những người tập. Các động tác được thiết kế sinh động, linh hoạt giúp tăng hiệu quả và cải thiện cảm xúc</p>
@@ -182,7 +183,8 @@
                                     <a class="btn btn-dark min-width-large" href="#contact">Gọi ngay</a>
                                 </div>
                                 <div class="item-training">
-                                    <img src="/metafit_landingpage/static/src/images/training/2.png" alt="Fit Premium" />
+                                    <img class="d-none d-lg-block" src="/metafit_landingpage/static/src/images/training/2-desktop.png" alt="Fit Premium" />
+                                    <img class="d-lg-none" src="/metafit_landingpage/static/src/images/training/2-mobile.png" alt="Fit Premium" />
                                     <div class="content">
                                         <h3 class="title">Fit Premium</h3>
                                         <p class="description">Trải nghiệm không gian tập luyện riêng tư, lộ trình tập luyện được chăm sóc bởi Huấn luyện viên giúp người tập đạt hiệu quả tốt nhất.</p>

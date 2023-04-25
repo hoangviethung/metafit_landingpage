@@ -33,6 +33,10 @@ $mf-spacing-section-lg: 80px;
 $mf-spacing-section-md: 60px;
 $mf-spacing-section-sm: 40px;
 
+//HEADER
+$mf-max-size-logo-default: 72px;
+$mf-min-size-logo-default: 40px;
+
 // OVERWIRTE ODOO
 $o-color-palettes: map-merge(
     $o-color-palettes,
