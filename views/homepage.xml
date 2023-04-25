@@ -338,32 +338,32 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-8">
-                                    <form class="mf_form_contact" method="post">
+                                <div class="col-lg-8 s_website_form">
+                                    <form class="mf_form_contact" action="/website/form/" enctype="multipart/form-data" data-model_name="res.partner" data-success-mode="redirect" data-success-page="/" data-pre-fill="true" method="post">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form_group">
                                                     <label class="form_label" for="name">Tên của bạn<span>*</span>
                                                     </label>
-                                                    <input class="form-control" type="text" id="name"/>
+                                                    <input class="form-control s_website_form_input" name="name" type="text" id="name"/>
                                                 </div>
                                                 <div class="form_group">
                                                     <label class="form_label" for="phone">Số điện thoại<span>*</span>
                                                     </label>
-                                                    <input class="form-control" type="text" id="phone"/>
+                                                    <input class="form-control s_website_form_input" type="text" name="phone" id="phone"/>
                                                 </div>
                                                 <div class="form_group">
                                                     <label class="form_label" for="email">Email</label>
-                                                    <input class="form-control" type="email" id="email"/>
+                                                    <input class="form-control s_website_form_input" name="email" type="email" id="email"/>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form_group">
                                                     <label class="form_label" for="desc">Tin nhắn của bạn</label>
-                                                    <textarea class="form-control" id="desc" name="desc"></textarea>
+                                                    <textarea class="form-control s_website_form_input" id="desc" name="note"></textarea>
                                                 </div>
                                                 <div class="form_submit">
-                                                    <button class="btn btn-dark min-width-large">Gửi đi</button>
+                                                    <button class="btn btn-dark w-100 s_website_form_send">Gửi đi</button>
                                                 </div>
                                             </div>
                                         </div>
