@@ -35,8 +35,8 @@
                             <div class="row">
                                 <div class="col-lg-5">
                                     <div class="image">
-                                        <img class="d-none d-lg-block" src="/metafit_landingpage/static/src/images/bio-electrical/desktop.png"/>
-                                        <img class="d-lg-none" src="/metafit_landingpage/static/src/images/bio-electrical/mobile.png"/>
+                                        <img class="d-none d-lg-block" src="/metafit_landingpage/static/src/images/bio-electrical/desktop.png" alt="BIO-ELECTRICAL" />
+                                        <img class="d-lg-none" src="/metafit_landingpage/static/src/images/bio-electrical/mobile.png" alt="BIO-ELECTRICAL" />
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
@@ -174,22 +174,22 @@
                             <h2 class="mf_title text-center">Hình thức tập luyện</h2>
                             <div class="list-training">
                                 <div class="item-training">
-                                    <img class="d-none d-md-block" src="/metafit_landingpage/static/src/images/training/1-desktop.png" alt="Fit Club" />
-                                    <img class="d-md-none" src="/metafit_landingpage/static/src/images/training/1-mobile.png" alt="Fit Club" />
+                                    <img class="d-none d-md-block" src="/metafit_landingpage/static/src/images/training/1-desktop.png" alt="FIT-CLUB" />
+                                    <img class="d-md-none" src="/metafit_landingpage/static/src/images/training/1-mobile.png" alt="FIT-CLUB" />
                                     <div class="content">
                                         <h3 class="title">Fit Club</h3>
                                         <p class="description">Tập luyện giờ đây thật hào hứng với các bài tập nhóm tạo sự tương tác giữa những người tập. Các động tác được thiết kế sinh động, linh hoạt giúp tăng hiệu quả và cải thiện cảm xúc</p>
                                     </div>
-                                    <a class="btn btn-dark min-width-large" href="#contact">Gọi ngay</a>
+                                    <a class="btn btn-dark min-width-large" href="tel:02862727626">Gọi ngay</a>
                                 </div>
                                 <div class="item-training">
-                                    <img class="d-none d-md-block" src="/metafit_landingpage/static/src/images/training/2-desktop.png" alt="Fit Premium" />
-                                    <img class="d-md-none" src="/metafit_landingpage/static/src/images/training/2-mobile.png" alt="Fit Premium" />
+                                    <img class="d-none d-md-block" src="/metafit_landingpage/static/src/images/training/2-desktop.png" alt="FIT-PREMIUM" />
+                                    <img class="d-md-none" src="/metafit_landingpage/static/src/images/training/2-mobile.png" alt="FIT-PREMIUM" />
                                     <div class="content">
                                         <h3 class="title">Fit Premium</h3>
                                         <p class="description">Trải nghiệm không gian tập luyện riêng tư, lộ trình tập luyện được chăm sóc bởi Huấn luyện viên giúp người tập đạt hiệu quả tốt nhất.</p>
                                     </div>
-                                    <a class="btn btn-dark min-width-large" href="#contact">Gọi ngay</a>
+                                    <a class="btn btn-dark min-width-large" href="tel:02862727626">Gọi ngay</a>
                                 </div>
                             </div>
                         </div>
@@ -209,37 +209,37 @@
                                             <div class="list-benefit">
                                                 <div class="item-benefit">
                                                     <div class="icon">
-                                                        <img src="/metafit_landingpage/static/src/images/icons/benefit.png" />
+                                                        <img src="/metafit_landingpage/static/src/images/icons/benefit.png" alt="ICON-BENEFIT" />
                                                     </div>
                                                     <p>Tiết kiệm thời gian</p>
                                                 </div>
                                                 <div class="item-benefit">
                                                     <div class="icon">
-                                                        <img src="/metafit_landingpage/static/src/images/icons/benefit.png" />
+                                                        <img src="/metafit_landingpage/static/src/images/icons/benefit.png" alt="ICON-BENEFIT" />
                                                     </div>
                                                     <p>Kích thích lưu thông máu</p>
                                                 </div>
                                                 <div class="item-benefit">
                                                     <div class="icon">
-                                                        <img src="/metafit_landingpage/static/src/images/icons/benefit.png" />
+                                                        <img src="/metafit_landingpage/static/src/images/icons/benefit.png" alt="ICON-BENEFIT" />
                                                     </div>
                                                     <p>Xây dựng cơ bắp</p>
                                                 </div>
                                                 <div class="item-benefit">
                                                     <div class="icon">
-                                                        <img src="/metafit_landingpage/static/src/images/icons/benefit.png" />
+                                                        <img src="/metafit_landingpage/static/src/images/icons/benefit.png" alt="ICON-BENEFIT" />
                                                     </div>
                                                     <p>Cải thiện vóc dáng</p>
                                                 </div>
                                                 <div class="item-benefit">
                                                     <div class="icon">
-                                                        <img src="/metafit_landingpage/static/src/images/icons/benefit.png" />
+                                                        <img src="/metafit_landingpage/static/src/images/icons/benefit.png" alt="ICON-BENEFIT" />
                                                     </div>
                                                     <p>Cải thiện sức bền</p>
                                                 </div>
                                                 <div class="item-benefit">
                                                     <div class="icon">
-                                                        <img src="/metafit_landingpage/static/src/images/icons/benefit.png" />
+                                                        <img src="/metafit_landingpage/static/src/images/icons/benefit.png" alt="ICON-BENEFIT" />
                                                     </div>
                                                     <p>Cân bằng hệ thống cơ bắp</p>
                                                 </div>
@@ -251,7 +251,7 @@
                                             <div class="swiper-wrapper">
                                                 <t t-foreach="range(9)" t-as="studio">
                                                     <div class="swiper-slide">
-                                                        <img t-att-src="'/metafit_landingpage/static/src/images/benefit/' + str(studio_index + 1) + '.png'" />
+                                                        <img t-att-src="'/metafit_landingpage/static/src/images/benefit/' + str(studio_index + 1) + '.png'" alt="BENEFIT" />
                                                     </div>
                                                 </t>
                                             </div>
@@ -271,7 +271,7 @@
                             <div class="swiper-wrapper">
                                 <t t-foreach="range(8)" t-as="studio">
                                     <div class="swiper-slide">
-                                        <img t-att-src="'/metafit_landingpage/static/src/images/studio/' + str(studio_index + 1) + '.png'" />
+                                        <img t-att-src="'/metafit_landingpage/static/src/images/studio/' + str(studio_index + 1) + '.png'" alt="STUDIO" />
                                     </div>
                                 </t>
                             </div>
@@ -291,16 +291,16 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                     <div class="contacts-information">
-                                        <div class="item-contact address">16 Phạm Ngọc Thạch, Phường 6 <br/>
-                                        Quận 3, TP.HCM.
+                                        <div class="item-contact address">34/11 Lữ Gia, Phường 15,<br/>
+                                        Quận 11, Thành Phố Hồ Chí Minh
                                         </div>
                                         <div class="item-contact hotline">Hotline: 0286.27.27.626</div>
                                         <div class="item-contact socials">
-                                            <a href="#">
-                                                <img src="/metafit_landingpage/static/src/images/icons/facebook.png" />
+                                            <a target="_blank" href="#">
+                                                <img src="/metafit_landingpage/static/src/images/icons/facebook.png" alt="SOCIAL-FACEBOOK" />
                                             </a>
-                                            <a href="#">
-                                                <img src="/metafit_landingpage/static/src/images/icons/youtube.png" />
+                                            <a target="_blank" href="#">
+                                                <img src="/metafit_landingpage/static/src/images/icons/youtube.png" alt="SOCIAL-YOUTUBE" />
                                             </a>
                                         </div>
                                     </div>
@@ -330,7 +330,7 @@
                                                     <textarea class="form-control s_website_form_input" id="desc" name="note"></textarea>
                                                 </div>
                                                 <div class="form_submit">
-                                                    <button class="btn btn-dark w-100 s_website_form_send">Gửi đi</button>
+                                                    <button class="btn btn-dark s_website_form_send">Gửi đi</button>
                                                 </div>
                                             </div>
                                         </div>
