@@ -13,8 +13,8 @@
                                     <div class="content">
                                         <h1 class="title">
                                             <span>B.E.S.T</span>
-                                            <span>Bio Electrical</span>
-                                            <span>Smart Training</span>
+                                            <span>BIO ELECTRICAL</span>
+                                            <span>SMART TRAINING</span>
                                         </h1>
                                         <p class="description">Thế hệ phòng tập mới, ứng dụng công nghệ mang tính cách mạng để đạt hiệu quả trong tập luyện.</p>
                                         <a class="btn btn-primary min-width-large" href="#contact">Trải nghiệm ngay</a>
@@ -41,8 +41,8 @@
                                 </div>
                                 <div class="col-lg-7">
                                     <div class="content">
-                                        <h2 class="mf_title">Bio Electrical<br/>
-                                        Xung điện sinh học </h2>
+                                        <h2 class="mf_title">BIO ELECTRICAL<br/>
+                                        XUNG ĐIỆN SINH HỌC</h2>
                                         <div class="content-box content-box-has-border">
                                             <div class="top-left-square"></div>
                                             <div class="top-right-square"></div>
@@ -60,9 +60,9 @@
                     <section class="mf_section_symbiont" id="symbiont">
                         <img class="decorate decorate_style--02" src="/metafit_landingpage/static/src/images/decorate/2.png" />
                         <div class="container">
-                            <h2 class="mf_title text-center text-primary">Symbiont
+                            <h2 class="mf_title text-center text-primary">SYMBIONT
                                 <br/>
-                                    Ứng dụng của công nghệ BET
+                                ỨNG DỤNG CỦA CÔNG NGHỆ BET
                             </h2>
                             <div class="content">
                                 <div class="swiper symbiont-swiper">
@@ -171,7 +171,7 @@
                     <section class="mf_section_training" id="training">
                         <img class="decorate decorate_style--01" src="/metafit_landingpage/static/src/images/decorate/1.png" />
                         <div class="container">
-                            <h2 class="mf_title text-center">Hình thức tập luyện</h2>
+                            <h2 class="mf_title text-center">HÌNH THỨC TẬP LUYỆN</h2>
                             <div class="list-training">
                                 <div class="item-training">
                                     <img class="d-none d-md-block" src="/metafit_landingpage/static/src/images/training/1-desktop.png" alt="FIT-CLUB" />
@@ -197,7 +197,7 @@
                     <!-- Benefit -->
                     <section class="mf_section_benefit" id="benefit">
                         <div class="container">
-                            <h2 class="mf_title text-primary text-center">Lợi ích tập luyện</h2>
+                            <h2 class="mf_title text-primary text-center">LỢI ÍCH TẬP LUYỆN</h2>
                             <div class="mf_benefit_wrapper">
                                 <div class="row align-items-center">
                                     <div class="col-lg-5">
@@ -276,18 +276,13 @@
                                 </t>
                             </div>
                             <div class="swiper-pagination"></div>
-                            <h2 class="watermark">
-                                MetaFit
-                                <br/>
-                                Studio
-                            </h2>
                         </div>
                     </section>
                     <!-- Contact  -->
                     <section class="mf_section_contact" id="contact">
                         <img class="decorate decorate_style--03" src="/metafit_landingpage/static/src/images/decorate/3.png" />
                         <div class="container">
-                            <h2 class="mf_title text-center">Liên hệ Metafit</h2>
+                            <h2 class="mf_title text-center">LIÊN HỆ MetaFit</h2>
                             <div class="row">
                                 <div class="col-lg-4">
                                     <div class="contacts-information">
@@ -295,14 +290,14 @@
                                         Quận 11, Thành Phố Hồ Chí Minh
                                         </div>
                                         <div class="item-contact hotline">Hotline: 0286.27.27.626</div>
-                                        <div class="item-contact socials">
+                                        <!-- <div class="item-contact socials">
                                             <a target="_blank" href="#">
                                                 <img src="/metafit_landingpage/static/src/images/icons/facebook.png" alt="SOCIAL-FACEBOOK" />
                                             </a>
                                             <a target="_blank" href="#">
                                                 <img src="/metafit_landingpage/static/src/images/icons/youtube.png" alt="SOCIAL-YOUTUBE" />
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="col-lg-8 s_website_form">
