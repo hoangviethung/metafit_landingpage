@@ -10,7 +10,9 @@
     'depends': ['website'],
     'data': [
         # DATAS
+        'data/data.xml',
         'data/menu_data.xml',
+        'data/mail_template.xml',
         # TEMPLATES
         'views/website_templates.xml',
         'views/homepage.xml',

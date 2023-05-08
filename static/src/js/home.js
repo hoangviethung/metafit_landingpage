@@ -76,6 +76,31 @@ odoo.define("metafit.home", function (require) {
                 },
             });
 
+            $('.mf_form_contact').submit((e) => {
+                e.preventDefault();
+            });
+
+            $('.mf_form_contact').validate({
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 1
+                    },
+                    phone: {
+                        minlength: 10,
+                        maxlength: 10,
+                        required: true,
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    desc:{
+                        required: true,
+                    }
+                }
+            })
+
             return this._super.apply(this, arguments);
         },
     });

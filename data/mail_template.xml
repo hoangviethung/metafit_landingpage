@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<odoo>
+  <data>
+    <record id="email_template_notify_sale_person" model="mail.template">
+      <field name="name">Metafit Notify Sale Person Email Template</field>
+      <field name="subject">HỖ TRỢ KHÁCH HÀNG {{ object.name }} TỪ WEBSITE</field>
+      <field name="email_from">info@metafit.asia</field>
+      <field name="email_to">{{ (object.user_id.partner_id.email or '') }}</field>
+      <field name="model_id" ref="model_res_partner"/>
+      <field name="auto_delete" eval="True"/>
+      <field name="body_html" type="html">
+        <p>Khách hàng <t t-out="object.name">Name</t> có để lại thông tin trên Website cần bạn hỗ trợ với nội dung:<t t-out="object.comment">Comment</t></p>
+        <p>Xem thông tin của khách hàng tại:</p>
+        <br />
+        <br />
+        <p style="margin: 0px; padding: 0px; font-size: 13px; text-align:center;"><a t-att-href="object._get_contact_url()" target="_blank" class="btn btn-primary">View Contact</a></p>
+      </field>
+    </record>
+  </data>
+</odoo>

@@ -1,0 +1,8 @@
+<odoo>
+    <data>
+        <record model="ir.config_parameter" id="metafit_default_sale_person">
+            <field name="key">metafit.default_sale_person</field>
+            <field name="value">1</field>
+        </record>
+    </data>
+</odoo>
