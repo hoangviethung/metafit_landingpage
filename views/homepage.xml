@@ -282,7 +282,7 @@
                     <section class="mf_section_contact" id="contact">
                         <img class="decorate decorate_style--03" src="/metafit_landingpage/static/src/images/decorate/3.png" />
                         <div class="container">
-                            <h2 class="mf_title text-center">LIÊN HỆ MetaFit</h2>
+                            <h2 class="mf_title text-center">LIÊN HỆ MetaFIT</h2>
                             <div class="row">
                                 <div class="col-lg-4">
                                     <div class="contacts-information">
@@ -301,38 +301,38 @@
                                 </div>
                                 <div class="col-lg-8 s_website_form">
                                     <form class="mf_form_contact" action="/website/form/" enctype="multipart/form-data" data-model_name="res.partner" data-success-mode="redirect" data-success-page="/" data-pre-fill="true" method="post">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form_group" hidden="1">
-                                                    <div class="col-sm">
-                                                        <div class="row s_col_no_resize s_col_no_bgcolor s_website_form_multiple" data-name="channel" data-display="horizontal">
-                                                            <div class="radio col-12 col-lg-4 col-md-6">
-                                                                <div class="form-check">
-                                                                    <input type="radio" class="s_website_form_input form-check-input" id="o9tg3aehqw0" name="channel" value="app" data-fill-with="undefined"/>
-                                                                    <label class="form-check-label s_website_form_check_label" for="o9tg3aehqw0">
+                                        <div hidden="1">
+                                            <div class="col-sm">
+                                                <div class="row s_col_no_resize s_col_no_bgcolor s_website_form_multiple" data-name="channel" data-display="horizontal">
+                                                    <div class="radio col-12 col-lg-4 col-md-6">
+                                                        <div class="form-check">
+                                                            <input type="radio" class="s_website_form_input form-check-input" id="o9tg3aehqw0" name="channel" value="app" data-fill-with="undefined"/>
+                                                            <label class="form-check-label s_website_form_check_label" for="o9tg3aehqw0">
                                                                         App
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="radio col-12 col-lg-4 col-md-6">
-                                                                <div class="form-check">
-                                                                    <input type="radio" class="s_website_form_input form-check-input" id="o9tg3aehqw1" name="channel" checked="checked" value="web"/>
-                                                                    <label class="form-check-label s_website_form_check_label" for="o9tg3aehqw1">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="radio col-12 col-lg-4 col-md-6">
+                                                        <div class="form-check">
+                                                            <input type="radio" class="s_website_form_input form-check-input" id="o9tg3aehqw1" name="channel" checked="checked" value="web"/>
+                                                            <label class="form-check-label s_website_form_check_label" for="o9tg3aehqw1">
                                                                         Web
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="radio col-12 col-lg-4 col-md-6">
-                                                                <div class="form-check">
-                                                                    <input type="radio" class="s_website_form_input form-check-input" id="o9tg3aehqw2" name="channel" value="creation"/>
-                                                                    <label class="form-check-label s_website_form_check_label" for="o9tg3aehqw2">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="radio col-12 col-lg-4 col-md-6">
+                                                        <div class="form-check">
+                                                            <input type="radio" class="s_website_form_input form-check-input" id="o9tg3aehqw2" name="channel" value="creation"/>
+                                                            <label class="form-check-label s_website_form_check_label" for="o9tg3aehqw2">
                                                                         Creation
-                                                                    </label>
-                                                                </div>
-                                                            </div>
+                                                            </label>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
                                                 <div class="form_group">
                                                     <label class="form_label" for="name">Tên của bạn<span>*</span>
                                                     </label>

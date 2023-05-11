@@ -429,6 +429,9 @@
                 width: 100%;
                 height: auto;
                 transition: 0.3s all ease-in-out;
+                @media (max-width: 576px) {
+                    border-top-right-radius: 60px;
+                }
             }
         }
         .swiper-pagination {
