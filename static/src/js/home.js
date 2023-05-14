@@ -6,7 +6,8 @@ odoo.define("metafit.home", function (require) {
     publicWidget.registry.MetafitHome = publicWidget.Widget.extend({
         selector: ".wrapwrap_mf_homepage",
         xmlDependencies: [],
-        events: { "click .s_website_form_send": "_validateFormContact" },
+
+        // events: { "click .s_website_form_send": "_validateFormContact" },
         start: function () {
             const symbiont_swiper = new Swiper(".symbiont-swiper", {
                 speed: 500,
@@ -76,28 +77,40 @@ odoo.define("metafit.home", function (require) {
                 },
             });
 
-            return this._super.apply(this, arguments);
-        },
-
-        _validateFormContact: function () {
             const form = this.$("#contactus_form");
 
             form.validate({
+                onfocusout: function(element) { this.element(element); },
                 rules: {
                     phone: {
+                        phoneVN: true,
                         required: true,
-                        minlength: 10,
-                        maxlength: 10,
                     },
                     email: { email: true },
                 },
             });
 
-            if (!form.valid()) {
-                console.log("false");
-            } else {
-                console.log("true");
-            }
+            $('#contact1').on('blur', function(e){
+                if(!form.valid()) $('.s_website_form_send').prop('disabled', true);
+                else $('.s_website_form_send').prop('disabled', false);
+            })
+
+            $('#contact2').on('blur', function(e){
+                if(!form.valid()) $('.s_website_form_send').prop('disabled', true);
+                else $('.s_website_form_send').prop('disabled', false);
+            })
+
+            $('#contact3').on('blur', function(e){
+                if(!form.valid()) $('.s_website_form_send').prop('disabled', true);
+                else $('.s_website_form_send').prop('disabled', false);
+            })
+
+            $('#contact6').on('blur', function(e){
+                if(!form.valid()) $('.s_website_form_send').prop('disabled', true);
+                else $('.s_website_form_send').prop('disabled', false);
+            })
+
+            return this._super.apply(this, arguments);
         },
     });
 });

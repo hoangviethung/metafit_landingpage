@@ -1510,3 +1510,9 @@ $.validator.addMethod( "ziprange", function( value, element ) {
 }, "Your ZIP-code must be in the range 902xx-xxxx to 905xx-xxxx." );
 return $;
 }));
+
+$.validator.addMethod( "phoneVN", function( phone_number, element ) {
+	phone_number = phone_number.replace( /\s+/g, "" );
+	return this.optional( element ) || phone_number.length > 9 &&
+		phone_number.match( /(84|0[3|5|7|8|9])+([0-9]{8})\b/g );
+}, "Please specify a valid phone number." );
