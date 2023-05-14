@@ -6,7 +6,7 @@ odoo.define("metafit.home", function (require) {
     publicWidget.registry.MetafitHome = publicWidget.Widget.extend({
         selector: ".wrapwrap_mf_homepage",
         xmlDependencies: [],
-        events: {},
+        events: { "click .s_website_form_send": "_validateFormContact" },
         start: function () {
             const symbiont_swiper = new Swiper(".symbiont-swiper", {
                 speed: 500,
@@ -76,32 +76,28 @@ odoo.define("metafit.home", function (require) {
                 },
             });
 
-            $('.mf_form_contact').submit((e) => {
-                e.preventDefault();
-            });
+            return this._super.apply(this, arguments);
+        },
 
-            $('.mf_form_contact').validate({
+        _validateFormContact: function () {
+            const form = this.$("#contactus_form");
+
+            form.validate({
                 rules: {
-                    name: {
-                        required: true,
-                        minlength: 1
-                    },
                     phone: {
+                        required: true,
                         minlength: 10,
                         maxlength: 10,
-                        required: true,
                     },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    desc:{
-                        required: true,
-                    }
-                }
-            })
+                    email: { email: true },
+                },
+            });
 
-            return this._super.apply(this, arguments);
+            if (!form.valid()) {
+                console.log("false");
+            } else {
+                console.log("true");
+            }
         },
     });
 });

@@ -546,20 +546,6 @@
             }
         }
 
-        .socials {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin-top: 16px;
-            > a {
-                display: inline-block;
-                img {
-                    width: 56px;
-                    height: 56px;
-                }
-            }
-        }
-
         @media (max-width: 992px) {
             padding-top: 0;
             margin-top: 32px;
@@ -578,7 +564,7 @@
 
     textarea {
         &.form-control {
-            min-height: calc((70px * 2) + 16px - 24px);
+            min-height: calc((100px * 2) - 42px - 16px);
             resize: none;
         }
     }
@@ -603,9 +589,13 @@
         background-color: rgba($color: #ffe5e5, $alpha: 0.4);
     }
 
-    .form_submit {
+    #s_website_form_result {
+        color: #ffffff !important;
+    }
+
+    .s_website_form_submit {
         text-align: left;
-        margin-top: calc(24px + 10px + 16px);
+        margin-top: 42px;
         .btn {
             width: 50%;
         }

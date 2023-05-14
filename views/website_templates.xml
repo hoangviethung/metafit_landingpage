@@ -20,6 +20,12 @@
             </t>
         </xpath>
     </template>
+    <!-- LOGO -->
+    <template id="option_header_brand_logo" name="" inherit_id="website.option_header_brand_logo">
+        <xpath expr="//a" position="attributes">
+            <attribute name="href">/#contact</attribute>
+        </xpath>
+    </template>
     <!-- BUTTON CALL TO ACTION IN HEADER -->
     <template id="header_call_to_action" inherit_id="website.header_call_to_action" name="Header Call to Action MetaFIT" active="True">
         <xpath expr="//a[hasclass('btn_cta')]" position="replace">

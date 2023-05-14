@@ -9,5 +9,8 @@ form {
 
 .form-control {
     border-radius: 1.25rem;
-    border-width: 0;
+    border-color: transparent;
+    &:focus {
+        border-color: transparent;
+    }
 }
